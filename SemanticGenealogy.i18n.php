@@ -37,6 +37,20 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'semanticgenealogy-desc' => '{{desc}}',
+	'semanticgenealogy-gedcomexport-desc' => 'Description of the GEDCOM result printer.',
+	'semanticgenealogy-gedcomexport-link' => 'Default link label to a GEDCOM file.',
+	'semanticgenealogy-specialfamilytree-title' => 'Title of the [[Special:FamilyTree]] page.',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Submit button of the [[Special:FamilyTree]] form.',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Label of an ancestors tree.',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Label of a descendants tree.',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Label of the "base person page name" input.',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Label of the "second base person page name" input (only for "link" type).',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Label of the "type of family tree" select.',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Label of the form field in order to input the number of generation in the tree.',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Error message when the "page2" field is not set (only for "link" type).',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Error message where no link is found between $1 and $2.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Error massage when the type of the family tree is unknown.',
 );
 
 
