@@ -15,7 +15,7 @@ $messages = array();
  * @author Thomas Pellissier Tanon
  */
 $messages['en'] = array(
-	'semanticgenealogy-desc' => 'Provides the ability to view genealogy trees and import/export GEDCOM files.',
+	'semanticgenealogy-desc' => 'Provides the ability to view genealogy trees and import/export GEDCOM files',
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM export',
 	'semanticgenealogy-gedcomexport-link' => 'GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => 'Create a Family Tree',
@@ -27,7 +27,7 @@ $messages['en'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Other person',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Type',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Number of generation',
-	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'You have to set a name of page person page in "Other person" field.',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'You have to set a name of page person page in "{{int:semanticgenealogy-specialfamilytree-label-page2}}" field.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'No link found between [[$1]] and [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'The $1 type is unknown.',
 );
@@ -53,12 +53,11 @@ $messages['qqq'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Error massage when the type of the family tree is unknown.',
 );
 
-
 /** French (Français)
  * @author Thomas Pellissier Tanon
  */
 $messages['fr'] = array(
-	'semanticmaps-desc' =>  "Permet d'afficher des arbres généalogiques ainsi que d'importer et d'exporter les fichiers GEDCOMs.",
+	'semanticmaps-desc' =>  "Permet d'afficher des arbres généalogiques ainsi que d'importer et d'exporter les fichiers GEDCOMs",
 	'semanticgenealogy-gedcomexport-desc' => 'Export GEDCOM',
 	'semanticgenealogy-gedcomexport-link' => 'GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => 'Créer un arbre généalogique',
@@ -70,7 +69,8 @@ $messages['fr'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Seconde personne',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Type',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Nombre de générations',
-	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Vous devez mettre le nomd d\'une page dans le champ "autre personne".',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Vous devez mettre le nomd d\'une page dans le champ "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Aucun lien trouvé entre [[$1]] et [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Le type $1 est inconnu.',
 );
+
