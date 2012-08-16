@@ -102,6 +102,30 @@ $messages['fr'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Le type $1 est inconnu.',
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Fâre',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Vielys',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Dèscendents',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Lim',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Pèrsona de dèpârt',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Seconda pèrsona',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipo',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Nombro de g·ènèracions',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Gins de lim trovâ entre-mié [[$1]] et [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Lo tipo $1 est encognu.',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Cruthaigh',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Cineál',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -135,6 +159,7 @@ $messages['it'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Altra persona:',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Tipo',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Numero della generazione',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'È necessario specificare il nome della pagina di una persona nel campo "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Nessun collegamento trovato fra [[$1]] e [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Il tipo $1 è sconosciuto.',
 );
@@ -231,5 +256,20 @@ $messages['tl'] = array(
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Dapat kang magtakda ng isang pangalan ng pahina ng tao ng pahina sa loob ng hanay ng "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Walang kawing na natagpuan sa pagitan ng [[$1]] at [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Hindi nalalaman ang uring $1.',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['vi'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Tạo',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Kiểu',
+);
+
+/** Yiddish (ייִדיש)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['yi'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'שאַפֿן',
 );
 
