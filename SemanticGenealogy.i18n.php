@@ -81,6 +81,14 @@ $messages['de-formal'] = array(
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Sie müssen den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.',
 );
 
+/** Finnish (suomi)
+ * @author Beluga
+ */
+$messages['fi'] = array(
+	'semanticgenealogy-specialfamilytree-type-link' => 'Linkki',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tyyppi',
+);
+
 /** French (français)
  * @author Grondin
  * @author Thomas Pellissier Tanon
@@ -256,6 +264,15 @@ $messages['tl'] = array(
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Dapat kang magtakda ng isang pangalan ng pahina ng tao ng pahina sa loob ng hanay ng "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Walang kawing na natagpuan sa pagitan ng [[$1]] at [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Hindi nalalaman ang uring $1.',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'تخلیق کریں',
+	'semanticgenealogy-specialfamilytree-type-link' => 'لنک',
+	'semanticgenealogy-specialfamilytree-label-type' => 'قسم',
 );
 
 /** Vietnamese (Tiếng Việt)
