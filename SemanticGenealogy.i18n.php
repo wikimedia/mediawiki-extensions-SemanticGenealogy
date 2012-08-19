@@ -53,6 +53,24 @@ $messages['qqq'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Error massage when the type of the family tree is unknown.',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'semanticgenealogy-specialfamilytree-title' => 'Krouiñ ur wezenn a gerentiezh',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Krouiñ',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Hendadoù',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Diskennidi',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Liamm',
+	'semanticgenealogy-specialfamilytree-label-page' => "Den loc'hañ",
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Den all',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Seurt',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Niver a remziadoù',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Rankout a rit lakaat anv ur bajenn er maezienn "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => "N'eus bet kavet liamm ebet etre [[$1]] ha [[$2]].",
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Dianv eo ar seurt $1.',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
@@ -92,8 +110,10 @@ $messages['fi'] = array(
 /** French (français)
  * @author Grondin
  * @author Thomas Pellissier Tanon
+ * @author Tititou36
  */
 $messages['fr'] = array(
+	'semanticgenealogy-desc' => "Offre la possibilité de voir des arbres généalogiques et d'importer/exporter des fichiers GEDCOM",
 	'semanticgenealogy-gedcomexport-desc' => 'Export GEDCOM',
 	'semanticgenealogy-gedcomexport-link' => 'GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => 'Créer un arbre généalogique',
@@ -134,10 +154,31 @@ $messages['ga'] = array(
 	'semanticgenealogy-specialfamilytree-label-type' => 'Cineál',
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'semanticgenealogy-desc' => 'Proporciona a posibilidade de ver árbores xenealóxicas e importar e exportar ficheiros GEDCOM',
+	'semanticgenealogy-gedcomexport-desc' => 'Exportación en GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Crear unha árbore xenealóxica',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Crear',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Devanceiros',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Descendentes',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Ligazón',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Persoa situada na base',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Outra persoa',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipo',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de xeración',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Cómpre definir o nome dunha páxina no campo "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Non se atopou ligazón ningunha entre [[$1]] e [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Descoñécese o tipo "$1".',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'semanticgenealogy-desc' => 'Zmóžnja wobhladowanje rodopisow a import/eksport GEDCOM-datajow',
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-eksport',
 	'semanticgenealogy-specialfamilytree-title' => 'Rodopis swójby wutworić',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Wutworić',
@@ -148,6 +189,7 @@ $messages['hsb'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Druha wosoba',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Ličba generacijow',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Dyrbiš mjeno strony k wosobje  w polu "{{int:semanticgenealogy-specialfamilytree-label-page2}}"  podać.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Žadyn zwisk mjez [[$1]] a [[$2]] namakany.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 je njeznaty.',
 );
@@ -252,6 +294,7 @@ $messages['nl'] = array(
 $messages['tl'] = array(
 	'semanticgenealogy-desc' => 'Nagbibigay ng kakayahan upang makita ang mga puno ng talaangkanan at mga talaksan ng pag-angkat/pagluluwas ng GEDCOM',
 	'semanticgenealogy-gedcomexport-desc' => 'Pagluluwas ng GEDCOM',
+	'semanticgenealogy-gedcomexport-link' => 'GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => 'Lumikha ng isang Puno ng Mag-anak',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Likhain',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Mga ninuno',
