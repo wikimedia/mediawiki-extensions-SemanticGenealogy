@@ -99,6 +99,24 @@ $messages['de-formal'] = array(
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Sie müssen den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-eksport',
+	'semanticgenealogy-specialfamilytree-title' => 'Rodopis familije napóraś',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Napóraś',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Prjedowniki',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Pótomnik',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Wótkaz',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Wuchadna wósoba',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Druga wósoba',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Licba generacijow',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Žeden zwisk mjazy [[$1]] a [[$2]] namakany.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 jo njeznaty.',
+);
+
 /** Finnish (suomi)
  * @author Beluga
  */
@@ -242,6 +260,7 @@ $messages['lb'] = array(
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Virfahren',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Nokommen',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Verbindung',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Ausgangspersoun',
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Aner Persoun',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Zuel vu Generatiounen',
