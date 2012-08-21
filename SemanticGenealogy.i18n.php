@@ -117,6 +117,26 @@ $messages['dsb'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 jo njeznaty.',
 );
 
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'semanticgenealogy-desc' => 'Proporciona la capacidad de ver árboles genealógicos e importar/exportar archivos GEDCOM',
+	'semanticgenealogy-gedcomexport-desc' => 'Exportación en GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Crear un árbol genealógico',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Crear',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Antepasados',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Descendientes',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Enlace',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Persona base',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Otra persona',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipo',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de generación',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Tienes que definir el nombre de página de una página de persona en el campo "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'No encontró ningún vínculo entre [[$1]] y [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'El tipo $1 es desconocido.',
+);
+
 /** Finnish (suomi)
  * @author Beluga
  */
