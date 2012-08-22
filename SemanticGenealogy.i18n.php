@@ -103,6 +103,7 @@ $messages['de-formal'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
+	'semanticgenealogy-desc' => 'Zmóžnja wobglědowanje rodopisow a import/eksport GEDCOM-datajow',
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-eksport',
 	'semanticgenealogy-specialfamilytree-title' => 'Rodopis familije napóraś',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Napóraś',
@@ -113,6 +114,7 @@ $messages['dsb'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Druga wósoba',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Licba generacijow',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Musyš mě boka k wósobje  w pólu "{{int:semanticgenealogy-specialfamilytree-label-page2}}"  pódaś.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Žeden zwisk mjazy [[$1]] a [[$2]] namakany.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 jo njeznaty.',
 );
