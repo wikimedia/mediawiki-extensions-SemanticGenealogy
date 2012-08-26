@@ -287,6 +287,7 @@ $messages['lb'] = array(
 	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Zuel vu Generatiounen',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Zwësche(n) [[$1]] an [[$2]] gouf keng Verbindung fonnt.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Den Typ $1 ass onbekannt.',
 );
 
 /** Macedonian (македонски)
