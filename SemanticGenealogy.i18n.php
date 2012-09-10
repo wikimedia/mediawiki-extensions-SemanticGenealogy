@@ -330,6 +330,20 @@ $messages['nl'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Het type "$1" is onbekend.',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Luckas Blade
+ */
+$messages['pt-br'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Criar',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Antepassados',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Descendente',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Ligação',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Pessoa base',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Outra pessoa',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipo',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de geração',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
