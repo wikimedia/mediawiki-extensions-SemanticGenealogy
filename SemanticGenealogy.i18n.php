@@ -330,6 +330,14 @@ $messages['nl'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Het type "$1" is onbekend.',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'جوړول',
+	'semanticgenealogy-specialfamilytree-type-link' => 'تړنه',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Luckas Blade
  */
