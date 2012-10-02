@@ -92,7 +92,7 @@ $messages['de'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Der Typ $1 ist unbekannt.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
