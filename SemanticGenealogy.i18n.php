@@ -352,6 +352,26 @@ $messages['pt-br'] = array(
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de geração',
 );
 
+/** Swedish (svenska)
+ * @author Martinwiss
+ */
+$messages['sv'] = array(
+	'semanticgenealogy-desc' => 'Gör så att man kan se släktträd och importera/exportera GEDCOM-filer',
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-export',
+	'semanticgenealogy-specialfamilytree-title' => 'Skapa släktträd',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Skapa',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Släktingar',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Ättlingar',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Länk',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Upphovs-person',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Annan person',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Släktledsnummer',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Du måste ange ett namn på personsidan i fältet: "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Ingen koppling fanns mellan [[$1]] och [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Känner inte till typen: $1.',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
