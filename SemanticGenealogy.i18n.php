@@ -27,7 +27,7 @@ $messages['en'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Other person',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Type',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Number of generation',
-	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'You have to set a name of page person page in "{{int:semanticgenealogy-specialfamilytree-label-page2}}" field.',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'You have to provide a name of a persons page in "{{int:semanticgenealogy-specialfamilytree-label-page2}}" field.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'No link found between [[$1]] and [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'The $1 type is unknown.',
 );
