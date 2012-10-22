@@ -416,4 +416,3 @@ $messages['vi'] = array(
 $messages['yi'] = array(
 	'semanticgenealogy-specialfamilytree-button-submit' => 'שאַפֿן',
 );
-
