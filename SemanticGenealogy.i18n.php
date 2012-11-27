@@ -141,10 +141,23 @@ $messages['es'] = array(
 
 /** Finnish (suomi)
  * @author Beluga
+ * @author Nedergard
  */
 $messages['fi'] = array(
-	'semanticgenealogy-specialfamilytree-type-link' => 'Linkki',
+	'semanticgenealogy-desc' => 'Mahdollistaa sukupuiden näyttämisen ja GEDCOM-tiedostojen tuonnin/viennin.',
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-vienti',
+	'semanticgenealogy-specialfamilytree-title' => 'Luo sukupuu',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Luo',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Esipolvet',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Jälkipolvet',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Suhde',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Kantahenkilö',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Muu henkilö',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Tyyppi',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Sukupolvien lukumäärä',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Henkilön sivun nimi on kirjoitettava kenttään "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '[[$1]] ja [[$2]]: yhteyttä ei löytynyt.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Tyyppi $1 on tuntematon.',
 );
 
 /** French (français)
