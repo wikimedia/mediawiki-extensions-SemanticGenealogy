@@ -119,6 +119,16 @@ $messages['dsb'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 jo njeznaty.',
 );
 
+/** Greek (Ελληνικά)
+ * @author Protnet
+ */
+$messages['el'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Δημιουργία',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Πρόγονοι',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Σύνδεσμος',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Τύπος',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -404,6 +414,15 @@ $messages['tl'] = array(
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Dapat kang magtakda ng isang pangalan ng pahina ng tao ng pahina sa loob ng hanay ng "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Walang kawing na natagpuan sa pagitan ng [[$1]] at [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Hindi nalalaman ang uring $1.',
+);
+
+/** Ukrainian (українська)
+ * @author Steve.rusyn
+ */
+$messages['uk'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Створити',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Посилання',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Тип',
 );
 
 /** Urdu (اردو)
