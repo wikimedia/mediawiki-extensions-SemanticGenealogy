@@ -149,6 +149,14 @@ $messages['es'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'El tipo $1 es desconocido.',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'ایجاد',
+	'semanticgenealogy-specialfamilytree-type-link' => 'پیوند',
+);
+
 /** Finnish (suomi)
  * @author Beluga
  * @author Nedergard
@@ -375,6 +383,20 @@ $messages['pt-br'] = array(
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de geração',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM නිර්යාත කිරීම',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'තනන්න',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'මුතුන් මිත්තෝ',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'අවරෝහණයා',
+	'semanticgenealogy-specialfamilytree-type-link' => 'සබැඳිය',
+	'semanticgenealogy-specialfamilytree-label-page' => 'පාදක පුද්ගලයෙක්',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'වෙනත් පුද්ගලයෙක්',
+	'semanticgenealogy-specialfamilytree-label-type' => 'වර්ගය',
+);
+
 /** Swedish (svenska)
  * @author Martinwiss
  */
@@ -447,4 +469,19 @@ $messages['vi'] = array(
  */
 $messages['yi'] = array(
 	'semanticgenealogy-specialfamilytree-button-submit' => 'שאַפֿן',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Shirayuki
+ */
+$messages['zh-hans'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => '创建',
+	'semanticgenealogy-specialfamilytree-type-link' => '链接',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Shirayuki
+ */
+$messages['zh-hant'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => '建立',
 );
