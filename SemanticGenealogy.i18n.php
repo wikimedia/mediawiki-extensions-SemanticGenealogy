@@ -265,6 +265,14 @@ $messages['hsb'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 je njeznaty.',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['id'] = array(
+	'semanticgenealogy-specialfamilytree-type-link' => 'Pranala',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipe',
+);
+
 /** Italian (italiano)
  * @author Darth Kule
  */
@@ -477,6 +485,7 @@ $messages['yi'] = array(
 $messages['zh-hans'] = array(
 	'semanticgenealogy-specialfamilytree-button-submit' => '创建',
 	'semanticgenealogy-specialfamilytree-type-link' => '链接',
+	'semanticgenealogy-specialfamilytree-label-type' => '类型',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
@@ -484,4 +493,6 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'semanticgenealogy-specialfamilytree-button-submit' => '建立',
+	'semanticgenealogy-specialfamilytree-type-link' => '連結',
+	'semanticgenealogy-specialfamilytree-label-type' => '類型',
 );
