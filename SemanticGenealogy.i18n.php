@@ -391,6 +391,14 @@ $messages['pt-br'] = array(
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Número de geração',
 );
 
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'semanticgenealogy-specialfamilytree-type-link' => 'Legătură',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tip',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
@@ -451,6 +459,7 @@ $messages['tl'] = array(
  */
 $messages['uk'] = array(
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Створити',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Предки',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Посилання',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Тип',
 );
