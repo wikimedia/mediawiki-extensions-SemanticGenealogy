@@ -463,6 +463,19 @@ $messages['sv'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Känner inte till typen: $1.',
 );
 
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'semanticgenealogy-specialfamilytree-button-submit' => 'உருவாக்கு',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'மூதாதையினர்',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'சந்ததி',
+	'semanticgenealogy-specialfamilytree-type-link' => 'இணைப்பு',
+	'semanticgenealogy-specialfamilytree-label-page' => 'அடிப்படை நபர்',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'மற்ற நபர்',
+	'semanticgenealogy-specialfamilytree-label-type' => 'வகை',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
