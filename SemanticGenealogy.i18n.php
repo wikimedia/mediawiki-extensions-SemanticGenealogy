@@ -434,6 +434,7 @@ $messages['ro'] = array(
  */
 $messages['si'] = array(
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM නිර්යාත කිරීම',
+	'semanticgenealogy-specialfamilytree-title' => 'පෙළපත දක්වන සටහනක් තනන්න',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'තනන්න',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'මුතුන් මිත්තෝ',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'අවරෝහණයා',
@@ -441,6 +442,8 @@ $messages['si'] = array(
 	'semanticgenealogy-specialfamilytree-label-page' => 'පාදක පුද්ගලයෙක්',
 	'semanticgenealogy-specialfamilytree-label-page2' => 'වෙනත් පුද්ගලයෙක්',
 	'semanticgenealogy-specialfamilytree-label-type' => 'වර්ගය',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'පරම්පරා ගණන',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 වර්ගය අඥාතය.',
 );
 
 /** Swedish (svenska)
