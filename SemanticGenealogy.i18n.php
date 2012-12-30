@@ -429,6 +429,24 @@ $messages['ro'] = array(
 	'semanticgenealogy-specialfamilytree-label-type' => 'Tip',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'Esporte GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => "Ccreje 'n'arvule de famigghie",
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Ccreje',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Andenate',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Discendende',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Collegamende',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Crestiane de base',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Otre crestiane',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipe',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Numere de generazione',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => "Nisicune collegamende acchiate 'mbrà [[$1]] e [[$2]].",
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => "'U tipe $1 jè scanusciute.",
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
