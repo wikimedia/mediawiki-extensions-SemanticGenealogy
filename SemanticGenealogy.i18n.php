@@ -425,7 +425,9 @@ $messages['pt-br'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Strămoși',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Legătură',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Altă persoană',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Tip',
 );
 
@@ -461,6 +463,7 @@ $messages['si'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'වෙනත් පුද්ගලයෙක්',
 	'semanticgenealogy-specialfamilytree-label-type' => 'වර්ගය',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'පරම්පරා ගණන',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '[[$1]] සහ [[$2]] අතර සබැඳියක් හමු නොවුනි.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 වර්ගය අඥාතය.',
 );
 
