@@ -380,21 +380,22 @@ $messages['nl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'semanticgenealogy-desc' => "A dà l'abilitassion a vardé erbo genealògich e d'amporté/esporté archivi GEDCOM",
-	'semanticgenealogy-gedcomexport-desc' => 'esporta GEDCOM',
+	'semanticgenealogy-desc' => "A dà la possibilità ëd vëdde dj'erbo genealògich e d'amporté/esporté dj'archivi GEDCOM",
+	'semanticgenealogy-gedcomexport-desc' => 'esportassion GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => "Crea n'Erbo Familiar",
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Crea',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Cé',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Dissendensa',
-	'semanticgenealogy-specialfamilytree-type-link' => 'Colegament',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Liura',
 	'semanticgenealogy-specialfamilytree-label-page' => 'Përson-a inissial',
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Àutra përson-a',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Sòrt',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Nùmer ëd generassion',
-	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'It deuve dé un nòm ëd la pagina ëd na përson-a ant ël camp "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'A dev buté un nòm ëd na pàgina ëd na përson-a ant ël camp «{{int:semanticgenealogy-specialfamilytree-label-page2}}».',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Pa gnun colegament trovà tra [[$1]] e [[$2]].',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => "La sòrt $1 a l'é pa conossùa.",
 );
