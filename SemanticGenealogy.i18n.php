@@ -33,6 +33,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author Thomas Pellissier Tanon
  */
 $messages['qqq'] = array(
@@ -46,7 +47,8 @@ $messages['qqq'] = array(
 	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.',
 	'semanticgenealogy-specialfamilytree-label-page' => 'Label of the "base person page name" input.',
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Label of the "second base person page name" input (only for "link" type).',
-	'semanticgenealogy-specialfamilytree-label-type' => 'Label of the "type of family tree" select.',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Label of the "type of family tree" select.
+{{Identical|Type}}',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Label of the form field in order to input the number of generation in the tree.',
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Error message when the "page2" field is not set (only for "link" type).',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Error message where no link is found between $1 and $2.',
