@@ -39,7 +39,8 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'semanticgenealogy-desc' => '{{desc}}',
 	'semanticgenealogy-gedcomexport-desc' => 'Description of the GEDCOM result printer.',
-	'semanticgenealogy-gedcomexport-link' => 'Default link label to a GEDCOM file.',
+	'semanticgenealogy-gedcomexport-link' => '{{Optional}}
+Default link label to a GEDCOM file.',
 	'semanticgenealogy-specialfamilytree-title' => 'Title of the [[Special:FamilyTree]] page.',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Submit button of the [[Special:FamilyTree]] form.',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Label of an ancestors tree.',
