@@ -561,9 +561,15 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'semanticgenealogy-desc' => '提供查看家谱树和导入/导出GEDCOM文件的能力',
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM导出',
+	'semanticgenealogy-specialfamilytree-title' => '创建家谱树',
 	'semanticgenealogy-specialfamilytree-button-submit' => '创建',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => '祖先',
+	'semanticgenealogy-specialfamilytree-type-descendant' => '后裔',
 	'semanticgenealogy-specialfamilytree-type-link' => '链接',
 	'semanticgenealogy-specialfamilytree-label-type' => '类型',
 );
