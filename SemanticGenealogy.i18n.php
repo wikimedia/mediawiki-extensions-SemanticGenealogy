@@ -74,6 +74,13 @@ $messages['br'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Dianv eo ar seurt $1.',
 );
 
+/** Catalan (català)
+ * @author Pitort
+ */
+$messages['ca'] = array(
+	'semanticgenealogy-specialfamilytree-label-type' => 'Tipus',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
