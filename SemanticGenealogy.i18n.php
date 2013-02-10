@@ -332,6 +332,18 @@ $messages['ja'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 という種類は不明です。',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'semanticgenealogy-specialfamilytree-title' => 'საგვარეულო ხის შექმნა',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'შექმნა',
+	'semanticgenealogy-specialfamilytree-type-link' => 'ბმული',
+	'semanticgenealogy-specialfamilytree-label-page' => 'საბაზო პირი',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'სხვა პირი',
+	'semanticgenealogy-specialfamilytree-label-type' => 'ტიპი',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
