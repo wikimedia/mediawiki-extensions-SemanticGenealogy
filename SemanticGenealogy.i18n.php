@@ -42,7 +42,8 @@ $messages['qqq'] = array(
 	'semanticgenealogy-gedcomexport-link' => '{{Optional}}
 Default link label to a GEDCOM file.',
 	'semanticgenealogy-specialfamilytree-title' => 'Title of the [[Special:FamilyTree]] page.',
-	'semanticgenealogy-specialfamilytree-button-submit' => 'Submit button of the [[Special:FamilyTree]] form.',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Submit button of the [[Special:FamilyTree]] form.
+{{Identical|Create}}',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Label of an ancestors tree.',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Label of a descendants tree.',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.',
