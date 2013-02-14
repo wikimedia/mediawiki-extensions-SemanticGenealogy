@@ -459,6 +459,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'semanticgenealogy-desc' => "Dèje l'abbilità pe 'ndrucà le arvule de genealoggije e 'mbortà/esportà le file GEDCOM",
 	'semanticgenealogy-gedcomexport-desc' => 'Esporte GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => "Ccreje 'n'arvule de famigghie",
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Ccreje',
@@ -469,6 +470,7 @@ $messages['roa-tara'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Otre crestiane',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Tipe',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Numere de generazione',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => "Tu a dà 'nu nome de 'na pàgene de crestiane jndr'à 'u cambe \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => "Nisicune collegamende acchiate 'mbrà [[$1]] e [[$2]].",
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => "'U tipe $1 jè scanusciute.",
 );
