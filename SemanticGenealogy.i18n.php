@@ -37,7 +37,7 @@ $messages['en'] = array(
  * @author Thomas Pellissier Tanon
  */
 $messages['qqq'] = array(
-	'semanticgenealogy-desc' => '{{desc}}',
+	'semanticgenealogy-desc' => '{{desc|name=Semantic Genealogy|url=http://www.mediawiki.org/wiki/Extension:Semantic_Genealogy}}',
 	'semanticgenealogy-gedcomexport-desc' => 'Description of the GEDCOM result printer.',
 	'semanticgenealogy-gedcomexport-link' => '{{Optional}}
 Default link label to a GEDCOM file.',
