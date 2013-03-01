@@ -315,6 +315,7 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
@@ -329,6 +330,7 @@ $messages['ja'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'その他の人',
 	'semanticgenealogy-specialfamilytree-label-type' => '種類',
 	'semanticgenealogy-specialfamilytree-label-gen' => '世代数',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => '「{{int:semanticgenealogy-specialfamilytree-label-page2}}」欄に人物のページの名前を指定する必要があります。',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '[[$1]]と[[$2]]の間にリンクが見つかりません。',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 という種類は不明です。',
 );
