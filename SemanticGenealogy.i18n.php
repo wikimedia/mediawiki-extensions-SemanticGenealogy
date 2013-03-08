@@ -58,9 +58,11 @@ Default link label to a GEDCOM file.',
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Y-M D
  */
 $messages['br'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'Ezporzhiañ GEDCOM',
 	'semanticgenealogy-specialfamilytree-title' => 'Krouiñ ur wezenn a gerentiezh',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Krouiñ',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Hendadoù',
