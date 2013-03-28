@@ -386,6 +386,13 @@ $messages['mk'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Типот $1 е непознат.',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'semanticgenealogy-specialfamilytree-type-link' => 'Lenk',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
