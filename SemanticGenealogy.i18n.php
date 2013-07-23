@@ -46,7 +46,8 @@ Default link label to a GEDCOM file.',
 {{Identical|Create}}',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Label of an ancestors tree.',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Label of a descendants tree.',
-	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.
+{{Identical|Link}}',
 	'semanticgenealogy-specialfamilytree-label-page' => 'Label of the "base person page name" input.',
 	'semanticgenealogy-specialfamilytree-label-page2' => 'Label of the "second base person page name" input (only for "link" type).',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Label of the "type of family tree" select.
