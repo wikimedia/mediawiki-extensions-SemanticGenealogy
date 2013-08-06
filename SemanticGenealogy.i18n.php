@@ -355,6 +355,7 @@ $messages['ka'] = array(
  */
 $messages['lb'] = array(
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-Export',
+	'semanticgenealogy-specialfamilytree-title' => 'E Familljestammbam uleeën',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Uleeën',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Virfahren',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Nokommen',
