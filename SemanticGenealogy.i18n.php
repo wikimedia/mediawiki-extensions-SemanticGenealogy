@@ -562,13 +562,25 @@ $messages['tl'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Steve.rusyn
+ * @author SteveR
  */
 $messages['uk'] = array(
+	'semanticgenealogy-desc' => 'Забезпечує можливість перегляду дерев родоводу і імпорту/експорту файлів GEDCOM',
+	'semanticgenealogy-gedcomexport-desc' => 'Експорт GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Створити генеалогічне дерево',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Створити',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Предки',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Нащадок',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Посилання',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Основна особа',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Інша особа',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Тип',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Номер покоління',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Ви повинні надати назву сторінки особи у полі "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Посилання не знайдено між [[$1]] та [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Тип $1 невідомий.',
 );
 
 /** Urdu (اردو)
