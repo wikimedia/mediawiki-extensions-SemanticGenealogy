@@ -416,6 +416,26 @@ $messages['nl'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Het type "$1" is onbekend.',
 );
 
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'semanticgenealogy-desc' => 'Umożliwia wyświetlanie drzew genealogicznych i import/eksport plików GEDCOM',
+	'semanticgenealogy-gedcomexport-desc' => 'Eksport GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Utwórz drzewo genealogiczne',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Utwórz',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Przodkowie',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Potomek',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Link',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Osoba główna',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Inna osoba',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Typ',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Liczba pokoleń',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Musisz podać nazwę strony osoby w polu "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Nie znaleziono połączenia pomiędzy [[$1]] a [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Typ $1 jest nieznany.',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
