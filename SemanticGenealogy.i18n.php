@@ -466,10 +466,12 @@ $messages['ps'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Luckas
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
+	'semanticgenealogy-desc' => 'Fornece a habilidade de ver árvores genealógicas e importar/exportar arquivos GEDCOM',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'Criar',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Antepassados',
 	'semanticgenealogy-specialfamilytree-type-descendant' => 'Descendente',
