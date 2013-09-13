@@ -49,11 +49,15 @@ Default link label to a GEDCOM file.',
 	'semanticgenealogy-specialfamilytree-type-link' => 'Label of the search of the closest family link between two people.
 {{Identical|Link}}',
 	'semanticgenealogy-specialfamilytree-label-page' => 'Label of the "base person page name" input.',
-	'semanticgenealogy-specialfamilytree-label-page2' => 'Label of the "second base person page name" input (only for "link" type).',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Label of the "second base person page name" input (only for "link" type).
+
+Used in {{msg-mw|Semanticgenealogy-specialfamilytree-error-nosecondpagename}}.',
 	'semanticgenealogy-specialfamilytree-label-type' => 'Label of the "type of family tree" select.
 {{Identical|Type}}',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'Label of the form field in order to input the number of generation in the tree.',
-	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Error message when the "page2" field is not set (only for "link" type).',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Error message when the "page2" field is not set (only for "link" type).
+
+Refers to {{msg-mw|Semanticgenealogy-specialfamilytree-label-page2}}.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Error message where no link is found between $1 and $2.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Error massage when the type of the family tree is unknown. Parameters:
 * $1 - unknown type. Known types are: "ancestors", "descendant", and "link"',
