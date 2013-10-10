@@ -516,6 +516,26 @@ $messages['roa-tara'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => "'U tipe $1 jè scanusciute.",
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'semanticgenealogy-desc' => 'Обеспечивает возможность просмотра генеалогических деревьев и импорт/экспорт GEDCOM-файлов',
+	'semanticgenealogy-gedcomexport-desc' => 'Экспорт GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Создаёт семейное древо',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Создать',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Предки',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Потомок',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Ссылка',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Основное лицо',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Другое лицо',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Тип',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Количество поколений',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Вы должны занести имя страницы в поле «{{int:semanticgenealogy-specialfamilytree-label-page2}}».',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'Не найдена ссылка между [[$1]] и [[$2]].',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Тип $1 неизвестен.',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
