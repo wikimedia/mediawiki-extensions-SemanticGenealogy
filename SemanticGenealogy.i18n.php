@@ -656,6 +656,7 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Li3939108
+ * @author Liuxinyu970226
  * @author Shirayuki
  * @author Yfdyh000
  */
@@ -667,6 +668,8 @@ $messages['zh-hans'] = array(
 	'semanticgenealogy-specialfamilytree-type-ancestors' => '祖先',
 	'semanticgenealogy-specialfamilytree-type-descendant' => '后裔',
 	'semanticgenealogy-specialfamilytree-type-link' => '链接',
+	'semanticgenealogy-specialfamilytree-label-page' => '基地人',
+	'semanticgenealogy-specialfamilytree-label-page2' => '其他人',
 	'semanticgenealogy-specialfamilytree-label-type' => '类型',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '未知类型$1',
 );
