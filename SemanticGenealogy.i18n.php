@@ -63,6 +63,26 @@ Refers to {{msg-mw|Semanticgenealogy-specialfamilytree-label-page2}}.',
 * $1 - unknown type. Known types are: "ancestors", "descendant", and "link"',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'semanticgenealogy-desc' => 'Proporciona la posibilidá de ver árboles xenealóxicos ya importar/esportar ficheros GEDCOM',
+	'semanticgenealogy-gedcomexport-desc' => 'Esportación en GEDCOM',
+	'semanticgenealogy-specialfamilytree-title' => 'Crear un árbol xenealóxicu',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Crear',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Antepasaos',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Descendiente',
+	'semanticgenealogy-specialfamilytree-type-link' => 'Enllaz',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Persona base',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'Otra persona',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Triba',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'Númberu de xeneración',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Tiene de dar el nome de la páxina d\'una persona nel campu "{{int:semanticgenealogy-specialfamilytree-label-page2}}".',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => "Nun s'alcontró nenguna rellación ente [[$1]] y [[$2]].",
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'El tipu $1 ye desconocíu.',
+);
+
 /** Breton (brezhoneg)
  * @author Fohanno
  * @author Y-M D
