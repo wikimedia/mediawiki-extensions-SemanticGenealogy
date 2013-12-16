@@ -691,6 +691,9 @@ $messages['zh-hans'] = array(
 	'semanticgenealogy-specialfamilytree-label-page' => '基地人',
 	'semanticgenealogy-specialfamilytree-label-page2' => '其他人',
 	'semanticgenealogy-specialfamilytree-label-type' => '类型',
+	'semanticgenealogy-specialfamilytree-label-gen' => '生成数量',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => '你必须提供“{{int:semanticgenealogy-specialfamilytree-label-page2}}”字段的一个人的页面名称。',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '没有找到[[$1]]与[[$2]]之间的链接。',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '未知类型$1',
 );
 
