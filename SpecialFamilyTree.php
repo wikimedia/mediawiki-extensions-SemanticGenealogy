@@ -54,7 +54,7 @@ class SpecialFamilyTree extends SpecialPage {
 			$typeSelect->addOption( wfMsg( 'semanticgenealogy-specialfamilytree-type-link' ), 'link' );
 			$output->addHTML(
 				Xml::openElement( 'form', array( 'action' => $wgScript ) ) .
-					Html::hidden( 'title', $this->getTitle()->getPrefixedText() ) .
+					Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 					Xml::openElement( 'fieldset' ) .
 						Xml::openElement( 'table', array( 'id' => 'smg-familyTree-form' ) ) .
 							Xml::openElement( 'tr', array('id' => 'smg-form-entry-page' ) ) .
