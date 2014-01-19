@@ -375,6 +375,24 @@ $messages['ka'] = array(
 	'semanticgenealogy-specialfamilytree-label-type' => 'ტიპი',
 );
 
+/** Korean (한국어)
+ * @author Priviet
+ */
+$messages['ko'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM 내보내기',
+	'semanticgenealogy-specialfamilytree-title' => '가족 트리 만들기',
+	'semanticgenealogy-specialfamilytree-button-submit' => '만들기',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => '조상',
+	'semanticgenealogy-specialfamilytree-type-descendant' => '자손',
+	'semanticgenealogy-specialfamilytree-type-link' => '링크',
+	'semanticgenealogy-specialfamilytree-label-page' => '기준 사람',
+	'semanticgenealogy-specialfamilytree-label-page2' => '다른 사람',
+	'semanticgenealogy-specialfamilytree-label-type' => '종류',
+	'semanticgenealogy-specialfamilytree-label-gen' => '세대 수',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '[[$1]]와 [[$2]] 사이에서 링크를 찾을 수 없음.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 유형을 알 수 없습니다.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
