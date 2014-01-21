@@ -379,6 +379,7 @@ $messages['ka'] = array(
  * @author Priviet
  */
 $messages['ko'] = array(
+	'semanticgenealogy-desc' => '계보 트리를 볼 수 있는 권한을 제공하고 GEDCOM 파일을 가져오기/내보내기',
 	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM 내보내기',
 	'semanticgenealogy-specialfamilytree-title' => '가족 트리 만들기',
 	'semanticgenealogy-specialfamilytree-button-submit' => '만들기',
@@ -389,6 +390,7 @@ $messages['ko'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => '다른 사람',
 	'semanticgenealogy-specialfamilytree-label-type' => '종류',
 	'semanticgenealogy-specialfamilytree-label-gen' => '세대 수',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => '"{{int:semanticgenealogy-specialfamilytree-label-page2}}" 필드에 사용자 문서의 이름을 입력해야 합니다.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => '[[$1]]와 [[$2]] 사이에서 링크를 찾을 수 없음.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1 유형을 알 수 없습니다.',
 );
