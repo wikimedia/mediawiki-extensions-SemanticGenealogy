@@ -199,11 +199,21 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'semanticgenealogy-specialfamilytree-title' => 'ایجاد یک شجره‌نامه',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'ایجاد',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'اجداد',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'نسل',
 	'semanticgenealogy-specialfamilytree-type-link' => 'پیوند',
+	'semanticgenealogy-specialfamilytree-label-page' => 'شخص اصلی',
+	'semanticgenealogy-specialfamilytree-label-page2' => 'شخص دیگر',
+	'semanticgenealogy-specialfamilytree-label-type' => 'نوع',
+	'semanticgenealogy-specialfamilytree-label-gen' => 'تعذذ نسل',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'هیچ لینکی بین [[$1]] و [[$2]] پیدا نشد.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'نوع $1 ناشناخته است.',
 );
 
 /** Finnish (suomi)
