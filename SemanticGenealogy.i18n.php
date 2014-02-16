@@ -443,6 +443,22 @@ $messages['mk'] = array(
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'Типот $1 е непознат.',
 );
 
+/** Norwegian Bokmål (norsk bokmål)
+ * @author Event
+ */
+$messages['nb'] = array(
+	'semanticgenealogy-desc' => 'Gir muligheten for å vise slektstrær og importere/eksportere GEDCOM-filer',
+	'semanticgenealogy-gedcomexport-desc' => 'GEDCOM-eksport',
+	'semanticgenealogy-specialfamilytree-title' => 'Opprett et familietre',
+	'semanticgenealogy-specialfamilytree-button-submit' => 'Opprett',
+	'semanticgenealogy-specialfamilytree-type-ancestors' => 'Forfedre',
+	'semanticgenealogy-specialfamilytree-type-descendant' => 'Etterfølgere',
+	'semanticgenealogy-specialfamilytree-label-page' => 'Utgangsperson',
+	'semanticgenealogy-specialfamilytree-label-type' => 'Type',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'Du må fremskaffe et navn på en personside i "{{int:semanticgenealogy-specialfamilytree-label-page2}}"-feltet.',
+	'semanticgenealogy-specialfamilytree-error-unknowntype' => '$1-typen er ukjent.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Joachim Mos
  */
