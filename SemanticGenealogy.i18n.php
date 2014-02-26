@@ -203,6 +203,7 @@ $messages['et'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'semanticgenealogy-gedcomexport-desc' => 'صادرات جی‌ای‌دی‌سی‌اُ‌ام',
 	'semanticgenealogy-specialfamilytree-title' => 'ایجاد یک شجره‌نامه',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'ایجاد',
 	'semanticgenealogy-specialfamilytree-type-ancestors' => 'اجداد',
