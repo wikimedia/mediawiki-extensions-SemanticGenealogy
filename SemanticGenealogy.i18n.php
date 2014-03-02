@@ -203,6 +203,7 @@ $messages['et'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'semanticgenealogy-desc' => 'ارائه توانایی برای مشاهده سلسله درختان و واردات/صادرات پوشه‌های جدکام',
 	'semanticgenealogy-gedcomexport-desc' => 'صادرات جی‌ای‌دی‌سی‌اُ‌ام',
 	'semanticgenealogy-specialfamilytree-title' => 'ایجاد یک شجره‌نامه',
 	'semanticgenealogy-specialfamilytree-button-submit' => 'ایجاد',
@@ -213,6 +214,7 @@ $messages['fa'] = array(
 	'semanticgenealogy-specialfamilytree-label-page2' => 'شخص دیگر',
 	'semanticgenealogy-specialfamilytree-label-type' => 'نوع',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'تعذذ نسل',
+	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'شما باید نام صفحه افراد را در زمینه "{{int:semanticgenealogy-specialfamilytree-برچسب-صفحه 2}}" ارائه دهید.',
 	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'هیچ لینکی بین [[$1]] و [[$2]] پیدا نشد.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'نوع $1 ناشناخته است.',
 );
