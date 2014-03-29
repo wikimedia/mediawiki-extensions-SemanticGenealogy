@@ -200,6 +200,7 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Armin1392
+ * @author Ebraminio
  * @author Mjbmr
  */
 $messages['fa'] = array(
@@ -215,7 +216,7 @@ $messages['fa'] = array(
 	'semanticgenealogy-specialfamilytree-label-type' => 'نوع',
 	'semanticgenealogy-specialfamilytree-label-gen' => 'تعذذ نسل',
 	'semanticgenealogy-specialfamilytree-error-nosecondpagename' => 'شما باید نام صفحه افراد را در زمینه "{{int:semanticgenealogy-specialfamilytree-برچسب-صفحه 2}}" ارائه دهید.',
-	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'هیچ لینکی بین [[$1]] و [[$2]] پیدا نشد.',
+	'semanticgenealogy-specialfamilytree-error-nolinkfound' => 'هیچ پیوندی بین [[$1]] و [[$2]] پیدا نشد.',
 	'semanticgenealogy-specialfamilytree-error-unknowntype' => 'نوع $1 ناشناخته است.',
 );
 
