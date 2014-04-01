@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "semanticgenealogy-desc": "Proporciona a posibilidade de ver árbores xenealóxicas e importar e exportar ficheiros GEDCOM",
+    "semanticgenealogy-gedcomexport-desc": "Exportación en GEDCOM",
+    "semanticgenealogy-specialfamilytree-title": "Crear unha árbore xenealóxica",
+    "semanticgenealogy-specialfamilytree-button-submit": "Crear",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Devanceiros",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Descendentes",
+    "semanticgenealogy-specialfamilytree-type-link": "Ligazón",
+    "semanticgenealogy-specialfamilytree-label-page": "Persoa situada na base",
+    "semanticgenealogy-specialfamilytree-label-page2": "Outra persoa",
+    "semanticgenealogy-specialfamilytree-label-type": "Tipo",
+    "semanticgenealogy-specialfamilytree-label-gen": "Número de xeración",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Cómpre definir o nome dunha páxina no campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Non se atopou ligazón ningunha entre [[$1]] e [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Descoñécese o tipo \"$1\"."
+}

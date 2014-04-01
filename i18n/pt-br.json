@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cainamarques",
+            "Luckas",
+            "Luckas Blade"
+        ]
+    },
+    "semanticgenealogy-desc": "Fornece a habilidade de ver árvores genealógicas e importar/exportar arquivos GEDCOM",
+    "semanticgenealogy-specialfamilytree-button-submit": "Criar",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Antepassados",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Descendente",
+    "semanticgenealogy-specialfamilytree-type-link": "Ligação",
+    "semanticgenealogy-specialfamilytree-label-page": "Pessoa base",
+    "semanticgenealogy-specialfamilytree-label-page2": "Outra pessoa",
+    "semanticgenealogy-specialfamilytree-label-type": "Tipo",
+    "semanticgenealogy-specialfamilytree-label-gen": "Número de geração"
+}

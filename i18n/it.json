@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Darth Kule"
+        ]
+    },
+    "semanticgenealogy-desc": "Permette di visualizzare alberi genealogici e importare/esportare file GEDCOM",
+    "semanticgenealogy-gedcomexport-desc": "Esporta GEDCOM",
+    "semanticgenealogy-specialfamilytree-title": "Crea un albero genealogico",
+    "semanticgenealogy-specialfamilytree-button-submit": "Crea",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Antenati",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Discendenti",
+    "semanticgenealogy-specialfamilytree-type-link": "Collegamento",
+    "semanticgenealogy-specialfamilytree-label-page": "Persona di partenza",
+    "semanticgenealogy-specialfamilytree-label-page2": "Altra persona:",
+    "semanticgenealogy-specialfamilytree-label-type": "Tipo",
+    "semanticgenealogy-specialfamilytree-label-gen": "Numero della generazione",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "È necessario specificare il nome della pagina di una persona nel campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Nessun collegamento trovato fra [[$1]] e [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Il tipo $1 è sconosciuto."
+}

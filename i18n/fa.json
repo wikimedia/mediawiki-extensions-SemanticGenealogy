@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Armin1392",
+            "Ebraminio",
+            "Mjbmr"
+        ]
+    },
+    "semanticgenealogy-desc": "ارائه توانایی برای مشاهده سلسله درختان و واردات/صادرات پوشه‌های جدکام",
+    "semanticgenealogy-gedcomexport-desc": "صادرات جی‌ای‌دی‌سی‌اُ‌ام",
+    "semanticgenealogy-specialfamilytree-title": "ایجاد یک شجره‌نامه",
+    "semanticgenealogy-specialfamilytree-button-submit": "ایجاد",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "اجداد",
+    "semanticgenealogy-specialfamilytree-type-descendant": "نسل",
+    "semanticgenealogy-specialfamilytree-type-link": "پیوند",
+    "semanticgenealogy-specialfamilytree-label-page": "شخص اصلی",
+    "semanticgenealogy-specialfamilytree-label-page2": "شخص دیگر",
+    "semanticgenealogy-specialfamilytree-label-type": "نوع",
+    "semanticgenealogy-specialfamilytree-label-gen": "تعذذ نسل",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "شما باید نام صفحه افراد را در زمینه \"{{int:semanticgenealogy-specialfamilytree-برچسب-صفحه 2}}\" ارائه دهید.",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "هیچ پیوندی بین [[$1]] و [[$2]] پیدا نشد.",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "نوع $1 ناشناخته است."
+}

@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fohanno",
+            "Y-M D"
+        ]
+    },
+    "semanticgenealogy-gedcomexport-desc": "Ezporzhiañ GEDCOM",
+    "semanticgenealogy-specialfamilytree-title": "Krouiñ ur wezenn a gerentiezh",
+    "semanticgenealogy-specialfamilytree-button-submit": "Krouiñ",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Hendadoù",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Diskennidi",
+    "semanticgenealogy-specialfamilytree-type-link": "Liamm",
+    "semanticgenealogy-specialfamilytree-label-page": "Den loc'hañ",
+    "semanticgenealogy-specialfamilytree-label-page2": "Den all",
+    "semanticgenealogy-specialfamilytree-label-type": "Seurt",
+    "semanticgenealogy-specialfamilytree-label-gen": "Niver a remziadoù",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Rankout a rit lakaat anv ur bajenn er maezienn \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "N'eus bet kavet liamm ebet etre [[$1]] ha [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Dianv eo ar seurt $1."
+}

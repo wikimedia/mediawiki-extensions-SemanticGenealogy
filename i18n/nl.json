@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "semanticgenealogy-desc": "Maakt het mogelijk om stambomen te bekijken deze GEDCOM-bestanden te importeren en exporteren",
+    "semanticgenealogy-gedcomexport-desc": "Exporteren naar GEDCOM",
+    "semanticgenealogy-specialfamilytree-title": "Stamboom aanmaken",
+    "semanticgenealogy-specialfamilytree-button-submit": "Aanmaken",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Voorouders",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Nakomeling",
+    "semanticgenealogy-specialfamilytree-type-link": "Relatie",
+    "semanticgenealogy-specialfamilytree-label-page": "Basispersoon",
+    "semanticgenealogy-specialfamilytree-label-page2": "Andere persoon",
+    "semanticgenealogy-specialfamilytree-label-type": "Type",
+    "semanticgenealogy-specialfamilytree-label-gen": "Nummer voor generatie",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "U  moet de naam van een persoonspagina invullen in het veld \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Er is geen relatie gevonden tussen [[$1]] en [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Het type \"$1\" is onbekend."
+}

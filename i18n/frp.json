@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "ChrisPtDe"
+        ]
+    },
+    "semanticgenealogy-specialfamilytree-button-submit": "Fâre",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Vielys",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Dèscendents",
+    "semanticgenealogy-specialfamilytree-type-link": "Lim",
+    "semanticgenealogy-specialfamilytree-label-page": "Pèrsona de dèpârt",
+    "semanticgenealogy-specialfamilytree-label-page2": "Seconda pèrsona",
+    "semanticgenealogy-specialfamilytree-label-type": "Tipo",
+    "semanticgenealogy-specialfamilytree-label-gen": "Nombro de g·ènèracions",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Gins de lim trovâ entre-mié [[$1]] et [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Lo tipo $1 est encognu."
+}

@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Grondin",
+            "Thomas Pellissier Tanon",
+            "Tititou36"
+        ]
+    },
+    "semanticgenealogy-desc": "Offre la possibilité de voir des arbres généalogiques et d'importer/exporter des fichiers GEDCOM",
+    "semanticgenealogy-gedcomexport-desc": "Export GEDCOM",
+    "semanticgenealogy-gedcomexport-link": "GEDCOM",
+    "semanticgenealogy-specialfamilytree-title": "Créer un arbre généalogique",
+    "semanticgenealogy-specialfamilytree-button-submit": "Créer",
+    "semanticgenealogy-specialfamilytree-type-ancestors": "Ascendance",
+    "semanticgenealogy-specialfamilytree-type-descendant": "Descendance",
+    "semanticgenealogy-specialfamilytree-type-link": "Lien de parenté",
+    "semanticgenealogy-specialfamilytree-label-page": "Personne de départ",
+    "semanticgenealogy-specialfamilytree-label-page2": "Seconde personne",
+    "semanticgenealogy-specialfamilytree-label-type": "Type",
+    "semanticgenealogy-specialfamilytree-label-gen": "Nombre de générations",
+    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Vous devez mettre le nom d'une page dans le champ « {{int:semanticgenealogy-specialfamilytree-étiquette-page2}}. »",
+    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Aucun lien trouvé entre [[$1]] et [[$2]].",
+    "semanticgenealogy-specialfamilytree-error-unknowntype": "Le type $1 est inconnu."
+}
