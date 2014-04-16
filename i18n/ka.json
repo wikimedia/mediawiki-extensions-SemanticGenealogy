@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "David1010"
-        ]
-    },
-    "semanticgenealogy-specialfamilytree-title": "საგვარეულო ხის შექმნა",
-    "semanticgenealogy-specialfamilytree-button-submit": "შექმნა",
-    "semanticgenealogy-specialfamilytree-type-link": "ბმული",
-    "semanticgenealogy-specialfamilytree-label-page": "საბაზო პირი",
-    "semanticgenealogy-specialfamilytree-label-page2": "სხვა პირი",
-    "semanticgenealogy-specialfamilytree-label-type": "ტიპი"
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"semanticgenealogy-specialfamilytree-title": "საგვარეულო ხის შექმნა",
+	"semanticgenealogy-specialfamilytree-button-submit": "შექმნა",
+	"semanticgenealogy-specialfamilytree-type-link": "ბმული",
+	"semanticgenealogy-specialfamilytree-label-page": "საბაზო პირი",
+	"semanticgenealogy-specialfamilytree-label-page2": "სხვა პირი",
+	"semanticgenealogy-specialfamilytree-label-type": "ტიპი"
 }

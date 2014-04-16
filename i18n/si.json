@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "semanticgenealogy-gedcomexport-desc": "GEDCOM නිර්යාත කිරීම",
-    "semanticgenealogy-specialfamilytree-title": "පෙළපත දක්වන සටහනක් තනන්න",
-    "semanticgenealogy-specialfamilytree-button-submit": "තනන්න",
-    "semanticgenealogy-specialfamilytree-type-ancestors": "මුතුන් මිත්තෝ",
-    "semanticgenealogy-specialfamilytree-type-descendant": "අවරෝහණයා",
-    "semanticgenealogy-specialfamilytree-type-link": "සබැඳිය",
-    "semanticgenealogy-specialfamilytree-label-page": "පාදක පුද්ගලයෙක්",
-    "semanticgenealogy-specialfamilytree-label-page2": "වෙනත් පුද්ගලයෙක්",
-    "semanticgenealogy-specialfamilytree-label-type": "වර්ගය",
-    "semanticgenealogy-specialfamilytree-label-gen": "පරම්පරා ගණන",
-    "semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]] සහ [[$2]] අතර සබැඳියක් හමු නොවුනි.",
-    "semanticgenealogy-specialfamilytree-error-unknowntype": "$1 වර්ගය අඥාතය."
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM නිර්යාත කිරීම",
+	"semanticgenealogy-specialfamilytree-title": "පෙළපත දක්වන සටහනක් තනන්න",
+	"semanticgenealogy-specialfamilytree-button-submit": "තනන්න",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "මුතුන් මිත්තෝ",
+	"semanticgenealogy-specialfamilytree-type-descendant": "අවරෝහණයා",
+	"semanticgenealogy-specialfamilytree-type-link": "සබැඳිය",
+	"semanticgenealogy-specialfamilytree-label-page": "පාදක පුද්ගලයෙක්",
+	"semanticgenealogy-specialfamilytree-label-page2": "වෙනත් පුද්ගලයෙක්",
+	"semanticgenealogy-specialfamilytree-label-type": "වර්ගය",
+	"semanticgenealogy-specialfamilytree-label-gen": "පරම්පරා ගණන",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]] සහ [[$2]] අතර සබැඳියක් හමු නොවුනි.",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1 වර්ගය අඥාතය."
 }

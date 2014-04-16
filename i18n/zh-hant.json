@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki"
-        ]
-    },
-    "semanticgenealogy-specialfamilytree-button-submit": "建立",
-    "semanticgenealogy-specialfamilytree-type-link": "連結",
-    "semanticgenealogy-specialfamilytree-label-type": "類型"
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"semanticgenealogy-specialfamilytree-button-submit": "建立",
+	"semanticgenealogy-specialfamilytree-type-link": "連結",
+	"semanticgenealogy-specialfamilytree-label-type": "類型"
 }

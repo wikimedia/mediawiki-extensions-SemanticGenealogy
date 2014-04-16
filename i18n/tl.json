@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "AnakngAraw"
-        ]
-    },
-    "semanticgenealogy-desc": "Nagbibigay ng kakayahan upang makita ang mga puno ng talaangkanan at mga talaksan ng pag-angkat/pagluluwas ng GEDCOM",
-    "semanticgenealogy-gedcomexport-desc": "Pagluluwas ng GEDCOM",
-    "semanticgenealogy-gedcomexport-link": "GEDCOM",
-    "semanticgenealogy-specialfamilytree-title": "Lumikha ng isang Puno ng Mag-anak",
-    "semanticgenealogy-specialfamilytree-button-submit": "Likhain",
-    "semanticgenealogy-specialfamilytree-type-ancestors": "Mga ninuno",
-    "semanticgenealogy-specialfamilytree-type-descendant": "Inapo",
-    "semanticgenealogy-specialfamilytree-type-link": "Kawing",
-    "semanticgenealogy-specialfamilytree-label-page": "Saligang tao",
-    "semanticgenealogy-specialfamilytree-label-page2": "Iba pang tao",
-    "semanticgenealogy-specialfamilytree-label-type": "Uri",
-    "semanticgenealogy-specialfamilytree-label-gen": "Bilang ng salinlahi",
-    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Dapat kang magtakda ng isang pangalan ng pahina ng tao ng pahina sa loob ng hanay ng \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
-    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Walang kawing na natagpuan sa pagitan ng [[$1]] at [[$2]].",
-    "semanticgenealogy-specialfamilytree-error-unknowntype": "Hindi nalalaman ang uring $1."
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"semanticgenealogy-desc": "Nagbibigay ng kakayahan upang makita ang mga puno ng talaangkanan at mga talaksan ng pag-angkat/pagluluwas ng GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "Pagluluwas ng GEDCOM",
+	"semanticgenealogy-gedcomexport-link": "GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "Lumikha ng isang Puno ng Mag-anak",
+	"semanticgenealogy-specialfamilytree-button-submit": "Likhain",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Mga ninuno",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Inapo",
+	"semanticgenealogy-specialfamilytree-type-link": "Kawing",
+	"semanticgenealogy-specialfamilytree-label-page": "Saligang tao",
+	"semanticgenealogy-specialfamilytree-label-page2": "Iba pang tao",
+	"semanticgenealogy-specialfamilytree-label-type": "Uri",
+	"semanticgenealogy-specialfamilytree-label-gen": "Bilang ng salinlahi",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Dapat kang magtakda ng isang pangalan ng pahina ng tao ng pahina sa loob ng hanay ng \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Walang kawing na natagpuan sa pagitan ng [[$1]] at [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Hindi nalalaman ang uring $1."
 }

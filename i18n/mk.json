@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "semanticgenealogy-desc": "Овозможува преглед на родословни лози и увоз/извоз како GEDCOM-податотеки",
-    "semanticgenealogy-gedcomexport-desc": "GEDCOM-извоз",
-    "semanticgenealogy-specialfamilytree-title": "Создај лоза",
-    "semanticgenealogy-specialfamilytree-button-submit": "Создај",
-    "semanticgenealogy-specialfamilytree-type-ancestors": "Предци",
-    "semanticgenealogy-specialfamilytree-type-descendant": "Потомци",
-    "semanticgenealogy-specialfamilytree-type-link": "Врска",
-    "semanticgenealogy-specialfamilytree-label-page": "Појдовно лице",
-    "semanticgenealogy-specialfamilytree-label-page2": "Друго лице",
-    "semanticgenealogy-specialfamilytree-label-type": "Тип",
-    "semanticgenealogy-specialfamilytree-label-gen": "Бр. на поколенија",
-    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Ќе мора да зададете име на страницата за лицето во полето „{{int:semanticgenealogy-specialfamilytree-label-page2}}“.",
-    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Не пронајдов врска помеѓу [[$1]] и [[$2]].",
-    "semanticgenealogy-specialfamilytree-error-unknowntype": "Типот $1 е непознат."
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"semanticgenealogy-desc": "Овозможува преглед на родословни лози и увоз/извоз како GEDCOM-податотеки",
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM-извоз",
+	"semanticgenealogy-specialfamilytree-title": "Создај лоза",
+	"semanticgenealogy-specialfamilytree-button-submit": "Создај",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Предци",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Потомци",
+	"semanticgenealogy-specialfamilytree-type-link": "Врска",
+	"semanticgenealogy-specialfamilytree-label-page": "Појдовно лице",
+	"semanticgenealogy-specialfamilytree-label-page2": "Друго лице",
+	"semanticgenealogy-specialfamilytree-label-type": "Тип",
+	"semanticgenealogy-specialfamilytree-label-gen": "Бр. на поколенија",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Ќе мора да зададете име на страницата за лицето во полето „{{int:semanticgenealogy-specialfamilytree-label-page2}}“.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Не пронајдов врска помеѓу [[$1]] и [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Типот $1 е непознат."
 }

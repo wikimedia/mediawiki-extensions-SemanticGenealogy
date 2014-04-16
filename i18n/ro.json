@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Stelistcristi"
-        ]
-    },
-    "semanticgenealogy-specialfamilytree-type-ancestors": "Strămoși",
-    "semanticgenealogy-specialfamilytree-type-link": "Legătură",
-    "semanticgenealogy-specialfamilytree-label-page2": "Altă persoană",
-    "semanticgenealogy-specialfamilytree-label-type": "Tip"
+	"@metadata": {
+		"authors": [
+			"Stelistcristi"
+		]
+	},
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Strămoși",
+	"semanticgenealogy-specialfamilytree-type-link": "Legătură",
+	"semanticgenealogy-specialfamilytree-label-page2": "Altă persoană",
+	"semanticgenealogy-specialfamilytree-label-type": "Tip"
 }

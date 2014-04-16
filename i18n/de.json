@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln",
-            "Metalhead64"
-        ]
-    },
-    "semanticgenealogy-desc": "Ermöglicht das Betrachten von Stammbäumen sowie das Importieren und Exportieren von GEDCOM-Dateien",
-    "semanticgenealogy-gedcomexport-desc": "GEDCOM-Export",
-    "semanticgenealogy-specialfamilytree-title": "Einen Familienstammbaum erstellen",
-    "semanticgenealogy-specialfamilytree-button-submit": "Erstellen",
-    "semanticgenealogy-specialfamilytree-type-ancestors": "Vorfahren",
-    "semanticgenealogy-specialfamilytree-type-descendant": "Nachfahre",
-    "semanticgenealogy-specialfamilytree-type-link": "Verbindung",
-    "semanticgenealogy-specialfamilytree-label-page": "Ausgangsperson",
-    "semanticgenealogy-specialfamilytree-label-page2": "Andere Person",
-    "semanticgenealogy-specialfamilytree-label-type": "Typ",
-    "semanticgenealogy-specialfamilytree-label-gen": "Anzahl der Generationen",
-    "semanticgenealogy-specialfamilytree-error-nosecondpagename": "Du musst den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.",
-    "semanticgenealogy-specialfamilytree-error-nolinkfound": "Es wurde keine Verbindung zwischen [[$1]] und [[$2]] gefunden.",
-    "semanticgenealogy-specialfamilytree-error-unknowntype": "Der Typ $1 ist unbekannt."
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64"
+		]
+	},
+	"semanticgenealogy-desc": "Ermöglicht das Betrachten von Stammbäumen sowie das Importieren und Exportieren von GEDCOM-Dateien",
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM-Export",
+	"semanticgenealogy-specialfamilytree-title": "Einen Familienstammbaum erstellen",
+	"semanticgenealogy-specialfamilytree-button-submit": "Erstellen",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Vorfahren",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Nachfahre",
+	"semanticgenealogy-specialfamilytree-type-link": "Verbindung",
+	"semanticgenealogy-specialfamilytree-label-page": "Ausgangsperson",
+	"semanticgenealogy-specialfamilytree-label-page2": "Andere Person",
+	"semanticgenealogy-specialfamilytree-label-type": "Typ",
+	"semanticgenealogy-specialfamilytree-label-gen": "Anzahl der Generationen",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Du musst den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Es wurde keine Verbindung zwischen [[$1]] und [[$2]] gefunden.",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Der Typ $1 ist unbekannt."
 }
