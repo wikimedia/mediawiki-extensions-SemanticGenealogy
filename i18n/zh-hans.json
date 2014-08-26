@@ -4,7 +4,8 @@
 			"Li3939108",
 			"Liuxinyu970226",
 			"Shirayuki",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Linforest"
 		]
 	},
 	"semanticgenealogy-desc": "提供查看家谱树和导入/导出GEDCOM文件的能力",
@@ -14,11 +15,11 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "祖先",
 	"semanticgenealogy-specialfamilytree-type-descendant": "后裔",
 	"semanticgenealogy-specialfamilytree-type-link": "链接",
-	"semanticgenealogy-specialfamilytree-label-page": "基地人",
-	"semanticgenealogy-specialfamilytree-label-page2": "其他人",
+	"semanticgenealogy-specialfamilytree-label-page": "基础人员",
+	"semanticgenealogy-specialfamilytree-label-page2": "其他人员",
 	"semanticgenealogy-specialfamilytree-label-type": "类型",
-	"semanticgenealogy-specialfamilytree-label-gen": "生成数量",
-	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "你必须提供“{{int:semanticgenealogy-specialfamilytree-label-page2}}”字段的一个人的页面名称。",
+	"semanticgenealogy-specialfamilytree-label-gen": "代次数量",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "您必须在“{{int:semanticgenealogy-specialfamilytree-label-page2}}”字段之中提供人员页面的名称。",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "没有找到[[$1]]与[[$2]]之间的链接。",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "未知类型$1"
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "类型$1未知"
 }
