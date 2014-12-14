@@ -14,6 +14,7 @@
 	"semanticgenealogy-specialfamilytree-label-page2": "Aner Persoun",
 	"semanticgenealogy-specialfamilytree-label-type": "Typ",
 	"semanticgenealogy-specialfamilytree-label-gen": "Zuel vu Generatiounen",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Dir musst den Numm vun enger Säit vun enger Persoun am Feld \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\" uginn.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Zwësche(n) [[$1]] an [[$2]] gouf keng Verbindung fonnt.",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Den Typ $1 ass onbekannt."
 }
