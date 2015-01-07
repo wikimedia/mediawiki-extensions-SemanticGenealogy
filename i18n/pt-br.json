@@ -4,10 +4,13 @@
 			"Cainamarques",
 			"Luckas",
 			"Luckas Blade",
-			"Dianakc"
+			"Dianakc",
+			"Jaideraf"
 		]
 	},
 	"semanticgenealogy-desc": "Fornece a habilidade de ver árvores genealógicas e importar/exportar arquivos GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "Exportação em GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "Criar árvore genealógica",
 	"semanticgenealogy-specialfamilytree-button-submit": "Criar",
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Antepassados",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Descendente",
@@ -15,5 +18,8 @@
 	"semanticgenealogy-specialfamilytree-label-page": "Pessoa base",
 	"semanticgenealogy-specialfamilytree-label-page2": "Outra pessoa",
 	"semanticgenealogy-specialfamilytree-label-type": "Tipo",
-	"semanticgenealogy-specialfamilytree-label-gen": "Número de geração"
+	"semanticgenealogy-specialfamilytree-label-gen": "Número de geração",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Você deve fornecer um nome de uma página de uma pessoa no campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nenhuma relação encontrada entre [[$1]] e [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "O tipo $1 é desconhecido."
 }
