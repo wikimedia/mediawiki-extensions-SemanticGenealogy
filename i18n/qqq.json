@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Thomas Pellissier Tanon"
+			"Thomas Pellissier Tanon",
+			"Umherirrender"
 		]
 	},
-	"semanticgenealogy-desc": "{{desc|name=Semantic Genealogy|url=http://www.mediawiki.org/wiki/Extension:Semantic_Genealogy}}",
+	"semanticgenealogy-desc": "{{desc|name=Semantic Genealogy|url=https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy}}",
 	"semanticgenealogy-gedcomexport-desc": "Description of the GEDCOM result printer.",
 	"semanticgenealogy-gedcomexport-link": "{{Optional}}\nDefault link label to a GEDCOM file.",
 	"semanticgenealogy-specialfamilytree-title": "Title of the [[Special:FamilyTree]] page.",
