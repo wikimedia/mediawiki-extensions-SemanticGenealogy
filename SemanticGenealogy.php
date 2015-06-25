@@ -79,7 +79,6 @@ $smwgResultFormats['gedcom5'] = 'Gedcom5ResultPrinter';
 
 $wgAutoloadClasses['SpecialFamilyTree'] = $dir . 'SpecialFamilyTree.php';
 $wgSpecialPages['FamilyTree'] = 'SpecialFamilyTree';
-$wgSpecialPageGroups['FamilyTree'] = 'other';
 
 $moduleTemplate = array(
 	'localBasePath' => $dir,

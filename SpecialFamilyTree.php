@@ -340,4 +340,8 @@ class SpecialFamilyTree extends SpecialPage {
 		}
 		$output->addHTML('</table>');
 	}
+
+	protected function getGroupName() {
+		return 'other';
+	}
 }
