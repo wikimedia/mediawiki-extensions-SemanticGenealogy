@@ -178,7 +178,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 			$this->addRow( 1, 'HUSB', '@I' . $fatherId . '@' );
 		}
 		if( $motherId != 0 ) {
-			$this->addRow( 1, 'WIFE', '@I' . $fatherId . '@' );
+			$this->addRow( 1, 'WIFE', '@I' . $motherId . '@' );
 		}
 		foreach( $children as $childId ) {
 			$this->addRow( 1, 'CHIL', '@I' . $childId . '@' );

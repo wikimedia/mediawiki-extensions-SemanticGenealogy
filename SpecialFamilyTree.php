@@ -168,7 +168,7 @@ class SpecialFamilyTree extends SpecialPage {
 		$empty = true;
 		$son = self::getNumOfPeopleInGen( $gen - 1 );
 		$end = $son * 4;
-		for( $parent = $son * 2; $parent < $end; $parent++ ) {
+		for( $parent = $son * 2; $parent < $end; true ) {
 			if( isset( $tree[$gen - 1][$son] ) ) {
 				$father = $tree[$gen - 1][$son]->father;
 				if( $father instanceof SMWDIWikiPage ) {
