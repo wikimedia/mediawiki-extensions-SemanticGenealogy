@@ -2,350 +2,272 @@
 
 /**
  * Special page that show a family tree
- * 
- * @file SpecialFamilyTree.php
+ *
+ * @file    SpecialFamilyTree.php
  * @ingroup SemanticGenealogy
  *
  * @licence GNU GPL v2+
- * @author Thomas Pellissier Tanon < thomaspt@hotmail.fr >
+ * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 class SpecialFamilyTree extends SpecialPage {
 
+	private $type;
+	private $gen;
+	private $page;
+	private $page2;
+	private $decorator;
+
+	private $params = [ 'type', 'gen', 'page', 'page2', 'decorator', 'displayname' ];
+
+	/**
+	 * @constructor
+	 *
+	 * @param string $name the name of the SpecialPage
+	 *
+	 * @return void
+	 */
 	public function __construct( $name = 'FamilyTree' ) {
-		parent::__construct( $name, 'other' );
+		parent::__construct( $name, '' );
 		$this->mIncludable = true;
 	}
 
-	public function execute( $par ) {
-		global $wgRequest, $wgScript;
+	/**
+	 * Parse the Form/Template parameters to feed the properties of the SpecialPage
+	 *
+	 * @return void
+	 */
+	private function parseParameters( $par ) {
+		global $wgRequest;
 
+		if ( $par != '' ) {
+			$parts = explode( '/', urldecode( $par ) );
+		} else {
+			$parts = [];
+		}
+
+		$this->type = isset( $parts[0] ) ? $parts[0] : $wgRequest->getText( 'type' );
+		if ( $this->type == '' ) {
+			$this->type = AncestorsFamilyTree::NAME;
+		}
+
+		$this->decorator = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'decorator' );
+		if ( $this->decorator == '' ) {
+			$this->decorator = SimpleDecorator::NAME;
+		}
+
+		$this->page = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'page' );
+
+		$this->displayname = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'displayname' );
+		if ( !$this->displayname ) {
+			$this->displayname = 'fullname';
+		}
+
+		if ( $this->type == LinkFamilyTree::NAME ) {
+			$this->page2 = isset( $parts[2] ) ? $parts[2] : $wgRequest->getText( 'page2' );
+			$this->gen = 0;
+		} else {
+			$this->gen = isset( $parts[2] ) ? intval( $parts[2] ) : $wgRequest->getInt( 'gen' );
+			if ( $this->gen <= 0 ) {
+				$this->gen = 5;
+			}
+			$this->page2 = '';
+		}
+	}
+
+	/**
+	 * Execute the Special Page
+	 *
+	 * @param string $par the url part
+	 *
+	 * @return boolean the status of the rendered page
+	 */
+	public function execute( $par ) {
+		global $wgOut;
 		$this->setHeaders();
+
+		$this->parseParameters( $par );
+
+		$this->showForm();
+
+		if ( $this->page == '' ) {
+			return;
+		}
+
 		$output = $this->getOutput();
 
-		if( $par != '') {
-			$parts = explode('/', urldecode( $par ));
-		} else {
-			$parts = array();
-		}
+		$output->addModuleStyles( 'ext.smg.specialfamilytree' );
 
-		$type = isset( $parts[0] ) ? $parts[0] : $wgRequest->getText( 'type' );
-		if($type == '') {
-			$type = 'ancestors';
-		}
+		try {
 
-		$pageName = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'page' );
+			$familytree = FamilyTreeFactory::create( $this->type, $this->decorator );
+			$familytree->setPerson( $this->page );
+			$familytree->setDisplayName( $this->displayname );
 
-		if( $type == 'link' ) {
-			$pageName2 = isset( $parts[2] ) ? $parts[2] : $wgRequest->getText( 'page2' );
-			$numOfGenerations = 0;
-		} else {
-			$numOfGenerations = isset( $parts[2] ) ? intval( $parts[2] ) : $wgRequest->getInt( 'gen' );
-			if($numOfGenerations <= 0) {
-				$numOfGenerations = 5;
+			if ( $this->page2 ) {
+				$familytree->setPerson2( $this->page2 );
 			}
-			$pageName2 = '';
-		}
 
-		if( !$this->mIncluding ) {
-			$output->addModules( 'ext.smg.specialfamilytree' );
-			$typeSelect = new XmlSelect( 'type', 'type', $type );
-			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-ancestors' )->text(), 'ancestors' );
-			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-descendant' )->text(), 'descendant' );
-			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-link' )->text(), 'link' );
-			$output->addHTML(
-				Xml::openElement( 'form', array( 'action' => $wgScript ) ) .
-					Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
-					Xml::openElement( 'fieldset' ) .
-						Xml::openElement( 'table', array( 'id' => 'smg-familyTree-form' ) ) .
-							Xml::openElement( 'tr', array('id' => 'smg-form-entry-page' ) ) .
-								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page' )
-										->text(), 'page' ) .
-								Xml::closeElement( 'th' ) .
-								Xml::openElement( 'td', array('class' => 'mw-input') ) .
-									Xml::input( 'page', 30, $pageName, array( 'class' => 'smg-input-page' ) ) .
-								Xml::closeElement( 'td' ) .
-							Xml::closeElement( 'tr' ) .
-							Xml::openElement( 'tr', array('id' => 'smg-form-entry-type' ) ) .
-								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-type' )
-										->text(), 'type' ) .
-								Xml::closeElement( 'th' ) .
-								Xml::openElement( 'td', array('class' => 'mw-input') ) .
-									$typeSelect->getHtml() .
-								Xml::closeElement( 'td' ) .
-							Xml::closeElement( 'tr' ) .
-							Xml::openElement( 'tr', array('id' => 'smg-form-entry-gen' ) ) .
-								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-gen' )
-										->text(), 'gen' ) .
-								Xml::closeElement( 'th' ) .
-								Xml::openElement( 'td', array('class' => 'mw-input') ) .
-									Xml::input( 'gen', 2, $numOfGenerations ) .
-								Xml::closeElement( 'td' ) .
-							Xml::closeElement( 'tr' ) .
-							Xml::openElement( 'tr', array('id' => 'smg-form-entry-page2' ) ) .
-								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page2' )
-										->text(), 'page2' ) .
-								Xml::closeElement( 'th' ) .
-								Xml::openElement( 'td', array('class' => 'mw-input') ) .
-									Xml::input( 'page2', 30, $pageName2, array( 'class' => 'smg-input-page' ) ) .
-								Xml::closeElement( 'td' ) .
-							Xml::closeElement( 'tr' ) .
-						Xml::closeElement( 'table' ) .
-						Xml::submitButton( $this->msg( 'semanticgenealogy-specialfamilytree-button-submit' )->text() ) .
-					Xml::closeElement( 'fieldset' ) .
-				Xml::closeElement( 'form' )
-			);
-		}
+			$familytree->setOutput( $this->getOutput() );
+			$familytree->setNumberOfGenerations( $this->gen );
 
-		if( $pageName == '')
-			return;
-
-		$pageTitle = Title::newFromText( $pageName );
-		$page = SMWDIWikiPage::newFromTitle( $pageTitle );
-
-		if($type == '')
-			$type = 'ancestors';
-		switch($type) {
-			case 'ancestors':
-				$tree = $this->getAncestors( $page, $numOfGenerations );
-				$this->outputAncestorsTree( $tree, $numOfGenerations );
-				break;
-			case 'descendant':
-				$this->outputDescendantList( $page, $numOfGenerations );
-				break;
-			case 'link':
-				if($pageName2 == '') {
-					$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-nosecondpagename' )->text() . '</span>' );
-					return;
-				}
-				$pageTitle2 = Title::newFromText( $pageName2 );
-				$page2 = SMWDIWikiPage::newFromTitle( $pageTitle2 );
-				$tree = $this->getRelation( $page, $page2 );
-				if( $tree !== null) {
-					$this->outputRelationTree( $tree );
-				} else {
-					$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-nolinkfound', $pageName, $pageName2 )->text() . '</span>' );
-				}
-				break;
-			default:
-				$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-unknowntype', $type )->text() . '</span>' );
+			$familytree->render();
+		} catch ( SemanticGenealogyException $e ) {
+			$wgOut->addWikiText( '<span class="error">' .  $e->getMessage() . '</span>' );
+			return Status::newFatal( $e->getMessage() );
+		} catch ( Exception $e ) {
+			$wgOut->addWikiText( '<span class="error">' .  $e->getMessage() . '</span>' );
+			return Status::newFatal( $e->getMessage() );
 		}
 		return Status::newGood();
 	}
 
+	/**
+	 * Display the search form for a genealogy tree
+	 *
+	 * @return void
+	 */
+	protected function showForm() {
+		global $wgScript;
+
+		if ( !$this->mIncluding ) {
+			$output = $this->getOutput();
+			$output->addModules( 'ext.smg.specialfamilytree' );
+
+			$trees = FamilyTreeFactory::listTrees();
+			$typeSelect = new XmlSelect( 'type', 'type', $this->type );
+			foreach ( $trees as $tree ) {
+				$typeSelect->addOption(
+					$this->msg( 'semanticgenealogy-specialfamilytree-type-'.$tree::NAME )->text(), $tree::NAME );
+			}
+			$decorators = TreeDecoratorFactory::listDecorators();
+			$decoratorSelect = new XmlSelect( 'decorator', 'decorator', $this->decorator );
+			foreach ( $decorators as $decorator ) {
+				$decoratorSelect->addOption(
+					$this->msg(
+						'semanticgenealogy-specialfamilytree-decorator-'.$decorator::NAME )->text(),
+						$decorator::NAME
+					   );
+			}
+
+			$displaynameSelect = new XmlSelect( 'displayname', 'displayname', $this->displayname );
+			$displaynameSelect->addOption(
+				$this->msg( 'semanticgenealogy-specialfamilytree-displayname-fullname' )->text(), 'fullname' );
+			$displaynameSelect->addOption(
+				$this->msg( 'semanticgenealogy-specialfamilytree-displayname-pagename' )->text(), 'pagename' );
+
+			$output->addHTML(
+				Xml::openElement( 'form', [ 'action' => $wgScript ] ) .
+				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
+				Xml::openElement( 'fieldset' ) .
+				Xml::openElement( 'table', [ 'id' => 'smg-familyTree-form' ] ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-page' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page' )->text(), 'page' ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				Xml::input( 'page', 30, $this->page, [ 'class' => 'smg-input-page' ] ) .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-type' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-type' )->text(), 'type' ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				$typeSelect->getHtml() .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-decorator' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label(
+					$this->msg( 'semanticgenealogy-specialfamilytree-label-decorator' )->text(), 'decorator'
+				   ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				$decoratorSelect->getHtml() .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-displayname' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label(
+					$this->msg( 'semanticgenealogy-specialfamilytree-label-displayname' )->text(), 'displayname'
+				   ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				$displaynameSelect->getHtml() .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-gen' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-gen' )->text(), 'gen' ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				Xml::input( 'gen', 2, $this->gen ) .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-page2' ] ) .
+				Xml::openElement( 'th', [ 'class' => 'mw-label' ] ) .
+				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page2' )->text(), 'page2' ) .
+				Xml::closeElement( 'th' ) .
+				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
+				Xml::input( 'page2', 30, $this->page2, [ 'class' => 'smg-input-page' ] ) .
+				Xml::closeElement( 'td' ) .
+				Xml::closeElement( 'tr' ) .
+				Xml::closeElement( 'table' ) .
+				Xml::submitButton( $this->msg( 'semanticgenealogy-specialfamilytree-button-submit' )->text() ) .
+				Xml::closeElement( 'fieldset' ) .
+				Xml::closeElement( 'form' )
+			);
+
+			if ( $this->page ) {
+				$output->addHTML(
+					$this->msg( 'semanticgenealogy-specialfamilytree-label-insert-code' )->text()
+					."<br/>\n<code>".$this->getWikiCode()."</code><br/><br/>" );
+
+			}
+		}
+	}
+
+	/**
+	 * Generate the wiki code to use for this tree
+	 *
+	 * @return string the wiki code
+	 */
+	private function getWikiCode() {
+		$code = "{{".preg_replace( "/Special/", "$0:", get_class( $this ) );
+		foreach ( $this->params as $param ) {
+			if ( !$this->$param ) {
+				continue;
+			}
+			$code .= "|".$param."=".$this->$param;
+		}
+		$code .= "}}";
+		return $code;
+	}
+
+	/**
+	 * Wether the page is cachable
+	 *
+	 * @return boolean
+	 */
 	public function isCacheable() {
 		return false;
 	}
 
-	public function getDescription( ) {
+	/**
+	 * Get the description
+	 *
+	 * @return string
+	 */
+	public function getDescription() {
 		return $this->msg( 'semanticgenealogy-specialfamilytree-title' )->text();
 	}
 
 	/**
-	 * Return the number of people in a generation
+	 * Get the groupe name
 	 *
-	 * @param  int $gen The number of the generation (beginning at 0)
-	 * @return int
+	 * @return string
 	 */
-	protected static function getNumOfPeopleInGen( $gen ) {
-		$result = 1;
-		for($i = 0; $i < $gen; $i++ ) {
-			$result *= 2;
-		}
-		return $result;
-	}
-
-	protected function getAncestors( SMWDIWikiPage $page, $numOfGenerations ) {
-		$tree = array();
-		$tree[0][1] = new PersonPageValues( $page );
-
-		for($i = 0; $i < $numOfGenerations && $tree[$i] !== null; $i++ ) {
-			$tree = $this->addGenInTree( $i + 1, $tree );
-		}
-		return $tree;
-	}
-
-	protected function addGenInTree( $gen, array $tree ) {
-		$empty = true;
-		$son = self::getNumOfPeopleInGen( $gen - 1 );
-		$end = $son * 4;
-		for( $parent = $son * 2; $parent < $end; true ) {
-			if( isset( $tree[$gen - 1][$son] ) ) {
-				$father = $tree[$gen - 1][$son]->father;
-				if( $father instanceof SMWDIWikiPage ) {
-					$tree[$gen][$parent] = new PersonPageValues( $father );
-					$empty = false;
-				} else {
-					$tree[$gen][$parent] = null;
-				}
-				$parent++;
-
-				$mother = $tree[$gen - 1][$son]->mother;
-				if( $mother instanceof SMWDIWikiPage ) {
-					$tree[$gen][$parent] = new PersonPageValues( $mother );
-					$empty = false;
-				} else {
-					$tree[$gen][$parent] = null;
-				}
-				$parent++;
-			} else {
-				$parent += 2;
-			}
-			$son++;
-		}
-		//Verif s'il n'y a personne dans la génération
-		if($empty) {
-			$tree[$gen] = null;
-		}
-		return $tree;
-	}
-
-	protected function outputAncestorsTree( array $tree, $numOfGenerations ) {
-		$output = $this->getOutput();
-		$output->addHTML('<table style="text-align:center;">');
-		$col = 1;
-		for( $i = $numOfGenerations - 1; $i >= 0; $i-- ) {
-			if( isset( $tree[$i] ) ) {
-				$output->addHTML('<tr>');
-				foreach ($tree[$i] as $sosa => $person) {
-					$output->addHTML('<td colspan="' . $col . '">');
-					if($person !== null) {
-						$output->addHTML($sosa . '<br/>' );
-						 $output->addWikiText( $person->getDescriptionWikiText( true ) );
-						if($sosa != 1) {
-							if($sosa % 2 == 0)
-								$output->addHTML( '<br/>\\' );
-							else
-								$output->addHTML( '<br/>/' );
-						}
-					}
-					$output->addHTML('</td>');
-				}
-				$output->addHTML('</tr>');
-			}
-			$col *= 2;
-		}
-		$output->addHTML('</table>');
-	}
-
-	protected function outputDescendantList( SMWDIWikiPage $main, $numOfGenerations ) {
-		$output = $this->getOutput();
-		$main = new PersonPageValues( $main );
-		$output->addWikiText( $main->getDescriptionWikiText( false ) );
-		$this->outputDescendantLine( $main, '', $numOfGenerations );
-	}
-
-	protected function outputDescendantLine( $person, $pellissier, $end ) {
-		$output = $this->getOutput();
-		$children = $person->getChildren();
-		$i = 1;
-		foreach($children as $child) {
-			$pel = $pellissier . $i . '.';
-			$output->addWikiText( $pel . ' ' . $child->getDescriptionWikiText( false ) );
-			if( $end > 0 )
-				$this->outputDescendantLine( $child, $pel, $end - 1);
-			$i++;
-		}
-	}
-
-	protected function getRelation( SMWDIWikiPage $page1, SMWDIWikiPage $page2 ) {
-		$tree1 = array();
-		$tree2 = array();
-		$tree1[0][1] = new PersonPageValues( $page1 );
-		$tree2[0][1] = new PersonPageValues( $page2 );
-
-		for($i = 0; $tree1[$i] !== null && $tree2[$i] !== null; $i++ ) {
-			$tree1 = $this->addGenInTree( $i + 1, $tree1 );
-			if($tree1[$i + 1] !== null) {
-				$result = $this->compareGenWith($tree1[$i + 1], $tree2, $i );
-				if($result !== null) {
-					list($sosa1, $sosa2) = $result;
-					break;
-				}
-			}
-
-			$tree2 = $this->addGenInTree( $i + 1, $tree2 );
-			if($tree2[$i + 1] !== null) {
-				$result = $this->compareGenWith($tree2[$i + 1], $tree1, $i + 1 );
-				if($result !== null) {
-					list($sosa2, $sosa1) = $result;
-					break;
-				}
-			}
-		}
-
-		if($result !== null)
-			return array( $this->getListOfAncestors( $sosa1, $tree1 ), $this->getListOfAncestors( $sosa2, $tree2 ) );
-	}
-
-	protected function compareGenWith( array $gen, array $tree, $max ) {
-		for( $i = $max; $i >= 0; $i-- ) {
-			if( isset( $tree[$i] ) ) {
-				foreach( $tree[$i] as $sosa2 => $person2 ) {
-					if($person2 !== null) {
-						foreach( $gen as $sosa1 => $person1 ) {
-							if($person1 !== null) {
-								if( $person1->title->equals( $person2->title ) ) {
-									return array( $sosa1, $sosa2 );
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	protected function getListOfAncestors( $sosa, array $tree ) {
-		$num = 1;
-		$temp = 1;
-		for($i = 0; $num < $sosa; $i++) {
-			$temp *= 2;
-			$num += $temp;
-		}
-
-		$list = array();
-		for( $j = $i; $j >= 0; $j-- ) {
-			$list[] = $tree[$j][$sosa];
-			$sosa /= 2;
-		}
-		return $list;
-	}
-
-	protected function outputRelationTree( array $trees ) {
-		$output = $this->getOutput();
-		list( $tree1, $tree2 ) = $trees;
-
-		$output->addHTML( '<table style="text-align:center;">' );
-		$output->addHTML( '<tr><td colspan="2">' );
-		$person = $tree1[0];
-		if( $person->fullname instanceof SMWDIBlob )
-			$output->addWikiText( $person->getDescriptionWikiText( false ) );
-		$output->addHTML( '</td></tr>' );
-
-		$length = max( count( $tree1 ), count( $tree2 ) );
-		for($i = 1; $i < $length; $i++ ) {
-			$output->addHTML('<tr><td>');
-			if( isset( $tree1[$i] ) ) {
-				$person = $tree1[$i];
-				if( $person->fullname instanceof SMWDIBlob )
-					$output->addWikiText( '|<br/>' . $person->getDescriptionWikiText( false ) );
-			}
-			$output->addHTML('</td><td>');
-			if( isset( $tree2[$i] ) ) {
-				$person = $tree2[$i];
-				if( $person->fullname instanceof SMWDIBlob )
-					$output->addWikiText( '|<br/>' . $person->getDescriptionWikiText( false ) );
-			}
-			$output->addHTML('</td></tr>');
-		}
-		$output->addHTML('</table>');
-	}
-
 	protected function getGroupName() {
-		return 'other';
+		return 'genealogy';
 	}
 }

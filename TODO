@@ -1,0 +1,15 @@
+
+Ideas
+-----
+- Add photo to the tree
+- Map tree
+- composer.json to include the extension with autoloading
+- adding Template:Person etc
+- adding Form:Personne, Form:Mariage etc
+
+Decorators
+----------
+- real brown branches + green for a person
+- blue for boys, pink for girls
+- left/right alignment for RelationFamilyTree
+- Pretty └── for Descendant tree

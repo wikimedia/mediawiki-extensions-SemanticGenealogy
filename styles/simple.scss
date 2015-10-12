@@ -1,0 +1,168 @@
+
+@mixin parent-link($left, $slash) {
+	width: 100%;
+	border-spacing: 0px;
+	$side1 : 1;
+	$side2 : 3;
+	@if $slash {
+		$side1 : 3;
+		$side2 : 1;
+	}
+	tr:nth-of-type(1) {
+		@if $left {
+			td:nth-of-type(#{$side1}) {
+				text-align: center;
+				&:before {
+					content: "\\";
+				}
+			}
+		} @else {
+			td:nth-of-type(#{$side2})  {
+				text-align: center;
+				&:before  {
+					content: "/";
+				}
+			}
+		}
+	}
+}
+
+.decorator-simple {
+	/** Ancestors Tree **/
+    &.smg-tree-root-ancestors {
+	    text-align: center;
+		.father-link {
+			@include parent-link(true, true);
+		}
+
+		.mother-link {
+			@include parent-link(false, true);
+		}
+    }
+
+	/** Descendant Tree **/
+	&.smg-tree-root-descendant {
+		margin-bottom: 20px;
+		border-collapse: collapse;
+		//border:1px solid black;
+		td {
+		  padding: 0;
+		  //border:1px solid black;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		.center {
+			text-align: center;
+
+			& > table {
+				margin: auto;
+				td {
+				  text-align: center;
+				}
+			}
+		}
+		.person {
+			min-width: 80px;
+		}
+		.person-block,
+		.person-name,
+		.person-dates {
+			display: inline-block;
+			margin: 2px;
+		}
+		.person-dates {
+			margin-left: 10px;
+		}
+		.descendant-line {
+			display: block;
+		}
+		/*
+		.father-link {
+			&:before {
+				content: "\\";
+			}
+		}
+		.mother-link {
+			&:before {
+				content: "/";
+			}
+		}
+		.couple-link {
+			width: 50%;
+			border-right: 3px solid black;
+		}
+		.child-first.child-right {
+			&:before {
+				content: "/";
+			}
+		}
+		.child-middle.child-left,
+		.child-one.child-left {
+			border-right: 3px solid black;
+		}
+		.child-last.child-left {
+			&:before {
+				content: "\\";
+			}
+		}
+		.child-left {
+			width: 50%;
+			&.child-middle,
+			&.child-last {
+				border-top: 3px solid black;
+			}
+		}
+		.child-right {
+			width: 50%;
+			&.child-first,
+			&.child-middle {
+				border-top: 3px solid black;
+			}
+		}
+		*/
+		.father-link {
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		.mother-link {
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		.couple-link {
+			width: 50%;
+			border-right: 1px solid black;
+		}
+		.child-left {
+			width: 50%;
+			border-right: 1px solid black;
+			&.child-middle,
+			&.child-last {
+				border-top: 1px solid black;
+			}
+		}
+		.child-right {
+			width: 50%;
+			//border-right: 1px solid black;
+			&.child-first,
+			&.child-middle {
+				border-top: 1px solid black;
+			}
+		}
+	}
+
+
+	/** Link Tree **/
+	&.smg-tree-root-link {
+		text-align: center;
+
+		.father-link {
+			@include parent-link(false, false);
+		}
+
+		.mother-link {
+			@include parent-link(true, false);
+		}
+	}
+
+}

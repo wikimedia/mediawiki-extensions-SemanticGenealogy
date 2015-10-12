@@ -1,7 +1,4 @@
 node_modules/
 vendor/
-
-.svn
-*~
-*.kate-swp
-.*.swp
+composer.lock
+styles/.sass-cache/

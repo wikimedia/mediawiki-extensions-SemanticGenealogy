@@ -1,0 +1,231 @@
+
+@mixin parent-link($left) {
+	width: 100%;
+	border-spacing: 0px;
+	tr:nth-of-type(1) {
+		td:nth-of-type(1) {
+			@if $left {
+			  width: 30px;
+			  border-bottom: 1px solid black;
+			} @else {
+			  width: 48%;
+			}
+			height: 10px;
+		}
+		td:nth-of-type(2) {
+			width: 48%;
+			@if not $left {
+				border-bottom: 1px solid black;
+			}
+		}
+		td:nth-of-type(3) {
+			@if $left {
+			  width: 48%;
+			} @else {
+			  width: 30px;
+			}
+		}
+	}
+	tr:nth-of-type(2) {
+		td:nth-of-type(1) {
+			height: 10px;
+			@if $left {
+			  width: 48%;
+			} @else {
+			  width: 30px;
+			}
+		}
+		td:nth-of-type(2) {
+			width: 50%;
+		}
+		td:nth-of-type(3) {
+			@if $left {
+			  width: 30px;
+			} @else {
+			  width: 48%;
+			}
+		}
+	}
+}
+
+$box-size: 80px;
+
+.decorator-box {
+	/** Ancestors Tree **/
+	&.smg-tree-root-ancestors {
+		text-align: center;
+
+		.father-link {
+			@include parent-link(false);
+			tr:nth-of-type(1) {
+				td:nth-of-type(1) {
+					border-right: 1px solid black;
+				}
+			}
+			tr:nth-of-type(2) {
+				td:nth-of-type(3) {
+					border-left: 1px solid black;
+				}
+			}
+		}
+
+		.mother-link {
+			@include parent-link(true);
+			tr:nth-of-type(1) {
+				td:nth-of-type(1) {
+					border-right: 1px solid black;
+				}
+			}
+			tr:nth-of-type(2) {
+				td:nth-of-type(1) {
+					border-left: 1px solid black;
+				}
+			}
+		}
+	}
+
+	/** Descendant Tree **/
+	&.smg-tree-root-descendant {
+		border-collapse: collapse;
+		//border:1px solid black;
+		td {
+		  padding: 0;
+		  //border:1px solid black;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		.person {
+			min-width: 30px;
+		}
+		.person-block,
+		.person-name,
+		.person-dates {
+			display: inline-block;
+			margin: 2px;
+		}
+		.person-dates {
+			display: none;
+		}
+		.descendant-line {
+			line-height: $box-size;
+			margin-top: 5px;
+			display: block;
+		}
+		.number {
+			display: inline-block;
+			visibility: hidden;
+			@for $i from 1 through 20 {
+				&.depth-#{$i} {
+					width: $box-size*$i;
+				}
+			}
+		}
+		.father-link {
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		.mother-link {
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		.couple-link {
+			width: 50%;
+			border-right: 1px solid black;
+		}
+		.child-left {
+			width: 50%;
+			border-right: 1px solid black;
+			&.child-middle,
+			&.child-last {
+				border-top: 1px solid black;
+			}
+		}
+		.child-right {
+			width: 50%;
+			//border-right: 1px solid black;
+			&.child-first,
+			&.child-middle {
+				border-top: 1px solid black;
+			}
+		}
+	}
+
+	/** Link Tree **/
+	&.smg-tree-root-link {
+		text-align: center;
+
+
+		.father-link {
+			@include parent-link(false);
+			tr:nth-of-type(1) {
+				td:nth-of-type(3) {
+					border-left: 1px solid black;
+				}
+			}
+			tr:nth-of-type(2) {
+				td:nth-of-type(1) {
+					border-right: 1px solid black;
+				}
+			}
+		}
+
+		.mother-link {
+			@include parent-link(true);
+			tr:nth-of-type(1) {
+				td:nth-of-type(1) {
+					border-left: 1px solid black;
+				}
+			}
+			tr:nth-of-type(2) {
+				td:nth-of-type(2) {
+					border-left: 1px solid black;
+				}
+			}
+		}
+	}
+
+	/** Persons **/
+
+
+
+	.person-block {
+		border: 1px solid black;
+		height: $box-size;
+		margin: auto;
+		text-align: center;
+		line-height: $box-size;
+		width: $box-size;
+	}
+
+	/**
+	 * Center several text lines in a div 
+	 * @see http://www.alsacreations.com/tuto/lire/1032-comment-centrer-verticalement-sur-tous-les-navigateurs.html#cv_lignes
+	 */
+	.person-name {
+		width: $box-size;
+		vertical-align: middle;
+		display: inline-block;
+		line-height: normal;
+		text-align: center;
+
+	}
+
+	.person-dates {
+		display: none;
+	}
+
+	.sosa-num {
+		text-align: center;
+		padding-left: 10px;
+		display: inline-block;
+		min-width: 12px;
+			background-color: #156bb4;
+			border-radius: 40px;
+			color: white;
+			font-size: 12px;
+			line-height: 12px;
+			padding: 5px;
+	}
+
+}

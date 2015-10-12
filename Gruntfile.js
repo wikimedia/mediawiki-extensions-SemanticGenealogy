@@ -1,10 +1,10 @@
+'use strict';
 /*jshint node:true */
 module.exports = function ( grunt ) {
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-	grunt.loadNpmTasks( 'grunt-banana-checker' );
 
-	grunt.initConfig( {
+	require( 'load-grunt-tasks' )( grunt );
+
+	grunt.initConfig({
 		banana: {
 			all: 'i18n/'
 		},
@@ -21,9 +21,34 @@ module.exports = function ( grunt ) {
 				'!node_modules/**',
 				'!vendor/**'
 			]
+		},
+		clean: {
+			css: {
+				src: ['modules/styles.css']
+			}
+		},
+		sass: {
+			dist: {
+				options: {
+					style: 'nested',
+					sourcemap: 'none',
+					cacheLocation: 'styles/.sass-cache'
+				},
+				files: {
+					'modules/styles.css': 'styles/decorators.scss'
+				}
+			}
+		},
+		watch: {
+			css: {
+				options: { livereload: true },
+				files: ['styles/*.scss'],
+				tasks: ['clean:css', 'sass']
+			}
 		}
-	} );
+	});
 
 	grunt.registerTask( 'test', [ 'jsonlint', 'banana', 'jshint' ] );
-	grunt.registerTask( 'default', 'test' );
+	grunt.registerTask( 'default', [ 'clean', 'sass', 'test' ] );
+
 };

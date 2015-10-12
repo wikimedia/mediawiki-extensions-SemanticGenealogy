@@ -1,0 +1,330 @@
+.decorator-box {
+  /** Ancestors Tree **/
+  /** Descendant Tree **/
+  /** Link Tree **/
+  /** Persons **/
+  /**
+   * Center several text lines in a div 
+   * @see http://www.alsacreations.com/tuto/lire/1032-comment-centrer-verticalement-sur-tous-les-navigateurs.html#cv_lignes
+   */ }
+  .decorator-box.smg-tree-root-ancestors {
+    text-align: center; }
+    .decorator-box.smg-tree-root-ancestors .father-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(1) {
+        width: 48%;
+        height: 10px; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(2) {
+        width: 48%;
+        border-bottom: 1px solid black; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(3) {
+        width: 30px; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(2) td:nth-of-type(1) {
+        height: 10px;
+        width: 30px; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(2) td:nth-of-type(2) {
+        width: 50%; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(2) td:nth-of-type(3) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(1) {
+        border-right: 1px solid black; }
+      .decorator-box.smg-tree-root-ancestors .father-link tr:nth-of-type(2) td:nth-of-type(3) {
+        border-left: 1px solid black; }
+    .decorator-box.smg-tree-root-ancestors .mother-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        width: 30px;
+        border-bottom: 1px solid black;
+        height: 10px; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(2) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(3) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(2) td:nth-of-type(1) {
+        height: 10px;
+        width: 48%; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(2) td:nth-of-type(2) {
+        width: 50%; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(2) td:nth-of-type(3) {
+        width: 30px; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        border-right: 1px solid black; }
+      .decorator-box.smg-tree-root-ancestors .mother-link tr:nth-of-type(2) td:nth-of-type(1) {
+        border-left: 1px solid black; }
+  .decorator-box.smg-tree-root-descendant {
+    border-collapse: collapse; }
+    .decorator-box.smg-tree-root-descendant td {
+      padding: 0; }
+    .decorator-box.smg-tree-root-descendant table {
+      border-collapse: collapse; }
+    .decorator-box.smg-tree-root-descendant .person {
+      min-width: 30px; }
+    .decorator-box.smg-tree-root-descendant .person-block,
+    .decorator-box.smg-tree-root-descendant .person-name,
+    .decorator-box.smg-tree-root-descendant .person-dates {
+      display: inline-block;
+      margin: 2px; }
+    .decorator-box.smg-tree-root-descendant .person-dates {
+      display: none; }
+    .decorator-box.smg-tree-root-descendant .descendant-line {
+      line-height: 80px;
+      margin-top: 5px;
+      display: block; }
+    .decorator-box.smg-tree-root-descendant .number {
+      display: inline-block;
+      visibility: hidden; }
+      .decorator-box.smg-tree-root-descendant .number.depth-1 {
+        width: 80px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-2 {
+        width: 160px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-3 {
+        width: 240px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-4 {
+        width: 320px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-5 {
+        width: 400px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-6 {
+        width: 480px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-7 {
+        width: 560px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-8 {
+        width: 640px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-9 {
+        width: 720px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-10 {
+        width: 800px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-11 {
+        width: 880px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-12 {
+        width: 960px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-13 {
+        width: 1040px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-14 {
+        width: 1120px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-15 {
+        width: 1200px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-16 {
+        width: 1280px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-17 {
+        width: 1360px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-18 {
+        width: 1440px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-19 {
+        width: 1520px; }
+      .decorator-box.smg-tree-root-descendant .number.depth-20 {
+        width: 1600px; }
+    .decorator-box.smg-tree-root-descendant .father-link {
+      border-left: 1px solid black;
+      border-bottom: 1px solid black; }
+    .decorator-box.smg-tree-root-descendant .mother-link {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .decorator-box.smg-tree-root-descendant .couple-link {
+      width: 50%;
+      border-right: 1px solid black; }
+    .decorator-box.smg-tree-root-descendant .child-left {
+      width: 50%;
+      border-right: 1px solid black; }
+      .decorator-box.smg-tree-root-descendant .child-left.child-middle, .decorator-box.smg-tree-root-descendant .child-left.child-last {
+        border-top: 1px solid black; }
+    .decorator-box.smg-tree-root-descendant .child-right {
+      width: 50%; }
+      .decorator-box.smg-tree-root-descendant .child-right.child-first, .decorator-box.smg-tree-root-descendant .child-right.child-middle {
+        border-top: 1px solid black; }
+  .decorator-box.smg-tree-root-link {
+    text-align: center; }
+    .decorator-box.smg-tree-root-link .father-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(1) {
+        width: 48%;
+        height: 10px; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(2) {
+        width: 48%;
+        border-bottom: 1px solid black; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(3) {
+        width: 30px; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(2) td:nth-of-type(1) {
+        height: 10px;
+        width: 30px; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(2) td:nth-of-type(2) {
+        width: 50%; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(2) td:nth-of-type(3) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(3) {
+        border-left: 1px solid black; }
+      .decorator-box.smg-tree-root-link .father-link tr:nth-of-type(2) td:nth-of-type(1) {
+        border-right: 1px solid black; }
+    .decorator-box.smg-tree-root-link .mother-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        width: 30px;
+        border-bottom: 1px solid black;
+        height: 10px; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(2) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(3) {
+        width: 48%; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(2) td:nth-of-type(1) {
+        height: 10px;
+        width: 48%; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(2) td:nth-of-type(2) {
+        width: 50%; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(2) td:nth-of-type(3) {
+        width: 30px; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        border-left: 1px solid black; }
+      .decorator-box.smg-tree-root-link .mother-link tr:nth-of-type(2) td:nth-of-type(2) {
+        border-left: 1px solid black; }
+  .decorator-box .person-block {
+    border: 1px solid black;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    line-height: 80px;
+    width: 80px; }
+  .decorator-box .person-name {
+    width: 80px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+    text-align: center; }
+  .decorator-box .person-dates {
+    display: none; }
+  .decorator-box .sosa-num {
+    text-align: center;
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 12px;
+    background-color: #156bb4;
+    border-radius: 40px;
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px; }
+
+.decorator-simple {
+  /** Ancestors Tree **/
+  /** Descendant Tree **/
+  /** Link Tree **/ }
+  .decorator-simple.smg-tree-root-ancestors {
+    text-align: center; }
+    .decorator-simple.smg-tree-root-ancestors .father-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-simple.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(3) {
+        text-align: center; }
+        .decorator-simple.smg-tree-root-ancestors .father-link tr:nth-of-type(1) td:nth-of-type(3):before {
+          content: "\\"; }
+    .decorator-simple.smg-tree-root-ancestors .mother-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-simple.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        text-align: center; }
+        .decorator-simple.smg-tree-root-ancestors .mother-link tr:nth-of-type(1) td:nth-of-type(1):before {
+          content: "/"; }
+  .decorator-simple.smg-tree-root-descendant {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    /*
+    .father-link {
+    	&:before {
+    		content: "\";
+    	}
+    }
+    .mother-link {
+    	&:before {
+    		content: "/";
+    	}
+    }
+    .couple-link {
+    	width: 50%;
+    	border-right: 3px solid black;
+    }
+    .child-first.child-right {
+    	&:before {
+    		content: "/";
+    	}
+    }
+    .child-middle.child-left,
+    .child-one.child-left {
+    	border-right: 3px solid black;
+    }
+    .child-last.child-left {
+    	&:before {
+    		content: "\";
+    	}
+    }
+    .child-left {
+    	width: 50%;
+    	&.child-middle,
+    	&.child-last {
+    		border-top: 3px solid black;
+    	}
+    }
+    .child-right {
+    	width: 50%;
+    	&.child-first,
+    	&.child-middle {
+    		border-top: 3px solid black;
+    	}
+    }
+    */ }
+    .decorator-simple.smg-tree-root-descendant td {
+      padding: 0; }
+    .decorator-simple.smg-tree-root-descendant table {
+      border-collapse: collapse; }
+    .decorator-simple.smg-tree-root-descendant .center {
+      text-align: center; }
+      .decorator-simple.smg-tree-root-descendant .center > table {
+        margin: auto; }
+        .decorator-simple.smg-tree-root-descendant .center > table td {
+          text-align: center; }
+    .decorator-simple.smg-tree-root-descendant .person {
+      min-width: 80px; }
+    .decorator-simple.smg-tree-root-descendant .person-block,
+    .decorator-simple.smg-tree-root-descendant .person-name,
+    .decorator-simple.smg-tree-root-descendant .person-dates {
+      display: inline-block;
+      margin: 2px; }
+    .decorator-simple.smg-tree-root-descendant .person-dates {
+      margin-left: 10px; }
+    .decorator-simple.smg-tree-root-descendant .descendant-line {
+      display: block; }
+    .decorator-simple.smg-tree-root-descendant .father-link {
+      border-left: 1px solid black;
+      border-bottom: 1px solid black; }
+    .decorator-simple.smg-tree-root-descendant .mother-link {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .decorator-simple.smg-tree-root-descendant .couple-link {
+      width: 50%;
+      border-right: 1px solid black; }
+    .decorator-simple.smg-tree-root-descendant .child-left {
+      width: 50%;
+      border-right: 1px solid black; }
+      .decorator-simple.smg-tree-root-descendant .child-left.child-middle, .decorator-simple.smg-tree-root-descendant .child-left.child-last {
+        border-top: 1px solid black; }
+    .decorator-simple.smg-tree-root-descendant .child-right {
+      width: 50%; }
+      .decorator-simple.smg-tree-root-descendant .child-right.child-first, .decorator-simple.smg-tree-root-descendant .child-right.child-middle {
+        border-top: 1px solid black; }
+  .decorator-simple.smg-tree-root-link {
+    text-align: center; }
+    .decorator-simple.smg-tree-root-link .father-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-simple.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(3) {
+        text-align: center; }
+        .decorator-simple.smg-tree-root-link .father-link tr:nth-of-type(1) td:nth-of-type(3):before {
+          content: "/"; }
+    .decorator-simple.smg-tree-root-link .mother-link {
+      width: 100%;
+      border-spacing: 0px; }
+      .decorator-simple.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(1) {
+        text-align: center; }
+        .decorator-simple.smg-tree-root-link .mother-link tr:nth-of-type(1) td:nth-of-type(1):before {
+          content: "\\"; }
