@@ -49,9 +49,9 @@ class SpecialFamilyTree extends SpecialPage {
 		if( !$this->mIncluding ) {
 			$output->addModules( 'ext.smg.specialfamilytree' );
 			$typeSelect = new XmlSelect( 'type', 'type', $type );
-			$typeSelect->addOption( wfMsg( 'semanticgenealogy-specialfamilytree-type-ancestors' ), 'ancestors' );
-			$typeSelect->addOption( wfMsg( 'semanticgenealogy-specialfamilytree-type-descendant' ), 'descendant' );
-			$typeSelect->addOption( wfMsg( 'semanticgenealogy-specialfamilytree-type-link' ), 'link' );
+			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-ancestors' )->text(), 'ancestors' );
+			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-descendant' )->text(), 'descendant' );
+			$typeSelect->addOption( $this->msg( 'semanticgenealogy-specialfamilytree-type-link' )->text(), 'link' );
 			$output->addHTML(
 				Xml::openElement( 'form', array( 'action' => $wgScript ) ) .
 					Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
@@ -59,7 +59,8 @@ class SpecialFamilyTree extends SpecialPage {
 						Xml::openElement( 'table', array( 'id' => 'smg-familyTree-form' ) ) .
 							Xml::openElement( 'tr', array('id' => 'smg-form-entry-page' ) ) .
 								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( wfMsg( 'semanticgenealogy-specialfamilytree-label-page' ), 'page' ) .
+									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page' )
+										->text(), 'page' ) .
 								Xml::closeElement( 'th' ) .
 								Xml::openElement( 'td', array('class' => 'mw-input') ) .
 									Xml::input( 'page', 30, $pageName, array( 'class' => 'smg-input-page' ) ) .
@@ -67,7 +68,8 @@ class SpecialFamilyTree extends SpecialPage {
 							Xml::closeElement( 'tr' ) .
 							Xml::openElement( 'tr', array('id' => 'smg-form-entry-type' ) ) .
 								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( wfMsg( 'semanticgenealogy-specialfamilytree-label-type' ), 'type' ) .
+									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-type' )
+										->text(), 'type' ) .
 								Xml::closeElement( 'th' ) .
 								Xml::openElement( 'td', array('class' => 'mw-input') ) .
 									$typeSelect->getHtml() .
@@ -75,7 +77,8 @@ class SpecialFamilyTree extends SpecialPage {
 							Xml::closeElement( 'tr' ) .
 							Xml::openElement( 'tr', array('id' => 'smg-form-entry-gen' ) ) .
 								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( wfMsg( 'semanticgenealogy-specialfamilytree-label-gen' ), 'gen' ) .
+									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-gen' )
+										->text(), 'gen' ) .
 								Xml::closeElement( 'th' ) .
 								Xml::openElement( 'td', array('class' => 'mw-input') ) .
 									Xml::input( 'gen', 2, $numOfGenerations ) .
@@ -83,14 +86,15 @@ class SpecialFamilyTree extends SpecialPage {
 							Xml::closeElement( 'tr' ) .
 							Xml::openElement( 'tr', array('id' => 'smg-form-entry-page2' ) ) .
 								Xml::openElement( 'th', array('class' => 'mw-label') ) .
-									Xml::label( wfMsg( 'semanticgenealogy-specialfamilytree-label-page2' ), 'page2' ) .
+									Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page2' )
+										->text(), 'page2' ) .
 								Xml::closeElement( 'th' ) .
 								Xml::openElement( 'td', array('class' => 'mw-input') ) .
 									Xml::input( 'page2', 30, $pageName2, array( 'class' => 'smg-input-page' ) ) .
 								Xml::closeElement( 'td' ) .
 							Xml::closeElement( 'tr' ) .
 						Xml::closeElement( 'table' ) .
-						Xml::submitButton( wfMsg( 'semanticgenealogy-specialfamilytree-button-submit' ) ) .
+						Xml::submitButton( $this->msg( 'semanticgenealogy-specialfamilytree-button-submit' )->text() ) .
 					Xml::closeElement( 'fieldset' ) .
 				Xml::closeElement( 'form' )
 			);
@@ -114,7 +118,7 @@ class SpecialFamilyTree extends SpecialPage {
 				break;
 			case 'link':
 				if($pageName2 == '') {
-					$output->addWikiText( '<span class="error">' . wfMsg( 'semanticgenealogy-specialfamilytree-error-nosecondpagename' ) . '</span>' );
+					$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-nosecondpagename' )->text() . '</span>' );
 					return;
 				}
 				$pageTitle2 = Title::newFromText( $pageName2 );
@@ -123,11 +127,11 @@ class SpecialFamilyTree extends SpecialPage {
 				if( $tree !== null) {
 					$this->outputRelationTree( $tree );
 				} else {
-					$output->addWikiText( '<span class="error">' . wfMsg( 'semanticgenealogy-specialfamilytree-error-nolinkfound', $pageName, $pageName2 ) . '</span>' );
+					$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-nolinkfound', $pageName, $pageName2 )->text() . '</span>' );
 				}
 				break;
 			default:
-				$output->addWikiText( '<span class="error">' . wfMsg( 'semanticgenealogy-specialfamilytree-error-unknowntype', $type ) . '</span>' );
+				$output->addWikiText( '<span class="error">' . $this->msg( 'semanticgenealogy-specialfamilytree-error-unknowntype', $type )->text() . '</span>' );
 		}
 		return Status::newGood();
 	}
@@ -137,7 +141,7 @@ class SpecialFamilyTree extends SpecialPage {
 	}
 
 	public function getDescription( ) {
-		return wfMsg( 'semanticgenealogy-specialfamilytree-title' );
+		return $this->msg( 'semanticgenealogy-specialfamilytree-title' )->text();
 	}
 
 	/**

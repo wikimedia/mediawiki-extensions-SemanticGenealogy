@@ -29,7 +29,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	}
 
 	public function getName() {
-		return wfMsg( 'semanticgenealogy-gedcomexport-desc' );
+		return wfMessage( 'semanticgenealogy-gedcomexport-desc' )->text();
 	}
 
 	protected function getResultText( SMWQueryResult $res, $outputmode ) {
@@ -49,7 +49,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 			if( $this->getSearchLabel( $outputmode ) ) {
 				$label = $this->getSearchLabel( $outputmode );
 			} else {
-				$label = wfMsgForContent( 'semanticgenealogy-gedcomexport-link' );
+				$label = wfMessage( 'semanticgenealogy-gedcomexport-link' )->inContentLanguage()->text();
 			}
 			$link = $res->getQueryLink( $label );
 			$link->setParameter( 'gedcom5', 'format' );
