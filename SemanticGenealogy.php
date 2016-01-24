@@ -36,7 +36,9 @@ if ( version_compare( SMW_VERSION, '1.7.0 alpha', '<' ) ) {
 	die( '<b>Error:</b> This version of Semantic Genealogy requires Semantic MediaWiki 1.7 or above.' );
 }
 
-define( 'SG_VERSION', '0.2.0 alpha' );
+if ( !defined('SG_VERSION') ) {
+	define( 'SG_VERSION', '0.2.0-alpha' );
+}
 
 $wgExtensionCredits['semantic'][] = array(
 	'path' => __FILE__,
