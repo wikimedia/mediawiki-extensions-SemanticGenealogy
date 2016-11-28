@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Event"
+			"Event",
+			"Jon Harald Søby"
 		]
 	},
 	"semanticgenealogy-desc": "Gir muligheten for å vise slektstrær og importere/eksportere GEDCOM-filer",
@@ -10,8 +11,12 @@
 	"semanticgenealogy-specialfamilytree-button-submit": "Opprett",
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Forfedre",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Etterfølgere",
+	"semanticgenealogy-specialfamilytree-type-link": "Kobling",
 	"semanticgenealogy-specialfamilytree-label-page": "Utgangsperson",
+	"semanticgenealogy-specialfamilytree-label-page2": "Annen person",
 	"semanticgenealogy-specialfamilytree-label-type": "Type",
+	"semanticgenealogy-specialfamilytree-label-gen": "Generasjonsnummer",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Du må fremskaffe et navn på en personside i \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\"-feltet.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Ingen kobling funnet mellom [[$1]] og [[$2]].",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1-typen er ukjent."
 }
