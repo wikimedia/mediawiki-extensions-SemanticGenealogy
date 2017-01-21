@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fohanno",
-			"Y-M D"
+			"Y-M D",
+			"Fulup"
 		]
 	},
+	"semanticgenealogy-desc": "Kinnig a ra an tu da welet gwezennoù-familh ha da enporzhiañ/ezporzhiañ restroù GEDCOM",
 	"semanticgenealogy-gedcomexport-desc": "Ezporzhiañ GEDCOM",
 	"semanticgenealogy-specialfamilytree-title": "Krouiñ ur wezenn a gerentiezh",
 	"semanticgenealogy-specialfamilytree-button-submit": "Krouiñ",
