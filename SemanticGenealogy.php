@@ -2,7 +2,7 @@
 /**
  * Initialization file for the Semantic Genealogy extension.
  *
- * On MediaWiki.org: http://www.mediawiki.org/wiki/Extension:Semantic_Genealogy
+ * On MediaWiki.org: https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy
  *
  * @file SemanticGenealogy.php
  * @ingroup SemanticGenealogy
@@ -23,8 +23,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point.' );
 }
 
-if ( version_compare( $wgVersion, '1.19', '<' ) ) {
-	die( '<b>Error:</b> This version of Semantic Genealogy requires MediaWiki 1.19 or above.' );
+if ( version_compare( $wgVersion, '1.23', '<' ) ) {
+	die( '<b>Error:</b> This version of Semantic Genealogy requires MediaWiki 1.23 or above.' );
 }
 
 // Show a warning if Semantic MediaWiki is not loaded.
@@ -37,7 +37,7 @@ if ( version_compare( SMW_VERSION, '1.7.0 alpha', '<' ) ) {
 }
 
 if ( !defined('SG_VERSION') ) {
-	define( 'SG_VERSION', '0.2.0-alpha' );
+	define( 'SG_VERSION', '0.3.0-alpha' );
 }
 
 $wgExtensionCredits['semantic'][] = array(
@@ -45,10 +45,11 @@ $wgExtensionCredits['semantic'][] = array(
 	'name' => 'Semantic Genealogy',
 	'version' => SG_VERSION,
 	'author' => array(
-		'[http://www.mediawiki.org/wiki/User:Tpt Tpt]'
+		'[https://www.mediawiki.org/wiki/User:Tpt Tpt]'
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy',
-	'descriptionmsg' => 'semanticgenealogy-desc'
+	'descriptionmsg' => 'semanticgenealogy-desc',
+	'license-name' => 'GPL-2.0+'
 );
 
 $wgGenealogicalProperties = array(
@@ -64,33 +65,32 @@ $wgGenealogicalProperties = array(
 	'mother' => 'Mère'
 );
 
-$dir = dirname( __FILE__ ) . '/';
-
 $wgMessagesDirs['SemanticGenealogy'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['SemanticGenealogy'] =  $dir . 'SemanticGenealogy.i18n.php';
-$wgExtensionMessagesFiles['SemanticGenealogyAlias'] = $dir . 'SemanticGenealogy.alias.php';
+$wgExtensionMessagesFiles['SemanticGenealogyAlias'] = __DIR__ . '/SemanticGenealogy.alias.php';
 
-$wgAutoloadClasses['SemanticGenealogy'] = $dir . 'SemanticGenealogy.body.php';
-$wgAutoloadClasses['PersonPageValues'] = $dir . 'PersonPageValues.php';
+$wgAutoloadClasses['SemanticGenealogy'] = __DIR__ . '/SemanticGenealogy.body.php';
+$wgAutoloadClasses['PersonPageValues'] = __DIR__ . '/PersonPageValues.php';
 
-$wgAutoloadClasses['GenealogicalFilePrinter'] = $dir . 'GenealogicalFilePrinter.php';
-$wgAutoloadClasses['Gedcom5FilePrinter'] = $dir . 'GenealogicalFilePrinter.php';
-$wgAutoloadClasses['Gedcom5ResultPrinter'] = $dir . 'Gedcom5ResultPrinter.php';
+$wgAutoloadClasses['GenealogicalFilePrinter'] = __DIR__ . '/GenealogicalFilePrinter.php';
+$wgAutoloadClasses['Gedcom5FilePrinter'] = __DIR__ . '/GenealogicalFilePrinter.php';
+$wgAutoloadClasses['Gedcom5ResultPrinter'] = __DIR__ . '/Gedcom5ResultPrinter.php';
 $smwgResultFormats['gedcom'] = 'Gedcom5ResultPrinter';
 $smwgResultFormats['gedcom5'] = 'Gedcom5ResultPrinter';
 
-$wgAutoloadClasses['SpecialFamilyTree'] = $dir . 'SpecialFamilyTree.php';
+$wgAutoloadClasses['SpecialFamilyTree'] = __DIR__ . '/SpecialFamilyTree.php';
 $wgSpecialPages['FamilyTree'] = 'SpecialFamilyTree';
 
 $moduleTemplate = array(
-	'localBasePath' => $dir,
+	'localBasePath' => __DIR__,
 	'remoteBasePath' => ( $wgExtensionAssetsPath === false ? $wgScriptPath . '/extensions' : $wgExtensionAssetsPath ) . '/SemanticGenealogy',
 	'group' => 'ext.smg'
 );
 
 $wgResourceModules['ext.smg.specialfamilytree'] = $moduleTemplate + array(
 	'scripts' => 'specialFamilyTree.js',
-	'dependencies' => array( 'jquery.ui.autocomplete' ),
+	'dependencies' => array(
+		'jquery.ui.autocomplete'
+	),
 	'messages' => array(
 	)
 );
