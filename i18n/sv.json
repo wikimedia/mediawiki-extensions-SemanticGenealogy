@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Martinwiss"
+			"Martinwiss",
+			"WikiPhoenix"
 		]
 	},
 	"semanticgenealogy-desc": "Gör så att man kan se släktträd och importera/exportera GEDCOM-filer",
@@ -11,6 +12,8 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Släktingar",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Ättlingar",
 	"semanticgenealogy-specialfamilytree-type-link": "Länk",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Enkelt",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Fullständigt namn",
 	"semanticgenealogy-specialfamilytree-label-page": "Upphovs-person",
 	"semanticgenealogy-specialfamilytree-label-page2": "Annan person",
 	"semanticgenealogy-specialfamilytree-label-type": "Typ",

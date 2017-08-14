@@ -11,11 +11,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Предци",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Потомци",
 	"semanticgenealogy-specialfamilytree-type-link": "Врска",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Просто",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Кутии",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Име и презиме",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Име на страницата",
 	"semanticgenealogy-specialfamilytree-label-page": "Појдовно лице",
 	"semanticgenealogy-specialfamilytree-label-page2": "Друго лице",
 	"semanticgenealogy-specialfamilytree-label-type": "Тип",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Стил",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Име за приказ",
 	"semanticgenealogy-specialfamilytree-label-gen": "Бр. на поколенија",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "За да вметнете лоза во страница, ставете го следниов викикод:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Ќе мора да зададете име на страницата за лицето во полето „{{int:semanticgenealogy-specialfamilytree-label-page2}}“.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Не пронајдов врска помеѓу [[$1]] и [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Типот $1 е непознат."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Типот $1 е непознат.",
+	"specialpages-group-genealogy": "Родослов"
 }

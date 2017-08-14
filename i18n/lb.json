@@ -10,11 +10,18 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Virfahren",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Nokommen",
 	"semanticgenealogy-specialfamilytree-type-link": "Verbindung",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Einfach",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Këschten",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Ganzen Numm",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Numm vun der Säit",
 	"semanticgenealogy-specialfamilytree-label-page": "Ausgangspersoun",
 	"semanticgenealogy-specialfamilytree-label-page2": "Aner Persoun",
 	"semanticgenealogy-specialfamilytree-label-type": "Typ",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Stil",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Numm fir ze weisen",
 	"semanticgenealogy-specialfamilytree-label-gen": "Zuel vu Generatiounen",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Dir musst den Numm vun enger Säit vun enger Persoun am Feld \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\" uginn.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Zwësche(n) [[$1]] an [[$2]] gouf keng Verbindung fonnt.",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Den Typ $1 ass onbekannt."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Den Typ $1 ass onbekannt.",
+	"specialpages-group-genealogy": "Genealogie"
 }

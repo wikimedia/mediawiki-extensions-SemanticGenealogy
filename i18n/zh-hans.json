@@ -15,11 +15,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "祖先",
 	"semanticgenealogy-specialfamilytree-type-descendant": "后裔",
 	"semanticgenealogy-specialfamilytree-type-link": "链接",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "简单",
+	"semanticgenealogy-specialfamilytree-decorator-box": "盒子",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "全名",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "页面名称",
 	"semanticgenealogy-specialfamilytree-label-page": "基础人员",
 	"semanticgenealogy-specialfamilytree-label-page2": "其他人员",
 	"semanticgenealogy-specialfamilytree-label-type": "类型",
+	"semanticgenealogy-specialfamilytree-label-decorator": "样式",
+	"semanticgenealogy-specialfamilytree-label-displayname": "要显示的名称",
 	"semanticgenealogy-specialfamilytree-label-gen": "代次数量",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "要将此树添加到页面中，加入下面的wiki代码即可：",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "您必须在“{{int:semanticgenealogy-specialfamilytree-label-page2}}”字段之中提供人员页面的名称。",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "没有找到[[$1]]与[[$2]]之间的链接。",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "类型$1未知"
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "类型$1未知",
+	"specialpages-group-genealogy": "家谱"
 }
