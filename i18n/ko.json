@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Priviet"
+			"Priviet",
+			"Ykhwong"
 		]
 	},
 	"semanticgenealogy-desc": "계보 트리를 볼 수 있는 권한을 제공하고 GEDCOM 파일을 가져오기/내보내기",
@@ -11,9 +12,11 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "조상",
 	"semanticgenealogy-specialfamilytree-type-descendant": "자손",
 	"semanticgenealogy-specialfamilytree-type-link": "링크",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "페이지 이름",
 	"semanticgenealogy-specialfamilytree-label-page": "기준 사람",
 	"semanticgenealogy-specialfamilytree-label-page2": "다른 사람",
 	"semanticgenealogy-specialfamilytree-label-type": "종류",
+	"semanticgenealogy-specialfamilytree-label-displayname": "표시할 이름",
 	"semanticgenealogy-specialfamilytree-label-gen": "세대 수",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "\"{{int:semanticgenealogy-specialfamilytree-label-page2}}\" 필드에 사용자 문서의 이름을 입력해야 합니다.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]]와 [[$2]] 사이에서 링크를 찾을 수 없음.",
