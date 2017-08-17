@@ -4,18 +4,26 @@
 			"Hamilton Abreu"
 		]
 	},
-	"semanticgenealogy-desc": "Fornece a capacidade de ver árvores genealógicos e importar/exportar ficheiros GEDCOM",
+	"semanticgenealogy-desc": "Fornece a capacidade de ver árvores genealógicas e importar/exportar ficheiros GEDCOM",
 	"semanticgenealogy-gedcomexport-desc": "Exportação em GEDCOM",
 	"semanticgenealogy-specialfamilytree-title": "Criar uma árvore genealógica",
 	"semanticgenealogy-specialfamilytree-button-submit": "Criar",
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Antepassados",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Descendente",
 	"semanticgenealogy-specialfamilytree-type-link": "Link",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Simples",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Caixas",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nome completo",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nome da página",
 	"semanticgenealogy-specialfamilytree-label-page": "Pessoa de base",
 	"semanticgenealogy-specialfamilytree-label-page2": "Outra pessoa",
 	"semanticgenealogy-specialfamilytree-label-type": "Tipo",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Estilo",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nome a apresentar",
 	"semanticgenealogy-specialfamilytree-label-gen": "Número de geração",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Para inserir esta árvore numa página, adicione o seguinte código wiki:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Tem de fornecer um nome da página de uma pessoa no campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Não foi encontrada nenhuma ligação entre [[$1]] e [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "O tipo $1 é desconhecido."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "O tipo $1 é desconhecido.",
+	"specialpages-group-genealogy": "Genealogia"
 }
