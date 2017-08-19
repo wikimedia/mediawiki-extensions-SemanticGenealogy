@@ -14,10 +14,13 @@
 	"semanticgenealogy-specialfamilytree-type-link": "Länk",
 	"semanticgenealogy-specialfamilytree-decorator-simple": "Enkelt",
 	"semanticgenealogy-specialfamilytree-displayname-fullname": "Fullständigt namn",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Sidnamn",
 	"semanticgenealogy-specialfamilytree-label-page": "Upphovs-person",
 	"semanticgenealogy-specialfamilytree-label-page2": "Annan person",
 	"semanticgenealogy-specialfamilytree-label-type": "Typ",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Namn att visa",
 	"semanticgenealogy-specialfamilytree-label-gen": "Släktledsnummer",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "För att infoga detta träd på en sida, lägg till följande wikikod:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Du måste ange ett namn på personsidan i fältet: \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Ingen koppling fanns mellan [[$1]] och [[$2]].",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Känner inte till typen: $1."

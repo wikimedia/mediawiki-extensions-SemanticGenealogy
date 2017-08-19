@@ -11,11 +11,13 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Przodkowie",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Potomek",
 	"semanticgenealogy-specialfamilytree-type-link": "Link",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nazwa strony",
 	"semanticgenealogy-specialfamilytree-label-page": "Osoba główna",
 	"semanticgenealogy-specialfamilytree-label-page2": "Inna osoba",
 	"semanticgenealogy-specialfamilytree-label-type": "Typ",
 	"semanticgenealogy-specialfamilytree-label-gen": "Liczba pokoleń",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Musisz podać nazwę strony osoby w polu \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nie znaleziono połączenia pomiędzy [[$1]] a [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Typ $1 jest nieznany."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Typ $1 jest nieznany.",
+	"specialpages-group-genealogy": "Genealogia"
 }
