@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Armando-Martin"
+			"Armando-Martin",
+			"Fitoschido"
 		]
 	},
 	"semanticgenealogy-desc": "Proporciona la capacidad de ver árboles genealógicos e importar/exportar archivos GEDCOM",
@@ -11,11 +12,17 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Antepasados",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Descendientes",
 	"semanticgenealogy-specialfamilytree-type-link": "Enlace",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nombre completo",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nombre de la página",
 	"semanticgenealogy-specialfamilytree-label-page": "Persona base",
 	"semanticgenealogy-specialfamilytree-label-page2": "Otra persona",
 	"semanticgenealogy-specialfamilytree-label-type": "Tipo",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Estilo",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nombre que mostrar",
 	"semanticgenealogy-specialfamilytree-label-gen": "Número de generación",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Para insertar este árbol en una página, añade el código siguiente:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Tienes que definir el nombre de página de una página de persona en el campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "No encontró ningún vínculo entre [[$1]] y [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "El tipo $1 es desconocido."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "El tipo $1 es desconocido.",
+	"specialpages-group-genealogy": "Genealogía"
 }

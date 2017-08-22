@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Subi"
+			"Subi",
+			"Mikel Ibaiba"
 		]
 	},
-	"semanticgenealogy-specialfamilytree-button-submit": "Sortu"
+	"semanticgenealogy-specialfamilytree-button-submit": "Sortu",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Arrunta",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Kutxak",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Izen osoa",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Orriaren izena"
 }
