@@ -11,11 +11,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Antepasaos",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Descendiente",
 	"semanticgenealogy-specialfamilytree-type-link": "Enllaz",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Simple",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Caxes",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nome completu",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nome de la páxina",
 	"semanticgenealogy-specialfamilytree-label-page": "Persona base",
 	"semanticgenealogy-specialfamilytree-label-page2": "Otra persona",
 	"semanticgenealogy-specialfamilytree-label-type": "Triba",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Estilu",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nome a amosar",
 	"semanticgenealogy-specialfamilytree-label-gen": "Númberu de xeneración",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Pa insertar esti árbol nuna páxina, añade'l códigu wiki siguiente:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Tiene de dar el nome de la páxina d'una persona nel campu \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nun s'alcontró nenguna rellación ente [[$1]] y [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "El tipu $1 ye desconocíu."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "El tipu $1 ye desconocíu.",
+	"specialpages-group-genealogy": "Xenealoxía"
 }
