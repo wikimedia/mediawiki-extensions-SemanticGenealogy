@@ -22,15 +22,18 @@
 			"role": "Developer"
 		}
 	],
+	"require": {
+		"mediawiki/semantic-media-wiki": ">=1.7"
+	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "0.10.0"
 	},
 	"scripts": {
 		"test": [
-			"phpcs --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor -p ."
+			"phpcs --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor,extensions -p ."
 		],
 		"fix": [
-			"phpcbf --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor -p ."
+			"phpcbf --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor,extensions -p ."
 		]
 	},
 	"autoload": {

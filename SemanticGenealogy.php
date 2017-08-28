@@ -33,7 +33,7 @@ if ( ! defined( 'SMW_VERSION' ) ) {
 	die( '<b>Error:</b> You need to have '
 		.'<a href="https://semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic MediaWiki</a> '
 		.'installed in order to use '
-		.'<a href="https://www.mediawiki.org/wiki/Extension:Semantic Maps">Semantic Maps</a>.<br />'
+		.'<a href="https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy">Semantic Genealogy</a>.<br />'
 	);
 }
 
