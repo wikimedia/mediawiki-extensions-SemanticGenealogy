@@ -26,14 +26,17 @@
 		"mediawiki/semantic-media-wiki": ">=1.7"
 	},
 	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9.2",
+		"jakub-onderka/php-console-highlighter": "0.3.2",
 		"mediawiki/mediawiki-codesniffer": "0.10.0"
 	},
 	"scripts": {
 		"test": [
-			"phpcs --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor,extensions -p ."
+			"parallel-lint . --exclude vendor --exclude node_modules --exclude extensions",
+			"phpcs -p -s"
 		],
 		"fix": [
-			"phpcbf --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor,extensions -p ."
+			"phpcbf"
 		]
 	},
 	"autoload": {
