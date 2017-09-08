@@ -30,5 +30,5 @@
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Error message when the \"page2\" field is not set (only for \"link\" type).\n\nRefers to {{msg-mw|Semanticgenealogy-specialfamilytree-label-page2}}.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Error message where no link is found between $1 and $2.",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Error massage when the type of the family tree is unknown. Parameters:\n* $1 - unknown type. Known types are: \"ancestors\", \"descendant\", and \"link\"",
-	"specialpages-group-genealogy": "Label for the genealogy group"
+	"specialpages-group-genealogy": "{{doc-special-group}}\n\nLabel for the genealogy group"
 }
