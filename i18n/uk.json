@@ -3,7 +3,8 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Steve.rusyn",
-			"SteveR"
+			"SteveR",
+			"Piramidion"
 		]
 	},
 	"semanticgenealogy-desc": "Забезпечує можливість перегляду дерев родоводу і імпорту/експорту файлів GEDCOM",
@@ -13,11 +14,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Предки",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Нащадок",
 	"semanticgenealogy-specialfamilytree-type-link": "Посилання",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Простий",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Скриньки",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Повна назва",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Назва сторінки",
 	"semanticgenealogy-specialfamilytree-label-page": "Основна особа",
 	"semanticgenealogy-specialfamilytree-label-page2": "Інша особа",
 	"semanticgenealogy-specialfamilytree-label-type": "Тип",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Стиль",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Назва, яку слід відтворити",
 	"semanticgenealogy-specialfamilytree-label-gen": "Номер покоління",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Щоб вставити це дерево на сторінку, додайте такий вікікод:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Ви повинні надати назву сторінки особи у полі \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Посилання не знайдено між [[$1]] та [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тип $1 невідомий."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тип $1 невідомий.",
+	"specialpages-group-genealogy": "Генеалогія"
 }
