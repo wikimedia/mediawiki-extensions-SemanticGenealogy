@@ -11,11 +11,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Andenate",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Discendende",
 	"semanticgenealogy-specialfamilytree-type-link": "Collegamende",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Facile",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Sckatole",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nome comblete",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nome d'a pàgene",
 	"semanticgenealogy-specialfamilytree-label-page": "Crestiane de base",
 	"semanticgenealogy-specialfamilytree-label-page2": "Otre crestiane",
 	"semanticgenealogy-specialfamilytree-label-type": "Tipe",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Stoche a formatte",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nome da ffà 'ndrucà",
 	"semanticgenealogy-specialfamilytree-label-gen": "Numere de generazione",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Pe sckaffà stu arvule jndr'à 'na pàgene, aggiunge stu stuézze de codece:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Tu a dà 'nu nome de 'na pàgene de crestiane jndr'à 'u cambe \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nisicune collegamende acchiate 'mbrà [[$1]] e [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "'U tipe $1 jè scanusciute."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "'U tipe $1 jè scanusciute.",
+	"specialpages-group-genealogy": "Genealoggije"
 }
