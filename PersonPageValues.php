@@ -31,7 +31,7 @@ class PersonPageValues {
 	/**
 	 * Constructor for a single indi in the file.
 	 *
-	 * @param SMWDIWikiPage $page the page
+	 * @param SMWDIWikiPage $page
 	 */
 	public function __construct( SMWDIWikiPage $page ) {
 		$values = [];

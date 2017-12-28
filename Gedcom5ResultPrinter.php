@@ -41,7 +41,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	/**
 	 * Get the query mode
 	 *
-	 * @param string $context the context
+	 * @param string $context
 	 *
 	 * @return string the query mode
 	 */
@@ -62,7 +62,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	/**
 	 * Get the result test of the result printer
 	 *
-	 * @param SMWQueryResult $res the result
+	 * @param SMWQueryResult $res
 	 * @param integer $outputmode the output mode chosen
 	 *
 	 * @return string the result text

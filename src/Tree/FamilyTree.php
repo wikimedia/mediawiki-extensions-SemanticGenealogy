@@ -26,8 +26,6 @@ abstract class FamilyTree {
 	protected $displayName;
 
 	/**
-	 * @constructor
-	 *
 	 * @param string $decorator the decorator name
 	 */
 	public function __construct( $decorator=null ) {
@@ -38,8 +36,6 @@ abstract class FamilyTree {
 	 * Setter for the person
 	 *
 	 * @param string $personName the name of the page of the person
-	 *
-	 * @return void
 	 */
 	public function setPerson( $personName ) {
 		$this->personName = $personName;
@@ -50,8 +46,6 @@ abstract class FamilyTree {
 	 * Setter for the number of generations
 	 *
 	 * @param integer $numOfGenerations the number of generations
-	 *
-	 * @return void
 	 */
 	public function setNumberOfGenerations( $numOfGenerations ) {
 		$this->numOfGenerations = $numOfGenerations;
@@ -61,28 +55,20 @@ abstract class FamilyTree {
 	 * Setter for preference for displayname
 	 *
 	 * @param string $displayName the name to display
-	 *
-	 * @return void
 	 */
 	public function setDisplayName( $displayName ) {
 		$this->displayName = $displayName;
 	}
 
 	/**
-	 * Setter for the ouput object
-	 *
-	 * @param OutputPage $output the output object
-	 *
-	 * @return void
+	 * @param OutputPage $output
 	 */
 	public function setOutput( $output ) {
 		$this->output = $output;
 	}
 
 	/**
-	 * Getter for the ouput object
-	 *
-	 * @return OutputPage the output object
+	 * @return OutputPage
 	 */
 	public function getOutput() {
 		return $this->output;

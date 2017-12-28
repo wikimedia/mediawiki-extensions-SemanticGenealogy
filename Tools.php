@@ -7,8 +7,8 @@ class Tools {
 	/**
 	 * Find the subclasses of that superclass in one directory
 	 *
-	 * @param string $dir the directory
-	 * @param string $superClass the superclass name
+	 * @param string $dir
+	 * @param string $superClass
 	 *
 	 * @return array an array of $classes subclass of the superClass
 	 */

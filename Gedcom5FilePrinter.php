@@ -151,7 +151,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Add the GEDCOM for a person
 	 *
 	 * @param integer $personId the id of the person
-	 * @param object $person PersonPageValues object
+	 * @param PersonPageValues $person
 	 *
 	 * @return void
 	 */
@@ -202,7 +202,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	/**
 	 * Get the gedcom name
 	 *
-	 * @param object $person the person object
+	 * @param PersonPageValues $person
 	 *
 	 * @return string the name for the gedcom
 	 */
@@ -224,8 +224,8 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Adds a row
 	 *
 	 * @param string $level the level of the row
-	 * @param string $key the key
-	 * @param object $value the value
+	 * @param string $key
+	 * @param object $value
 	 *
 	 * @return void
 	 */
@@ -242,9 +242,9 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * TODO add places metadata support.
 	 *
-	 * @param string $type the type
-	 * @param string $date the date
-	 * @param string $place the place
+	 * @param string $type
+	 * @param string $date
+	 * @param string $place
 	 *
 	 * @return void
 	 */
@@ -265,7 +265,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Adds a row from string value
 	 *
 	 * @param string $level the level of the row
-	 * @param string $key the key
+	 * @param string $key
 	 * @param object $value the string value
 	 *
 	 * @return void
@@ -280,7 +280,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Adds a row from time value
 	 *
 	 * @param string $level the level of the row
-	 * @param string $key the key
+	 * @param string $key
 	 * @param object $value the time value
 	 *
 	 * @return void
@@ -297,7 +297,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Adds a row from the wiki page
 	 *
 	 * @param string $level the level of the row
-	 * @param string $key the key
+	 * @param string $key
 	 * @param object $value the wiki page value
 	 *
 	 * @return void

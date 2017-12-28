@@ -75,7 +75,7 @@ class LinkFamilyTree extends FamilyTree {
 	 * Compare a generation with a tree
 	 *
 	 * @param array   $gen  the generation number
-	 * @param array   $tree the tree
+	 * @param array[] $tree
 	 * @param integer $max  the max depth
 	 *
 	 * @return array an array of 2 SOSA
