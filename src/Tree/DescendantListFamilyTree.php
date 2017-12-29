@@ -20,7 +20,7 @@ class DescendantListFamilyTree extends FamilyTree {
 	 *
 	 * @param PersonPageValues $person
 	 * @param string           $pellissier I don't know
-	 * @param integer          $end        counter to know wether we should stop
+	 * @param integer          $end        counter to know whether we should stop
 	 *
 	 * @return void
 	 */
