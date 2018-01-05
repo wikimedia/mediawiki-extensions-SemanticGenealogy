@@ -26,6 +26,7 @@
 	"semanticgenealogy-specialfamilytree-label-decorator": "Estilo",
 	"semanticgenealogy-specialfamilytree-label-displayname": "Nome a ser exibido",
 	"semanticgenealogy-specialfamilytree-label-gen": "Número de geração",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Para inserir esta árvore numa página, adicione o seguinte código wiki:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Você deve fornecer um nome de uma página de uma pessoa no campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nenhuma relação encontrada entre [[$1]] e [[$2]].",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "O tipo $1 é desconhecido.",
