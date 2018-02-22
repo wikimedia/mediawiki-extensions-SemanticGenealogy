@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"Alexandr Efremov"
 		]
 	},
 	"semanticgenealogy-desc": "Обеспечивает возможность просмотра генеалогических деревьев и импорт/экспорт GEDCOM-файлов",
@@ -17,5 +18,6 @@
 	"semanticgenealogy-specialfamilytree-label-gen": "Количество поколений",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Вы должны занести имя страницы в поле «{{int:semanticgenealogy-specialfamilytree-label-page2}}».",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Не найдена ссылка между [[$1]] и [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тип $1 неизвестен."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тип $1 неизвестен.",
+	"specialpages-group-genealogy": "Генеалогия"
 }
