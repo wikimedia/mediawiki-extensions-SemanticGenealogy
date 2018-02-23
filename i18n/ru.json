@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Alexandr Efremov"
+			"Alexandr Efremov",
+			"Mouse21"
 		]
 	},
 	"semanticgenealogy-desc": "Обеспечивает возможность просмотра генеалогических деревьев и импорт/экспорт GEDCOM-файлов",
@@ -12,10 +13,17 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Предки",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Потомок",
 	"semanticgenealogy-specialfamilytree-type-link": "Ссылка",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Простой",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Ящики",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Полное имя",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Название страницы",
 	"semanticgenealogy-specialfamilytree-label-page": "Основное лицо",
 	"semanticgenealogy-specialfamilytree-label-page2": "Другое лицо",
 	"semanticgenealogy-specialfamilytree-label-type": "Тип",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Стиль",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Имя для отображения",
 	"semanticgenealogy-specialfamilytree-label-gen": "Количество поколений",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Чтобы вставить это дерево в страницу, добавьте следующий код вики:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Вы должны занести имя страницы в поле «{{int:semanticgenealogy-specialfamilytree-label-page2}}».",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Не найдена ссылка между [[$1]] и [[$2]].",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тип $1 неизвестен.",
