@@ -9,7 +9,7 @@
 		"GEDCOM"
 	],
 	"homepage": "https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy",
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Thomas Pellissier Tanon",

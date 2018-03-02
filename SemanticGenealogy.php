@@ -58,7 +58,7 @@ $wgExtensionCredits['semantic'][] = [
 	],
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy',
 	'descriptionmsg' => 'semanticgenealogy-desc',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 ];
 
 $wgGenealogicalProperties = [
