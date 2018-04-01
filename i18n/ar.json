@@ -1,9 +1,30 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
 		]
 	},
+	"semanticgenealogy-desc": "يوفر القدرة على عرض أشجار الأنساب وملفات استيراد/تصدير GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "تصدير GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "قم بإنشاء شجرة عائلة",
+	"semanticgenealogy-specialfamilytree-button-submit": "إنشاء",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "أسلاف",
+	"semanticgenealogy-specialfamilytree-type-descendant": "تنازلي",
+	"semanticgenealogy-specialfamilytree-type-link": "وصلة",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "بسيط",
+	"semanticgenealogy-specialfamilytree-decorator-box": "صناديق",
 	"semanticgenealogy-specialfamilytree-displayname-fullname": "الاسم الكامل",
-	"semanticgenealogy-specialfamilytree-displayname-pagename": "اسم الصفحة"
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "اسم الصفحة",
+	"semanticgenealogy-specialfamilytree-label-page": "الشخص الأساسي",
+	"semanticgenealogy-specialfamilytree-label-page2": "شخص آخر",
+	"semanticgenealogy-specialfamilytree-label-type": "النوع",
+	"semanticgenealogy-specialfamilytree-label-decorator": "التصميم",
+	"semanticgenealogy-specialfamilytree-label-displayname": "اسم لعرضه",
+	"semanticgenealogy-specialfamilytree-label-gen": "رقم الجيل",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "لإدراج هذه الشجرة في صفحة; أضف رمز الويكي التالي:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "يجب عليك تقديم اسم صفحة أشخاص في حقل \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "لم يتم العثور على وصلة بين [[$1]] و[[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "النوع $1 غير معروف.",
+	"specialpages-group-genealogy": "علم الأنساب"
 }
