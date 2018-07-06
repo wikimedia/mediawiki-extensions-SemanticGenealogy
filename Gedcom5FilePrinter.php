@@ -287,7 +287,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 */
 	protected function addTimeValueAsRow( $level, $key, $value ) {
 		if ( $value instanceof SMWDITime ) {
-			$lang = new Language();
+			$lang = Language::factory( 'en' );
 			$this->addRow( $level, $key,
 				strtoupper( $lang->sprintfDate( 'd M Y', $value->getMwTimestamp( TS_MW ) ) ) );
 		}
