@@ -1,10 +1,30 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Kly"
 		]
 	},
+	"semanticgenealogy-desc": "提供可查看族譜圖以及匯入/匯出 GEDCOM 檔案功能",
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM 匯出",
+	"semanticgenealogy-specialfamilytree-title": "建立家系",
 	"semanticgenealogy-specialfamilytree-button-submit": "建立",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "祖先",
+	"semanticgenealogy-specialfamilytree-type-descendant": "後代",
 	"semanticgenealogy-specialfamilytree-type-link": "連結",
-	"semanticgenealogy-specialfamilytree-label-type": "類型"
+	"semanticgenealogy-specialfamilytree-decorator-simple": "簡稱",
+	"semanticgenealogy-specialfamilytree-decorator-box": "方框",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "全名",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "頁面名稱",
+	"semanticgenealogy-specialfamilytree-label-page": "基本人物",
+	"semanticgenealogy-specialfamilytree-label-page2": "其他人",
+	"semanticgenealogy-specialfamilytree-label-type": "類型",
+	"semanticgenealogy-specialfamilytree-label-decorator": "樣式",
+	"semanticgenealogy-specialfamilytree-label-displayname": "要顯示的名稱",
+	"semanticgenealogy-specialfamilytree-label-gen": "世代數目",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "要插入此樹狀至頁面裡，請添加以下 wiki 代碼：",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "您必須在「{{int:semanticgenealogy-specialfamilytree-label-page2}}」欄位裡提供人物頁面名稱。",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "查無 [[$1]] 與 [[$2]] 之間的連結。",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1類型未知。",
+	"specialpages-group-genealogy": "族譜"
 }
