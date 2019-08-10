@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"semanticgenealogy-specialfamilytree-button-submit": "Krei",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Antaŭuloj",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Ido",
+	"semanticgenealogy-specialfamilytree-type-link": "Ligilo",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Simpla",
+	"semanticgenealogy-specialfamilytree-label-page": "Baza ulo",
+	"semanticgenealogy-specialfamilytree-label-page2": "Alia ulo",
+	"semanticgenealogy-specialfamilytree-label-type": "Speco",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Stilo",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Montrota nomo",
+	"specialpages-group-genealogy": "Genealogio"
+}
