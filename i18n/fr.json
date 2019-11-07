@@ -3,10 +3,11 @@
 		"authors": [
 			"Grondin",
 			"Thomas Pellissier Tanon",
-			"Tititou36"
+			"Tititou36",
+			"Verdy p"
 		]
 	},
-	"semanticgenealogy-desc": "Offre la possibilité de voir des arbres généalogiques et d'importer/exporter des fichiers GEDCOM",
+	"semanticgenealogy-desc": "Offre la possibilité de voir des arbres généalogiques et d’importer/exporter des fichiers GEDCOM.",
 	"semanticgenealogy-gedcomexport-desc": "Export GEDCOM",
 	"semanticgenealogy-gedcomexport-link": "GEDCOM",
 	"semanticgenealogy-specialfamilytree-title": "Créer un arbre généalogique",
@@ -18,14 +19,14 @@
 	"semanticgenealogy-specialfamilytree-decorator-box": "Boîtes",
 	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nom complet",
 	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nom de la page",
-	"semanticgenealogy-specialfamilytree-label-page": "Personne de départ",
-	"semanticgenealogy-specialfamilytree-label-page2": "Seconde personne",
+	"semanticgenealogy-specialfamilytree-label-page": "Personne de base",
+	"semanticgenealogy-specialfamilytree-label-page2": "Autre personne",
 	"semanticgenealogy-specialfamilytree-label-type": "Type",
-	"semanticgenealogy-specialfamilytree-label-decorator": "Style",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Mise en forme",
 	"semanticgenealogy-specialfamilytree-label-displayname": "Nom à afficher",
 	"semanticgenealogy-specialfamilytree-label-gen": "Nombre de générations",
-	"semanticgenealogy-specialfamilytree-label-insert-code": "Pour insérer cet arbre dans une page, ajoutez le code wiki suivant :",
-	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Vous devez mettre le nom d'une page dans le champ « {{int:semanticgenealogy-specialfamilytree-étiquette-page2}}. »",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Pour insérer cet arbre dans une page, ajoutez le code wiki suivant :",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Vous devez mettre le nom d’une page sur les personnes dans le champ « {{int:semanticgenealogy-specialfamilytree-étiquette-page2}} ».",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Aucun lien trouvé entre [[$1]] et [[$2]].",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Le type $1 est inconnu.",
 	"specialpages-group-genealogy": "Généalogie"
