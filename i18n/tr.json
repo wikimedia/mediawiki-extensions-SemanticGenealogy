@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"semanticgenealogy-desc": "Şecere ağaçlarını görüntüleme ve GEDCOM dosyalarını içe/dışa aktarma olanağı sağlar",
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM ihracatı",
+	"semanticgenealogy-specialfamilytree-title": "Bir Aile Ağacı Oluşturun",
+	"semanticgenealogy-specialfamilytree-button-submit": "Oluştur",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Atalar",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Azalan",
+	"semanticgenealogy-specialfamilytree-type-link": "Bağlantı",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Basit",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Kutular",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Tam ad",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Sayfa adı",
+	"semanticgenealogy-specialfamilytree-label-page": "Temel kişi",
+	"semanticgenealogy-specialfamilytree-label-page2": "Diğer kişi",
+	"semanticgenealogy-specialfamilytree-label-type": "Tür",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Stil",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Gösterilecek isim",
+	"semanticgenealogy-specialfamilytree-label-gen": "Üretim sayısı",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Bu ağacı bir sayfaya eklemek için aşağıdaki wiki kodunu ekleyin:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "\"{{int:semantic genealogy-specialfamilytree-label-page2}}\" alanına bir kişinin sayfasının adını sağlamanız gerekir.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]] ve [[$2]] arasında bağlantı bulunamadı.",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1 türü bilinmiyor.",
+	"specialpages-group-genealogy": "Şecere"
+}
