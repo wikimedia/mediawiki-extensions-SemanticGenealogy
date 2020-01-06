@@ -8,7 +8,7 @@
  * @file    DescendantFamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
@@ -31,7 +31,7 @@ class DescendantFamilyTree extends FamilyTree {
 		$infoEmpty = "&nbsp;";
 		$infoPartner = "&nbsp;";
 		$couple = '<td>&nbsp;</td><td class="father-link">&nbsp;</td>'
-			.'<td class="mother-link">&nbsp;</td><td>&nbsp;</td>';
+			. '<td class="mother-link">&nbsp;</td><td>&nbsp;</td>';
 		$tdempty = '<td>&nbsp;</td><td>&nbsp;</td>';
 		if ( $person->getPartner() ) {
 			$partner = new PersonPageValues( $person->getPartner() );
@@ -41,10 +41,10 @@ class DescendantFamilyTree extends FamilyTree {
 		}
 
 		$output->addHTML(
-			'<table class="decorator-'.$this->decorator. ' smg-tree-root-descendant" style="width:100%">'
-			.'<tr class="smg-tree-line">'
-			.'<td colspan="2" class="center">'
-			.'<table><tr>'
+			'<table class="decorator-' . $this->decorator . ' smg-tree-root-descendant" style="width:100%">'
+			. '<tr class="smg-tree-line">'
+			. '<td colspan="2" class="center">'
+			. '<table><tr>'
 		);
 		$nbChildren = count( $person->getChildren() );
 		if ( $person->sex && $person->sex->getString() == 'M' ) {
@@ -55,7 +55,7 @@ class DescendantFamilyTree extends FamilyTree {
 			$output->addHTML( '</td><td class="person" colspan="2">' );
 			$output->addWikiText( $infoPartner );
 			$output->addHTML( '</td></tr><tr>' );
-			$output->addHTML( $tdempty.( $nbChildren ? $couple : $tdempty.$tdempty ) );
+			$output->addHTML( $tdempty . ( $nbChildren ? $couple : $tdempty . $tdempty ) );
 		} else {
 			$output->addHTML( '<tr><td class="person" colspan="2">' );
 			$output->addWikiText( $infoPartner );
@@ -64,11 +64,11 @@ class DescendantFamilyTree extends FamilyTree {
 			$output->addHTML( '</td><td class="person" colspan="2">' );
 			$output->addWikiText( $infoEmpty );
 			$output->addHTML( '</td></tr><tr>' );
-			$output->addHTML( ( $nbChildren ? $couple : $tdempty.$tdempty ).$tdempty );
+			$output->addHTML( ( $nbChildren ? $couple : $tdempty . $tdempty ) . $tdempty );
 		}
 		$output->addHTML(
 			'</tr></table></td></tr>'
-			.'<tr><td '.( $nbChildren ? ' class="couple-link"' : '' ).'>&nbsp;</td><td>&nbsp;</td></tr>'
+			. '<tr><td ' . ( $nbChildren ? ' class="couple-link"' : '' ) . '>&nbsp;</td><td>&nbsp;</td></tr>'
 		 );
 
 		$output->addHTML( '<tr><td colspan="2"><table><tr>' );
@@ -77,13 +77,13 @@ class DescendantFamilyTree extends FamilyTree {
 			$class = $this->getClass( $itemNumber++, $nbChildren );
 			$output->addHTML(
 				'<td style="vertical-align: top"><table><tr>'
-				.'<td class="child-left '.$class.'">&nbsp;</td>'
-				.'<td class="child-right '.$class.'">&nbsp;</td>'
-				.'</tr>'
-				.'<tr><td colspan="2" class="center">'
+				. '<td class="child-left ' . $class . '">&nbsp;</td>'
+				. '<td class="child-right ' . $class . '">&nbsp;</td>'
+				. '</tr>'
+				. '<tr><td colspan="2" class="center">'
 			);
 			$childPage = new PersonPageValues( $child->getPage() );
-			$this->showDescendants( $childPage, $numOfGenerations-1 );
+			$this->showDescendants( $childPage, $numOfGenerations - 1 );
 			$output->addHTML( '</td></tr></table></td>' );
 		}
 		$output->addHTML( '</tr></td></table></td></tr></table>' );

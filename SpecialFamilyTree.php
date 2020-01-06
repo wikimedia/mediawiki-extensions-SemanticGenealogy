@@ -6,7 +6,7 @@
  * @file    SpecialFamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 class SpecialFamilyTree extends SpecialPage {
@@ -20,8 +20,6 @@ class SpecialFamilyTree extends SpecialPage {
 	private $params = [ 'type', 'gen', 'page', 'page2', 'decorator', 'displayname' ];
 
 	/**
-	 * @constructor
-	 *
 	 * @param string $name the name of the SpecialPage
 	 *
 	 * @return void
@@ -79,7 +77,7 @@ class SpecialFamilyTree extends SpecialPage {
 	 *
 	 * @param string $par the url part
 	 *
-	 * @return boolean the status of the rendered page
+	 * @return bool the status of the rendered page
 	 */
 	public function execute( $par ) {
 		global $wgOut;
@@ -112,10 +110,10 @@ class SpecialFamilyTree extends SpecialPage {
 
 			$familytree->render();
 		} catch ( SemanticGenealogyException $e ) {
-			$wgOut->addWikiText( '<span class="error">' .  $e->getMessage() . '</span>' );
+			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
 			return Status::newFatal( $e->getMessage() );
 		} catch ( Exception $e ) {
-			$wgOut->addWikiText( '<span class="error">' .  $e->getMessage() . '</span>' );
+			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
 			return Status::newFatal( $e->getMessage() );
 		}
 		return Status::newGood();
@@ -137,14 +135,14 @@ class SpecialFamilyTree extends SpecialPage {
 			$typeSelect = new XmlSelect( 'type', 'type', $this->type );
 			foreach ( $trees as $tree ) {
 				$typeSelect->addOption(
-					$this->msg( 'semanticgenealogy-specialfamilytree-type-'.$tree::NAME )->text(), $tree::NAME );
+					$this->msg( 'semanticgenealogy-specialfamilytree-type-' . $tree::NAME )->text(), $tree::NAME );
 			}
 			$decorators = TreeDecoratorFactory::listDecorators();
 			$decoratorSelect = new XmlSelect( 'decorator', 'decorator', $this->decorator );
 			foreach ( $decorators as $decorator ) {
 				$decoratorSelect->addOption(
 					$this->msg(
-						'semanticgenealogy-specialfamilytree-decorator-'.$decorator::NAME )->text(),
+						'semanticgenealogy-specialfamilytree-decorator-' . $decorator::NAME )->text(),
 						$decorator::NAME
 					   );
 			}
@@ -221,7 +219,7 @@ class SpecialFamilyTree extends SpecialPage {
 			if ( $this->page ) {
 				$output->addHTML(
 					$this->msg( 'semanticgenealogy-specialfamilytree-label-insert-code' )->text()
-					."<br/>\n<code>".$this->getWikiCode()."</code><br/><br/>" );
+					. "<br/>\n<code>" . $this->getWikiCode() . "</code><br/><br/>" );
 
 			}
 		}
@@ -233,12 +231,12 @@ class SpecialFamilyTree extends SpecialPage {
 	 * @return string the wiki code
 	 */
 	private function getWikiCode() {
-		$code = "{{".preg_replace( "/Special/", "$0:", get_class( $this ) );
+		$code = "{{" . preg_replace( "/Special/", "$0:", get_class( $this ) );
 		foreach ( $this->params as $param ) {
 			if ( !$this->$param ) {
 				continue;
 			}
-			$code .= "|".$param."=".$this->$param;
+			$code .= "|" . $param . "=" . $this->$param;
 		}
 		$code .= "}}";
 		return $code;
@@ -247,7 +245,7 @@ class SpecialFamilyTree extends SpecialPage {
 	/**
 	 * Wether the page is cachable
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isCacheable() {
 		return false;

@@ -8,7 +8,7 @@
  * @file    AncestorsFamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
@@ -39,24 +39,26 @@ class AncestorsFamilyTree extends FamilyTree {
 	public function render() {
 		$tree = $this->getAncestors();
 		$output = $this->getOutput();
-		$output->addHTML( '<table class="decorator-'.$this->decorator. ' smg-tree-root-ancestors">' );
+		$output->addHTML( '<table class="decorator-' . $this->decorator . ' smg-tree-root-ancestors">' );
 
 		$col = 1;
 		for ( $i = $this->numOfGenerations - 1; $i >= 0; $i-- ) {
 			if ( isset( $tree[$i] ) ) {
 				$output->addHTML( '<tr class="smg-tree-line">' );
 				foreach ( $tree[$i] as $sosa => $person ) {
-					$output->addHTML( '<td class="smg-tree-person col-width-'.$col.'" colspan="'.$col.'">' );
+					$output->addHTML(
+						'<td class="smg-tree-person col-width-' . $col . '" colspan="' . $col . '">'
+					);
 					if ( $person !== null ) {
-						$output->addHTML( '<span class="sosa-num">'.$sosa.'</span><br/>' );
+						$output->addHTML( '<span class="sosa-num">' . $sosa . '</span><br/>' );
 						$output->addWikiText( $person->getDescriptionWikiText( true, $this->displayName ) );
 						if ( $sosa != 1 ) {
 							if ( $sosa % 2 == 0 ) {
 								$output->addHTML( '<table class="father-link"><tr><td></td><td></td><td></td></tr>'
-									.'<tr><td></td><td></td><td></td></tr></table>' );
+									. '<tr><td></td><td></td><td></td></tr></table>' );
 							} else {
 								$output->addHTML( '<table class="mother-link"><tr><td></td><td></td><td></td></tr>'
-									.'<tr><td></td><td></td><td></td></tr></table>' );
+									. '<tr><td></td><td></td><td></td></tr></table>' );
 							}
 						}
 					}

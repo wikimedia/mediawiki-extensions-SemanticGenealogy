@@ -6,7 +6,7 @@
  * @file    GenealogicalFilePrinter.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 abstract class GenealogicalFilePrinter {

@@ -9,7 +9,7 @@
  * @file    LinkFamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
@@ -140,8 +140,8 @@ class LinkFamilyTree extends FamilyTree {
 		list( $tree1, $tree2 ) = $tree;
 
 		$length = max( count( $tree1 ), count( $tree2 ) );
-		$output->addHTML( '<table class="decorator-'.$this->decorator.' smg-tree-root-link">' );
-		$output->addHTML( '<tr><td colspan="'.pow( 2, $length-1 ).'">' );
+		$output->addHTML( '<table class="decorator-' . $this->decorator . ' smg-tree-root-link">' );
+		$output->addHTML( '<tr><td colspan="' . pow( 2, $length - 1 ) . '">' );
 		$person = $tree1[0];
 		if ( $person->fullname instanceof SMWDIBlob ) {
 			$output->addWikiText( $person->getDescriptionWikiText( false, $this->displayName ) );
@@ -165,21 +165,21 @@ class LinkFamilyTree extends FamilyTree {
 	}
 
 	private function renderPerson( $person, $length, $i, $index, $side ) {
-		$colspan = pow( 2, $length-$i-1 );
-		$colwidth = pow( 2, $i-1 );
+		$colspan = pow( 2, $length - $i - 1 );
+		$colwidth = pow( 2, $i - 1 );
 		$output = $this->getOutput();
-		$emptytd = '<td colspan="'.$colspan.'" style="min-width: 30px">&nbsp;</td>';
+		$emptytd = '<td colspan="' . $colspan . '" style="min-width: 30px">&nbsp;</td>';
 
-		if ( ! $person ) {
+		if ( !$person ) {
 			$output->addHTML( str_repeat( $emptytd, $colwidth ) );
-			return $index*2;
+			return $index * 2;
 		}
 		$class = "";
 
-		$index = $i == 1 ? 0 : $index*2 + ( $person->sex == 'M' ? 0 : 1 );
+		$index = $i == 1 ? 0 : $index * 2 + ( $person->sex == 'M' ? 0 : 1 );
 		$output->addHTML( str_repeat( $emptytd, $index ) );
 		if ( $person->fullname instanceof SMWDIBlob ) {
-			$output->addHTML( '<td colspan="'.$colspan.'">' );
+			$output->addHTML( '<td colspan="' . $colspan . '">' );
 			// ( $person->sex == 'M' ? '/' : '\\' ).'<br/>' .
 			if ( $i == 1 ) {
 				$class = $side == 'left' ? 'father' : 'mother';
@@ -187,16 +187,16 @@ class LinkFamilyTree extends FamilyTree {
 				$class = $person->sex == 'M' ? 'father' : 'mother';
 			}
 
-			$parentLink = '<table class="'.$class.'-link">'
-				.'<tr><td></td><td></td><td></td></tr>'
-				.'<tr><td></td><td></td><td></td></tr></table>';
+			$parentLink = '<table class="' . $class . '-link">'
+				. '<tr><td></td><td></td><td></td></tr>'
+				. '<tr><td></td><td></td><td></td></tr></table>';
 			$output->addHTML( $parentLink );
 			$output->addWikiText(
 				$person->getDescriptionWikiText( false, $this->displayName )
 			);
 			$output->addHTML( '</td>' );
 		}
-		$indextail = $colwidth-1-$index;
+		$indextail = $colwidth - 1 - $index;
 		$output->addHTML( str_repeat( $emptytd, $indextail ) );
 		return $index;
 	}

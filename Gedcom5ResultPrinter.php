@@ -6,7 +6,7 @@
  * @file    GedcomResultPrinter.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 class Gedcom5ResultPrinter extends SMWResultPrinter {
@@ -63,7 +63,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	 * Get the result test of the result printer
 	 *
 	 * @param SMWQueryResult $res
-	 * @param integer $outputmode the output mode chosen
+	 * @param int $outputmode the output mode chosen
 	 *
 	 * @return string the result text
 	 */

@@ -7,7 +7,7 @@
  * @file    SemanticGenealogy.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 
@@ -29,17 +29,17 @@ if ( version_compare( $wgVersion, '1.23', '<' ) ) {
 }
 
 // Show a warning if Semantic MediaWiki is not loaded.
-if ( ! defined( 'SMW_VERSION' ) ) {
+if ( !defined( 'SMW_VERSION' ) ) {
 	die( '<b>Error:</b> You need to have '
-		.'<a href="https://semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic MediaWiki</a> '
-		.'installed in order to use '
-		.'<a href="https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy">Semantic Genealogy</a>.<br />'
+		. '<a href="https://semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic MediaWiki</a> '
+		. 'installed in order to use '
+		. '<a href="https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy">Semantic Genealogy</a>.'
 	);
 }
 
 if ( version_compare( SMW_VERSION, '1.7.0 alpha', '<' ) ) {
 	die( '<b>Error:</b> This version of Semantic Genealogy requires '
-		.'Semantic MediaWiki 1.7 or above.' );
+		. 'Semantic MediaWiki 1.7 or above.' );
 }
 
 // Beware, SG_VERSION conflicts with SemanticGlossary

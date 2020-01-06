@@ -8,7 +8,7 @@
  * @file    DescendantListFamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
@@ -29,10 +29,10 @@ class DescendantListFamilyTree extends FamilyTree {
 		$output->addHTML( '<div class="descendant-line">' );
 		$children = $person->getChildren();
 		$count = 1;
-		$depth = substr_count( $pellissier, '.' )+1;
+		$depth = substr_count( $pellissier, '.' ) + 1;
 		foreach ( $children as $child ) {
 			$pel = $pellissier . $count . '.';
-			$output->addHtml( '<span class="number depth-'.$depth.'">'.$pel.'</span> ' );
+			$output->addHtml( '<span class="number depth-' . $depth . '">' . $pel . '</span> ' );
 			$output->addWikiText( $child->getDescriptionWikiText( false ) );
 			if ( $end > 0 ) {
 				$this->outputDescendantLine( $child, $pel, $end - 1 );
@@ -49,7 +49,7 @@ class DescendantListFamilyTree extends FamilyTree {
 	 */
 	public function render() {
 		$output = $this->getOutput();
-		$output->addHTML( '<div class="decorator-'.$this->decorator. ' smg-tree-root-descendant">' );
+		$output->addHTML( '<div class="decorator-' . $this->decorator . ' smg-tree-root-descendant">' );
 		$main = new PersonPageValues( $this->person );
 		$output->addWikiText( $main->getDescriptionWikiText( false ) );
 		$this->outputDescendantLine( $main, '', $this->numOfGenerations );

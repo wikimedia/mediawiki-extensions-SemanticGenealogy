@@ -6,7 +6,7 @@
  * @file    PersonPageValues.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 class PersonPageValues {
@@ -166,7 +166,7 @@ class PersonPageValues {
 	/**
 	 * Generate the Person description wiki text based on the special pages options
 	 *
-	 * @param boolean $withBr adding <br> tags or not
+	 * @param bool $withBr adding <br> tags or not
 	 * @param string $displayName the display type tag
 	 *
 	 * @return string the text to display
@@ -175,7 +175,7 @@ class PersonPageValues {
 		$yearRegexp = "/.*\b(\d\d\d\d)\b.*/";
 		$text = '<div class="person-block">';
 		$text .= '<div class="person-name">';
-		$text .= '[[' . $this->title->getFullText() . '|' . $this->getPersonName( $displayName ). ']]';
+		$text .= '[[' . $this->title->getFullText() . '|' . $this->getPersonName( $displayName ) . ']]';
 		$text .= '</div>';
 		if ( $this->birthdate || $this->deathdate ) {
 			$text .= '<span class="person-dates">';

@@ -8,7 +8,7 @@
  * @file    FamilyTreeFactory.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
 class FamilyTreeFactory {
@@ -21,7 +21,7 @@ class FamilyTreeFactory {
 	 *
 	 * @return object a new FamilyTree Object
 	 */
-	public static function create( $name , $decorator ) {
+	public static function create( $name, $decorator ) {
 		$trees = static::listTrees();
 		foreach ( $trees as $tree ) {
 			if ( $name == $tree::NAME ) {

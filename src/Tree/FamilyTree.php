@@ -10,7 +10,7 @@
  * @file    FamilyTree.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  * @author  Thibault Taillandier <thibault@taillandier.name>
  */
@@ -26,9 +26,9 @@ abstract class FamilyTree {
 	protected $displayName;
 
 	/**
-	 * @param string $decorator the decorator name
+	 * @param string|null $decorator the decorator name
 	 */
-	public function __construct( $decorator=null ) {
+	public function __construct( $decorator = null ) {
 		$this->decorator = $decorator;
 	}
 
@@ -45,7 +45,7 @@ abstract class FamilyTree {
 	/**
 	 * Setter for the number of generations
 	 *
-	 * @param integer $numOfGenerations the number of generations
+	 * @param int $numOfGenerations the number of generations
 	 */
 	public function setNumberOfGenerations( $numOfGenerations ) {
 		$this->numOfGenerations = $numOfGenerations;
@@ -77,7 +77,7 @@ abstract class FamilyTree {
 	/**
 	 * Return the number of people in a generation
 	 *
-	 * @param  int $gen The number of the generation (beginning at 0)
+	 * @param int $gen The number of the generation (beginning at 0)
 	 * @return int
 	 */
 	public function getNumOfPeopleInGen( $gen ) {
@@ -91,7 +91,7 @@ abstract class FamilyTree {
 	/**
 	 * Add a generation in a tree
 	 *
-	 * @param integer $gen the generation number
+	 * @param int $gen the generation number
 	 * @param array $tree the tree to add in
 	 *
 	 * @return array the resulting tree

@@ -8,7 +8,7 @@
  * @file    Gedcom5FilePrinter.php
  * @ingroup SemanticGenealogy
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
 class Gedcom5FilePrinter extends GenealogicalFilePrinter {
@@ -103,8 +103,8 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	/**
 	 * Adds a family to a person
 	 *
-	 * @param integer $familyId the id of the family
-	 * @param integer $personId the id of the person
+	 * @param int $familyId the id of the family
+	 * @param int $personId the id of the person
 	 *
 	 * @return void
 	 */
@@ -150,13 +150,13 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	/**
 	 * Add the GEDCOM for a person
 	 *
-	 * @param integer $personId the id of the person
+	 * @param int $personId the id of the person
 	 * @param PersonPageValues $person
 	 *
 	 * @return void
 	 */
 	protected function addPerson( $personId, PersonPageValues $person ) {
-		$this->addRow( 0, '@I'. $personId . '@', 'INDI' );
+		$this->addRow( 0, '@I' . $personId . '@', 'INDI' );
 		$this->addRow( 1, 'NAME', $this->getGedcomName( $person ) );
 		$this->addStringValueAsRow( 2, 'GIVN', $person->givenname );
 		$this->addStringValueAsRow( 2, 'SURN', $person->surname );
@@ -166,11 +166,11 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 		$this->addStringValueAsRow( 1, 'SEX', $person->sex );
 		$familyId = $this->getFamilyIdForChild( $person );
 		if ( $familyId != '0S0' ) {
-			$this->addRow( 1, 'FAMC', '@F'. $familyId . '@' );
+			$this->addRow( 1, 'FAMC', '@F' . $familyId . '@' );
 		}
 		if ( isset( $this->familiesByPerson[$personId] ) ) {
 			foreach ( $this->familiesByPerson[$personId] as $familyId ) {
-				$this->addRow( 1, 'FAMS', '@F'. $familyId . '@' );
+				$this->addRow( 1, 'FAMS', '@F' . $familyId . '@' );
 			}
 		}
 		$this->addEvent( 'BIRT', $person->birthdate, $person->birthplace );
@@ -180,14 +180,14 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	/**
 	 * Adds family to the gedcom
 	 *
-	 * @param integer $familyId the id of the family
+	 * @param int $familyId the id of the family
 	 * @param array $children the children array
 	 *
 	 * @return void
 	 */
 	protected function addFamily( $familyId, $children ) {
 		list( $fatherId, $motherId ) = explode( 'S', $familyId );
-		$this->addRow( 0, '@F'. $familyId . '@', 'FAM' );
+		$this->addRow( 0, '@F' . $familyId . '@', 'FAM' );
 		if ( $fatherId != 0 ) {
 			$this->addRow( 1, 'HUSB', '@I' . $fatherId . '@' );
 		}
@@ -225,7 +225,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * @param string $level the level of the row
 	 * @param string $key
-	 * @param object $value
+	 * @param object|null $value
 	 *
 	 * @return void
 	 */
