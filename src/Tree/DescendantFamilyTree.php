@@ -18,8 +18,9 @@ class DescendantFamilyTree extends FamilyTree {
 	/**
 	 * Show the descendants tree
 	 *
-	 * @param object  $person              the target person to create the descendant tree
-	 * @param integer $numberOfGenerations number of generation to display
+	 * @param object $person the target person to create the descendant tree
+	 * @param int $numOfGenerations number of generation to display
+	 * @return object|bool
 	 */
 	private function showDescendants( $person, $numOfGenerations ) {
 		$output = $this->getOutput();
@@ -93,8 +94,8 @@ class DescendantFamilyTree extends FamilyTree {
 	/**
 	 * Determine the class to display
 	 *
-	 * @param integer $itemNumber the number of the current item
-	 * @param integer $nbChildren the number of total children
+	 * @param int $itemNumber the number of the current item
+	 * @param int $nbChildren the number of total children
 	 *
 	 * @return string the class name
 	 */

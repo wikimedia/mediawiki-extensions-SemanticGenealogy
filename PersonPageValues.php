@@ -122,7 +122,9 @@ class PersonPageValues {
 	/**
 	 * Sorter to compare 2 persons based on their date of birth
 	 *
-	 * @return integer a comparaison integer
+	 * @param PersonPageValues $personA
+	 * @param PersonPageValues $personB
+	 * @return int a comparaison integer
 	 */
 	private static function comparePeopleByBirthDate( PersonPageValues $personA,
 		PersonPageValues $personB ) {

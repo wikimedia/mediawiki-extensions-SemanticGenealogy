@@ -19,8 +19,8 @@ class DescendantListFamilyTree extends FamilyTree {
 	 * List the descendants for all needed generations
 	 *
 	 * @param PersonPageValues $person
-	 * @param string           $pellissier I don't know
-	 * @param integer          $end        counter to know whether we should stop
+	 * @param string $pellissier I don't know
+	 * @param int $end counter to know whether we should stop
 	 *
 	 * @return void
 	 */

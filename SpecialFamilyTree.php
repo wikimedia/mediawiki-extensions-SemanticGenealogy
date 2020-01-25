@@ -32,6 +32,7 @@ class SpecialFamilyTree extends SpecialPage {
 	/**
 	 * Parse the Form/Template parameters to feed the properties of the SpecialPage
 	 *
+	 * @param string $par
 	 * @return void
 	 */
 	private function parseParameters( $par ) {
