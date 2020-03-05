@@ -21,7 +21,7 @@
 	"semanticgenealogy-specialfamilytree-label-decorator": "Stil",
 	"semanticgenealogy-specialfamilytree-label-displayname": "Gösterilecek isim",
 	"semanticgenealogy-specialfamilytree-label-gen": "Üretim sayısı",
-	"semanticgenealogy-specialfamilytree-label-insert-code": "Bu ağacı bir sayfaya eklemek için aşağıdaki wiki kodunu ekleyin:",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Bu ağacı bir sayfaya eklemek için aşağıdaki viki kodunu ekleyin:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "\"{{int:semantic genealogy-specialfamilytree-label-page2}}\" alanına bir kişinin sayfasının adını sağlamanız gerekir.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]] ve [[$2]] arasında bağlantı bulunamadı.",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1 türü bilinmiyor.",
