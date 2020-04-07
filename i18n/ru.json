@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras",
 			"Alexandr Efremov",
-			"Mouse21"
+			"Mouse21",
+			"Okras"
 		]
 	},
 	"semanticgenealogy-desc": "Обеспечивает возможность просмотра генеалогических деревьев и импорт/экспорт GEDCOM-файлов",

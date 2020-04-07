@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki",
-			"Kly"
+			"Kly",
+			"Shirayuki"
 		]
 	},
 	"semanticgenealogy-desc": "提供可查看族譜圖以及匯入/匯出 GEDCOM 檔案功能",

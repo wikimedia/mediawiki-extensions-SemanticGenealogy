@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
-			"Luckas",
-			"Luckas Blade",
 			"Dianakc",
+			"Eduardo Addad de Oliveira",
 			"Jaideraf",
-			"Eduardo Addad de Oliveira"
+			"Luckas",
+			"Luckas Blade"
 		]
 	},
 	"semanticgenealogy-desc": "Fornece a habilidade de ver árvores genealógicas e importar/exportar arquivos GEDCOM",

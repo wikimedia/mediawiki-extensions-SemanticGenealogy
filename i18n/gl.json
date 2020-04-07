@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño",
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"semanticgenealogy-desc": "Proporciona a posibilidade de ver árbores xenealóxicas e importar e exportar ficheiros GEDCOM",

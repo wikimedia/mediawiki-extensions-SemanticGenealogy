@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"Piramidion",
 			"Steve.rusyn",
-			"SteveR",
-			"Piramidion"
+			"SteveR"
 		]
 	},
 	"semanticgenealogy-desc": "Забезпечує можливість перегляду дерев родоводу і імпорту/експорту файлів GEDCOM",

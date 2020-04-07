@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Li3939108",
+			"Linforest",
 			"Liuxinyu970226",
 			"Shirayuki",
-			"Yfdyh000",
-			"Linforest"
+			"Yfdyh000"
 		]
 	},
 	"semanticgenealogy-desc": "提供查看家谱树和导入/导出GEDCOM文件的能力",
