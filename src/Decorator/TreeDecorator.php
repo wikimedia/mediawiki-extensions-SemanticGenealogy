@@ -1,6 +1,5 @@
 <?php
 
-
 abstract class TreeDecorator {
 
 	const NAME = 'root';

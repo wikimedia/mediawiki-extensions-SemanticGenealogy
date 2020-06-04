@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 class SimpleDecorator extends TreeDecorator {
 
 	const NAME = 'simple';
