@@ -18,9 +18,9 @@ class DescendantFamilyTree extends FamilyTree {
 	/**
 	 * Show the descendants tree
 	 *
-	 * @param object $person the target person to create the descendant tree
+	 * @param PersonPageValues $person the target person to create the descendant tree
 	 * @param int $numOfGenerations number of generation to display
-	 * @return object|bool
+	 * @return PersonPageValues|bool
 	 */
 	private function showDescendants( $person, $numOfGenerations ) {
 		$output = $this->getOutput();

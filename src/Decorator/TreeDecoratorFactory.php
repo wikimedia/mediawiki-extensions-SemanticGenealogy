@@ -7,7 +7,7 @@ class TreeDecoratorFactory {
 	 *
 	 * @param string $name the name of the wanted FamilyTree
 	 *
-	 * @return object a new FamilyTree Object
+	 * @return FamilyTree
 	 */
 	public static function create( $name ) {
 		$decorators = static::listDecorators();

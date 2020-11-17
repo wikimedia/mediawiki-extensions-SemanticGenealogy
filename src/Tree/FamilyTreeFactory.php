@@ -19,7 +19,7 @@ class FamilyTreeFactory {
 	 * @param string $name the name of the wanted FamilyTree
 	 * @param string $decorator the decorator name
 	 *
-	 * @return object a new FamilyTree Object
+	 * @return FamilyTree
 	 */
 	public static function create( $name, $decorator ) {
 		$trees = static::listTrees();

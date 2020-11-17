@@ -54,7 +54,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	/**
 	 * Get the family Id if the given child
 	 *
-	 * @param object $child the PersonPageValues object of the child
+	 * @param PersonPageValues $child the PersonPageValues object of the child
 	 *
 	 * @return string the key
 	 */
@@ -85,7 +85,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * Adds a child to a family
 	 *
 	 * @param string $familyKey the family key
-	 * @param object $child the PersonPageValues object of the child to add
+	 * @param PersonPageValues $child the PersonPageValues object of the child to add
 	 *
 	 * @return void
 	 */
