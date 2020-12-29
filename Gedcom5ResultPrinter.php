@@ -15,7 +15,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	/**
 	 * Get the mimetype of the result printer
 	 *
-	 * @param string|object $res the result printer
+	 * @param string|SMWQueryResult $res the result printer
 	 *
 	 * @return string the mimetype
 	 */
@@ -26,7 +26,7 @@ class Gedcom5ResultPrinter extends SMWResultPrinter {
 	/**
 	 * Get the filename of the result printer
 	 *
-	 * @param string|object $res the result printer
+	 * @param string|SMWQueryResult $res the result printer
 	 *
 	 * @return string the filename
 	 */

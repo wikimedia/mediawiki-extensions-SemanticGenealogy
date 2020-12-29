@@ -225,7 +225,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * @param string $level the level of the row
 	 * @param string $key
-	 * @param object|null $value
+	 * @param string|null $value
 	 *
 	 * @return void
 	 */
@@ -243,8 +243,8 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * TODO add places metadata support.
 	 *
 	 * @param string $type
-	 * @param string $date
-	 * @param string $place
+	 * @param SMWDITime|null $date
+	 * @param SMWDIWikiPage|string|null $place
 	 *
 	 * @return void
 	 */
@@ -266,7 +266,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * @param string $level the level of the row
 	 * @param string $key
-	 * @param object $value the string value
+	 * @param SMWDIBlob $value
 	 *
 	 * @return void
 	 */
@@ -281,7 +281,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * @param string $level the level of the row
 	 * @param string $key
-	 * @param object $value the time value
+	 * @param SMWDITime $value the time value
 	 *
 	 * @return void
 	 */
@@ -298,7 +298,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 *
 	 * @param string $level the level of the row
 	 * @param string $key
-	 * @param object $value the wiki page value
+	 * @param SMWDIWikiPage $value the wiki page value
 	 *
 	 * @return void
 	 */
