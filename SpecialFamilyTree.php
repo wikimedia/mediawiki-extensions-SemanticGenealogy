@@ -21,8 +21,6 @@ class SpecialFamilyTree extends SpecialPage {
 
 	/**
 	 * @param string $name the name of the SpecialPage
-	 *
-	 * @return void
 	 */
 	public function __construct( $name = 'FamilyTree' ) {
 		parent::__construct( $name, '' );
@@ -77,8 +75,6 @@ class SpecialFamilyTree extends SpecialPage {
 	 * Execute the Special Page
 	 *
 	 * @param string $par the url part
-	 *
-	 * @return bool the status of the rendered page
 	 */
 	public function execute( $par ) {
 		global $wgOut;
@@ -112,12 +108,9 @@ class SpecialFamilyTree extends SpecialPage {
 			$familytree->render();
 		} catch ( SemanticGenealogyException $e ) {
 			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
-			return Status::newFatal( $e->getMessage() );
 		} catch ( Exception $e ) {
 			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
-			return Status::newFatal( $e->getMessage() );
 		}
-		return Status::newGood();
 	}
 
 	/**
