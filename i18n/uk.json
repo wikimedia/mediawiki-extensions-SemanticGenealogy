@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Piramidion",
 			"Steve.rusyn",
 			"SteveR"
@@ -9,6 +10,7 @@
 	},
 	"semanticgenealogy-desc": "Забезпечує можливість перегляду дерев родоводу і імпорту/експорту файлів GEDCOM",
 	"semanticgenealogy-gedcomexport-desc": "Експорт GEDCOM",
+	"semanticgenealogy-gedcomexport-link": "GEDCOM",
 	"semanticgenealogy-specialfamilytree-title": "Створити генеалогічне дерево",
 	"semanticgenealogy-specialfamilytree-button-submit": "Створити",
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Предки",
