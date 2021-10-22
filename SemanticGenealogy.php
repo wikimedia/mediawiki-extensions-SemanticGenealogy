@@ -116,7 +116,7 @@ $wgResourceModules['ext.smg.specialfamilytree'] = $moduleTemplate + [
 	'scripts' => 'modules/specialFamilyTree.js',
 	'styles' => 'modules/styles.css',
 	'dependencies' => [
-		'jquery.ui.autocomplete'
+		'jquery.ui'
 	],
 	'messages' => [
 	]
