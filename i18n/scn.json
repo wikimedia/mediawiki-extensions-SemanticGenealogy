@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"semanticgenealogy-specialfamilytree-button-submit": "Crea",
+	"semanticgenealogy-specialfamilytree-type-link": "Culligamentu",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Sìmprici",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nomu cumpretu",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nomu dâ pàggina",
+	"semanticgenealogy-specialfamilytree-label-page2": "Àutra pirsona",
+	"semanticgenealogy-specialfamilytree-label-type": "Tipu",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nomu da ammustrari",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Lu tipu $1 è scanusciutu."
+}

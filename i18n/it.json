@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Darth Kule"
+			"Darth Kule",
+			"Ajeje Brazorf"
 		]
 	},
 	"semanticgenealogy-desc": "Permette di visualizzare alberi genealogici e importare/esportare file GEDCOM",
@@ -12,7 +13,7 @@
 	"semanticgenealogy-specialfamilytree-type-descendant": "Discendenti",
 	"semanticgenealogy-specialfamilytree-type-link": "Collegamento",
 	"semanticgenealogy-specialfamilytree-label-page": "Persona di partenza",
-	"semanticgenealogy-specialfamilytree-label-page2": "Altra persona:",
+	"semanticgenealogy-specialfamilytree-label-page2": "Altra persona",
 	"semanticgenealogy-specialfamilytree-label-type": "Tipo",
 	"semanticgenealogy-specialfamilytree-label-gen": "Numero della generazione",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "È necessario specificare il nome della pagina di una persona nel campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
