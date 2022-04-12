@@ -3,11 +3,12 @@
 		"authors": [
 			"Armin1392",
 			"Ebraminio",
-			"Mjbmr"
+			"Mjbmr",
+			"Beginneruser"
 		]
 	},
-	"semanticgenealogy-desc": "ارائه توانایی برای مشاهده سلسله درختان و واردات/صادرات پوشه‌های جدکام",
-	"semanticgenealogy-gedcomexport-desc": "صادرات جی‌ای‌دی‌سی‌اُ‌ام",
+	"semanticgenealogy-desc": "توانایی مشاهده درخت‌های شجره‌نامه و درون‌ریزی/برون‌بری پرونده‌های GEDCOM ارائه می‌دهد.",
+	"semanticgenealogy-gedcomexport-desc": "برون‌بری GEDCOM",
 	"semanticgenealogy-specialfamilytree-title": "ایجاد یک شجره‌نامه",
 	"semanticgenealogy-specialfamilytree-button-submit": "ایجاد",
 	"semanticgenealogy-specialfamilytree-type-ancestors": "اجداد",
