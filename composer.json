@@ -34,13 +34,14 @@
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules --exclude extensions",
-			"phpcs -p -s",
+			"@phpcs",
 			"minus-x check ."
 		],
 		"fix": [
 			"minus-x fix .",
 			"phpcbf"
-		]
+		],
+		"phpcs": "phpcs -sp --cache"
 	},
 	"autoload": {
 		"files": [],
