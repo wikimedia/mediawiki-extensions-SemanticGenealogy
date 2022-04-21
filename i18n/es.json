@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Fitoschido"
+			"Fitoschido",
+			"DiegoAmbrocio"
 		]
 	},
 	"semanticgenealogy-desc": "Proporciona la capacidad de ver árboles genealógicos e importar/exportar archivos GEDCOM",
@@ -12,6 +13,8 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Antepasados",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Descendientes",
 	"semanticgenealogy-specialfamilytree-type-link": "Enlace",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Simple",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Cajas",
 	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nombre completo",
 	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nombre de la página",
 	"semanticgenealogy-specialfamilytree-label-page": "Persona base",
