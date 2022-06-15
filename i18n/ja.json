@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
-			"Shirayuki"
+			"Shirayuki",
+			"Omotecho"
 		]
 	},
 	"semanticgenealogy-desc": "家系図を表示したり GEDCOM ファイルを取り込み/書き出ししたりする機能を提供する",
@@ -12,11 +13,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "祖先",
 	"semanticgenealogy-specialfamilytree-type-descendant": "子孫",
 	"semanticgenealogy-specialfamilytree-type-link": "リンク",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "省略形",
+	"semanticgenealogy-specialfamilytree-decorator-box": "記入欄",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "フルネーム",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "ページ名",
 	"semanticgenealogy-specialfamilytree-label-page": "基準の人",
 	"semanticgenealogy-specialfamilytree-label-page2": "その他の人",
 	"semanticgenealogy-specialfamilytree-label-type": "種類",
+	"semanticgenealogy-specialfamilytree-label-decorator": "文字修飾",
+	"semanticgenealogy-specialfamilytree-label-displayname": "表示名",
 	"semanticgenealogy-specialfamilytree-label-gen": "世代数",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "この樹形図を特定のページに挿入するには、以下のウィキコードを追加します。",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "「{{int:semanticgenealogy-specialfamilytree-label-page2}}」欄に人物のページの名前を指定する必要があります。",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]]と[[$2]]の間にリンクが見つかりません。",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1 という種類は不明です。"
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1 という種類は不明です。",
+	"specialpages-group-genealogy": "家系図"
 }
