@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"semanticgenealogy-desc": "Forni le capacitate de vider arbores genealogic e importar/exportar files GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "Exportation in GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "Crear un arbore genealogic",
+	"semanticgenealogy-specialfamilytree-button-submit": "Crear",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Ancestres",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Descendente",
+	"semanticgenealogy-specialfamilytree-type-link": "Ligamine",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Simple",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Cassas",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Nomine complete",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Nomine de pagina",
+	"semanticgenealogy-specialfamilytree-label-page": "Persona de base",
+	"semanticgenealogy-specialfamilytree-label-page2": "Altere persona",
+	"semanticgenealogy-specialfamilytree-label-type": "Typo",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Stilo",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Nomine a monstrar",
+	"semanticgenealogy-specialfamilytree-label-gen": "Numero del generation",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Pro inserer iste arbore in un pagina, adde le sequente codice wiki:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Tu debe fornir le nomine del pagina de un persona in le campo \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Nulle ligamine trovate inter [[$1]] e [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Le typo $1 es incognite.",
+	"specialpages-group-genealogy": "Genealogia"
+}
