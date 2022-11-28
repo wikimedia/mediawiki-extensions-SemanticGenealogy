@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
-	"semanticgenealogy-specialfamilytree-button-submit": "Räähti"
+	"semanticgenealogy-specialfamilytree-button-submit": "Räähti",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Sijđonommâ"
 }
