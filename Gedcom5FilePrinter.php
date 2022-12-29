@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Gedcom5FilePrinter object
  *
@@ -287,7 +289,12 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 */
 	protected function addTimeValueAsRow( $level, $key, $value ) {
 		if ( $value instanceof SMWDITime ) {
-			$lang = Language::factory( 'en' );
+			if ( method_exists( MediaWikiServices::class, 'getLanguageFactory' ) ) {
+				// MW 1.35+
+				$lang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( 'en' );
+			} else {
+				$lang = Language::factory( 'en' );
+			}
 			$this->addRow( $level, $key,
 				strtoupper( $lang->sprintfDate( 'd M Y', $value->getMwTimestamp( TS_MW ) ) ) );
 		}
