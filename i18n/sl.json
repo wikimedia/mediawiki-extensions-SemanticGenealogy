@@ -4,8 +4,26 @@
 			"Eleassar"
 		]
 	},
+	"semanticgenealogy-desc": "Omogoča ogled genealoških dreves in uvoz/izvoz datotek GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "Izvoz GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "Ustvaritev družinskega drevesa",
 	"semanticgenealogy-specialfamilytree-button-submit": "Ustvari",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Predniki",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Potomec",
 	"semanticgenealogy-specialfamilytree-type-link": "Povezava",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Preprosto",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Polja",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Celotno ime",
 	"semanticgenealogy-specialfamilytree-displayname-pagename": "Ime strani",
-	"semanticgenealogy-specialfamilytree-label-type": "Vrsta"
+	"semanticgenealogy-specialfamilytree-label-page": "Izhodiščna oseba",
+	"semanticgenealogy-specialfamilytree-label-page2": "Druga oseba",
+	"semanticgenealogy-specialfamilytree-label-type": "Vrsta",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Oblikovanje",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Ime za prikaz",
+	"semanticgenealogy-specialfamilytree-label-gen": "Število generacij",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Za vstavitev tega drevesa v stran uporabite naslednjo vikikodo:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "V polju »{{int:semanticgenealogy-specialfamilytree-label-page2}}« morate navesti ime strani osebe.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Ni najdene povezave med [[$1]] in [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Vrsta $1 je neznana.",
+	"specialpages-group-genealogy": "Genealogija"
 }
