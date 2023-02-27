@@ -4,5 +4,26 @@
 			"Amire80"
 		]
 	},
-	"semanticgenealogy-specialfamilytree-displayname-fullname": "שם מלא"
+	"semanticgenealogy-desc": "אספקת היכולת להציג עצי גנאלוגיה ולייבא/לייצא קובצי GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "יצוא GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "צור אילן יוחסין",
+	"semanticgenealogy-specialfamilytree-button-submit": "יצירה",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "אבות קדמונים",
+	"semanticgenealogy-specialfamilytree-type-descendant": "צאצא",
+	"semanticgenealogy-specialfamilytree-type-link": "קישור",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "פשוט",
+	"semanticgenealogy-specialfamilytree-decorator-box": "תיבות",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "שם מלא",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "שם הדף",
+	"semanticgenealogy-specialfamilytree-label-page": "איש בסיס",
+	"semanticgenealogy-specialfamilytree-label-page2": "אדם אחר",
+	"semanticgenealogy-specialfamilytree-label-type": "סוג",
+	"semanticgenealogy-specialfamilytree-label-decorator": "עיצוב",
+	"semanticgenealogy-specialfamilytree-label-displayname": "השם לתצוגה",
+	"semanticgenealogy-specialfamilytree-label-gen": "מספר הדור",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "כדי להכניס את העץ הזה לדף, יש להוסיף את קוד הוויקי הבא:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "יש לספק שם של דף אנשים בשדה \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "לא נמצא קישור בין [[$1]] לבין [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "הסוג $1 אינו ידוע.",
+	"specialpages-group-genealogy": "גנאלוגיה"
 }
