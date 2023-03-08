@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Pacha Tchernof"
 		]
 	},
-	"semanticgenealogy-specialfamilytree-button-submit": "שאַפֿן"
+	"semanticgenealogy-specialfamilytree-button-submit": "שאַפֿן",
+	"semanticgenealogy-specialfamilytree-type-link": "לינק"
 }
