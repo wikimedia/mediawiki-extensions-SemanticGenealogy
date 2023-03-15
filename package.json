@@ -7,8 +7,8 @@
 	"version": "0.3.0",
 	"description": "MediaWiki extension to deal with Genealogy",
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.22.1",
-		"grunt": "1.5.3",
+		"eslint-config-wikimedia": "0.24.0",
+		"grunt": "1.6.1",
 		"grunt-banana-checker": "0.10.0",
 		"grunt-contrib-clean": "2.0.0",
 		"grunt-contrib-sass": "1.0.0",
