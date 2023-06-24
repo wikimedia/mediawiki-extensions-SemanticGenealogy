@@ -48,5 +48,10 @@
 		"classmap": [
 			"src/"
 		]
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
