@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"semanticgenealogy-desc": "Maakt het mogelijk om stambomen te bekijken deze GEDCOM-bestanden te importeren en exporteren",
@@ -11,11 +12,19 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Voorouders",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Nakomeling",
 	"semanticgenealogy-specialfamilytree-type-link": "Relatie",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Eenvoudig",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Dozen",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Volledige naam",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Paginanaam",
 	"semanticgenealogy-specialfamilytree-label-page": "Basispersoon",
 	"semanticgenealogy-specialfamilytree-label-page2": "Andere persoon",
 	"semanticgenealogy-specialfamilytree-label-type": "Type",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Opmaak",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Weer te geven naam",
 	"semanticgenealogy-specialfamilytree-label-gen": "Nummer voor generatie",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Om deze boom in een pagina te plaatsen, voegt u de volgende wikicode toe:",
 	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "U  moet de naam van een persoonspagina invullen in het veld \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Er is geen relatie gevonden tussen [[$1]] en [[$2]].",
-	"semanticgenealogy-specialfamilytree-error-unknowntype": "Het type \"$1\" is onbekend."
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Het type \"$1\" is onbekend.",
+	"specialpages-group-genealogy": "Genealogie"
 }
