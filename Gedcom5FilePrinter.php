@@ -46,7 +46,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 			$familyId = $this->getFamilyIdForChild( $child );
 			if ( $familyId != '0S0' ) {
 				$this->addChildToFamily( $familyId, $child );
-				list( $fatherId, $motherId ) = explode( 'S', $familyId );
+				[ $fatherId, $motherId ] = explode( 'S', $familyId );
 				$this->addFamilyToPerson( $familyId, $fatherId );
 				$this->addFamilyToPerson( $familyId, $motherId );
 			}
@@ -188,7 +188,7 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * @return void
 	 */
 	protected function addFamily( $familyId, $children ) {
-		list( $fatherId, $motherId ) = explode( 'S', $familyId );
+		[ $fatherId, $motherId ] = explode( 'S', $familyId );
 		$this->addRow( 0, '@F' . $familyId . '@', 'FAM' );
 		if ( $fatherId != 0 ) {
 			$this->addRow( 1, 'HUSB', '@I' . $fatherId . '@' );

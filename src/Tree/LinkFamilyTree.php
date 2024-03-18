@@ -50,7 +50,7 @@ class LinkFamilyTree extends FamilyTree {
 			if ( $tree1[$i + 1] !== null ) {
 				$result = $this->compareGenWith( $tree1[$i + 1], $tree2, $i );
 				if ( $result !== null ) {
-					list( $sosa1, $sosa2 ) = $result;
+					[ $sosa1, $sosa2 ] = $result;
 					break;
 				}
 			}
@@ -59,7 +59,7 @@ class LinkFamilyTree extends FamilyTree {
 			if ( $tree2[$i + 1] !== null ) {
 				$result = $this->compareGenWith( $tree2[$i + 1], $tree1, $i + 1 );
 				if ( $result !== null ) {
-					list( $sosa2, $sosa1 ) = $result;
+					[ $sosa2, $sosa1 ] = $result;
 					break;
 				}
 			}
@@ -137,7 +137,7 @@ class LinkFamilyTree extends FamilyTree {
 				$this->personName, $this->personName2 )->text()
 			);
 		}
-		list( $tree1, $tree2 ) = $tree;
+		[ $tree1, $tree2 ] = $tree;
 
 		$length = max( count( $tree1 ), count( $tree2 ) );
 		$output->addHTML( '<table class="decorator-' . $this->decorator . ' smg-tree-root-link">' );
