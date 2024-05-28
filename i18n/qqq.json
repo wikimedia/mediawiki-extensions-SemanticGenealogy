@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
+			"Pppery",
 			"Shirayuki",
 			"Thibault Taillandier",
 			"Thomas Pellissier Tanon",
@@ -16,7 +17,7 @@
 	"semanticgenealogy-specialfamilytree-type-ancestors": "Label of an ancestors tree.",
 	"semanticgenealogy-specialfamilytree-type-descendant": "Label of a descendants tree.",
 	"semanticgenealogy-specialfamilytree-type-link": "Label of the search of the closest family link between two people.\n{{Identical|Link}}",
-	"semanticgenealogy-specialfamilytree-decorator-simple": "Label for the simple Decorator name\n{{Identical|Simple}}",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Label for the simple Decorator name",
 	"semanticgenealogy-specialfamilytree-decorator-box": "Label for the boxes Decorator name\n{{Identical|Box}}",
 	"semanticgenealogy-specialfamilytree-displayname-fullname": "Label for the full name display mode\n{{Identical|Full name}}",
 	"semanticgenealogy-specialfamilytree-displayname-pagename": "Label for the page name display mode\n{{Identical|Page name}}",
