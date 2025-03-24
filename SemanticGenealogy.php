@@ -24,8 +24,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point.' );
 }
 
-if ( version_compare( $wgVersion, '1.35', '<' ) ) {
-	die( '<b>Error:</b> This version of Semantic Genealogy requires MediaWiki 1.35 or above.' );
+if ( version_compare( $wgVersion, '1.35.4', '<' ) ) {
+	die( '<b>Error:</b> This version of Semantic Genealogy requires MediaWiki 1.35.4 or above.' );
 }
 
 // Show a warning if Semantic MediaWiki is not loaded.
