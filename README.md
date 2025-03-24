@@ -15,7 +15,7 @@ Requirements
 ------------
 
 Semantic Genealogy requires:
-* MediaWiki 1.23 or above
+* MediaWiki 1.35 or above
 * Semantic MediaWiki 1.7 or above
 * PHP 5.4 or above
 
