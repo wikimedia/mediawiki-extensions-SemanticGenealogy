@@ -1,4 +1,4 @@
-jQuery( function ( $ ) {
+jQuery( ( $ ) => {
 	function initAutocomplete() {
 		$( 'input.smg-input-page' ).autocomplete( {
 			source: function ( request, response ) {
@@ -6,14 +6,12 @@ jQuery( function ( $ ) {
 					mw.util.wikiScript( 'api' ), {
 						action: 'opensearch',
 						search: request.term
-					}, function ( data ) {
+					}, ( data ) => {
 						if ( Array.isArray( data ) && 1 in data ) {
-							response( $.map( data[ 1 ], function ( item ) {
-								return {
-									label: item,
-									value: item
-								};
-							} ) );
+							response( $.map( data[ 1 ], ( item ) => ( {
+								label: item,
+								value: item
+							} ) ) );
 						}
 					}
 				);
@@ -37,7 +35,7 @@ jQuery( function ( $ ) {
 
 	showFields();
 	initAutocomplete();
-	$( 'select#type' ).on( 'change', function () {
+	$( 'select#type' ).on( 'change', () => {
 		showFields();
 	} );
 } );
