@@ -4,5 +4,23 @@
 			"Умар"
 		]
 	},
-	"semanticgenealogy-specialfamilytree-label-type": "Тайпа"
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM экспорт",
+	"semanticgenealogy-specialfamilytree-title": "Кхоллу доьзалан дитт",
+	"semanticgenealogy-specialfamilytree-button-submit": "Кхолла",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Дай",
+	"semanticgenealogy-specialfamilytree-type-descendant": "ТӀаьхье",
+	"semanticgenealogy-specialfamilytree-type-link": "Хьажорг",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Цхьалха",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Йаьшканаш",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Йуьззина цӀе",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "АгӀонан цӀе",
+	"semanticgenealogy-specialfamilytree-label-page": "Коьрта стаг",
+	"semanticgenealogy-specialfamilytree-label-page2": "Кхин стаг",
+	"semanticgenealogy-specialfamilytree-label-type": "Тайпа",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Стиль",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Гуш йолу цӀе",
+	"semanticgenealogy-specialfamilytree-label-gen": "ТӀаьхьенийн дукхалла",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "[[$1]] а, [[$2]] а йукъахь цхьа а хьажорг ца карийна.",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Тайпа $1 ца девза.",
+	"specialpages-group-genealogy": "Генеалоги"
 }
