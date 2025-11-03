@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Html\Html;
+
 /**
  * Special page that show a family tree
  *
