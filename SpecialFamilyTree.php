@@ -157,7 +157,7 @@ class SpecialFamilyTree extends SpecialPage {
 				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page' )->text(), 'page' ) .
 				Xml::closeElement( 'th' ) .
 				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
-				Xml::input( 'page', 30, $this->page, [ 'class' => 'smg-input-page' ] ) .
+				Html::input( 'page', $this->page, 'text', [ 'class' => 'smg-input-page', 'size' => 30 ] ) .
 				Xml::closeElement( 'td' ) .
 				Xml::closeElement( 'tr' ) .
 				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-type' ] ) .
@@ -193,7 +193,7 @@ class SpecialFamilyTree extends SpecialPage {
 				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-gen' )->text(), 'gen' ) .
 				Xml::closeElement( 'th' ) .
 				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
-				Xml::input( 'gen', 2, $this->gen ) .
+				Html::input( 'gen', $this->gen, 'text', [ 'size' => 2 ] ) .
 				Xml::closeElement( 'td' ) .
 				Xml::closeElement( 'tr' ) .
 				Xml::openElement( 'tr', [ 'id' => 'smg-form-entry-page2' ] ) .
@@ -201,11 +201,11 @@ class SpecialFamilyTree extends SpecialPage {
 				Xml::label( $this->msg( 'semanticgenealogy-specialfamilytree-label-page2' )->text(), 'page2' ) .
 				Xml::closeElement( 'th' ) .
 				Xml::openElement( 'td', [ 'class' => 'mw-input' ] ) .
-				Xml::input( 'page2', 30, $this->page2, [ 'class' => 'smg-input-page' ] ) .
+				Html::input( 'page2', $this->page2, 'text', [ 'class' => 'smg-input-page', 'size' => 30 ] ) .
 				Xml::closeElement( 'td' ) .
 				Xml::closeElement( 'tr' ) .
 				Xml::closeElement( 'table' ) .
-				Xml::submitButton( $this->msg( 'semanticgenealogy-specialfamilytree-button-submit' )->text() ) .
+				Html::submitButton( $this->msg( 'semanticgenealogy-specialfamilytree-button-submit' )->text(), [] ) .
 				Xml::closeElement( 'fieldset' ) .
 				Xml::closeElement( 'form' )
 			);
