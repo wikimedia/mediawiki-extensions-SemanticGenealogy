@@ -11,7 +11,7 @@ use MediaWiki\Html\Html;
  * @license GPL-2.0-or-later
  * @author  Thomas Pellissier Tanon <thomaspt@hotmail.fr>
  */
-class SpecialFamilyTree extends SpecialPage {
+class SpecialFamilyTree extends IncludableSpecialPage {
 
 	private $type;
 	private $gen;
@@ -26,7 +26,6 @@ class SpecialFamilyTree extends SpecialPage {
 	 */
 	public function __construct( $name = 'FamilyTree' ) {
 		parent::__construct( $name, '' );
-		$this->mIncludable = true;
 	}
 
 	/**
@@ -123,7 +122,7 @@ class SpecialFamilyTree extends SpecialPage {
 	protected function showForm() {
 		global $wgScript;
 
-		if ( !$this->mIncluding ) {
+		if ( !$this->including() ) {
 			$output = $this->getOutput();
 			$output->addModules( 'ext.smg.specialfamilytree' );
 
