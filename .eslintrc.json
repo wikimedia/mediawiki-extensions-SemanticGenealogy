@@ -11,6 +11,7 @@
 	"rules": {
 		"eqeqeq": "warn",
 		"no-jquery/no-map-util": "warn",
-		"no-jquery/no-global-selector": "warn"
+		"no-jquery/no-global-selector": "warn",
+		"no-jquery/no-jquery-ui": "warn"
 	}
 }
