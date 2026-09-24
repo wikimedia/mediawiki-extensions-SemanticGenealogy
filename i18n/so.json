@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"semanticgenealogy-desc": "Waxay bixisaa awoodda lagu daawado geedaha abtirsiinta iyo lagu soo dejiyo/lagaga dhoofiyo faylasha GEDCOM",
+	"semanticgenealogy-gedcomexport-desc": "Dhoofinta GEDCOM",
+	"semanticgenealogy-specialfamilytree-title": "Abuur geed qoys",
+	"semanticgenealogy-specialfamilytree-button-submit": "Abuur",
+	"semanticgenealogy-specialfamilytree-type-ancestors": "Awowayaal",
+	"semanticgenealogy-specialfamilytree-type-descendant": "Farac",
+	"semanticgenealogy-specialfamilytree-type-link": "Xiriir",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "Fudud",
+	"semanticgenealogy-specialfamilytree-decorator-box": "Sanduuqyo",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "Magaca oo buuxa",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "Magaca bogga",
+	"semanticgenealogy-specialfamilytree-label-page": "Qofka aasaasiga ah",
+	"semanticgenealogy-specialfamilytree-label-page2": "Qof kale",
+	"semanticgenealogy-specialfamilytree-label-type": "Nooca",
+	"semanticgenealogy-specialfamilytree-label-decorator": "Habaynta",
+	"semanticgenealogy-specialfamilytree-label-displayname": "Magaca la muujinayo",
+	"semanticgenealogy-specialfamilytree-label-gen": "Tirada jiilalka",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "Si geedkan loogu geliyo bog, ku dar koodhka wiki-ga ee soo socda:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Waa inaad bixisaa magaca bogga qofka ee ku jira \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\".",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Ma jiro xiriiriye laga helay inta u dhexeysa [[$1]] iyo [[$2]].",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "Nooca $1 lama garanayo.",
+	"specialpages-group-genealogy": "Abtirsiin"
+}
