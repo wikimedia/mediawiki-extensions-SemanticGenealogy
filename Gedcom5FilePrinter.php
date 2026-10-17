@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -128,15 +129,16 @@ class Gedcom5FilePrinter extends GenealogicalFilePrinter {
 	 * @return void
 	 */
 	protected function addHead() {
-		global $wgSitename, $wgRightsText;
+		$config = MediaWikiServices::getInstance()->getMainConfig();
+		$rightsText = $config->get( MainConfigNames::RightsText );
 
 		$this->addRow( 0, 'HEAD' );
 		$this->addRow( 1, 'SOUR', 'unregistered' );
 		$this->addRow( 2, 'NAME', 'Semantic Genealogy' );
 		$this->addRow( 2, 'VERS', SGENEA_VERSION );
-		$this->addRow( 2, 'DATA', $wgSitename );
-		if ( isset( $wgRightsText ) && $wgRightsText ) {
-			$this->addRow( 3, 'COPR', $wgRightsText );
+		$this->addRow( 2, 'DATA', $config->get( MainConfigNames::Sitename ) );
+		if ( $rightsText !== null ) {
+			$this->addRow( 3, 'COPR', $rightsText );
 		}
 		// $this->addRow( 1, 'FILE',  ); //TODO name of the file
 		$this->addRow( 1, 'DATE', strtoupper( date( 'd M Y' ) ) );

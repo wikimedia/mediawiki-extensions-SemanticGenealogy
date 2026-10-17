@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Html\Html;
+use MediaWiki\MainConfigNames;
 
 /**
  * Special page that show a family tree
@@ -35,36 +36,35 @@ class SpecialFamilyTree extends IncludableSpecialPage {
 	 * @return void
 	 */
 	private function parseParameters( $par ) {
-		global $wgRequest;
-
 		if ( $par != '' ) {
 			$parts = explode( '/', urldecode( $par ) );
 		} else {
 			$parts = [];
 		}
 
-		$this->type = isset( $parts[0] ) ? $parts[0] : $wgRequest->getText( 'type' );
+		$request = $this->getRequest();
+		$this->type = isset( $parts[0] ) ? $parts[0] : $request->getText( 'type' );
 		if ( $this->type == '' ) {
 			$this->type = AncestorsFamilyTree::NAME;
 		}
 
-		$this->decorator = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'decorator' );
+		$this->decorator = isset( $parts[1] ) ? $parts[1] : $request->getText( 'decorator' );
 		if ( $this->decorator == '' ) {
 			$this->decorator = SimpleDecorator::NAME;
 		}
 
-		$this->page = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'page' );
+		$this->page = isset( $parts[1] ) ? $parts[1] : $request->getText( 'page' );
 
-		$this->displayname = isset( $parts[1] ) ? $parts[1] : $wgRequest->getText( 'displayname' );
+		$this->displayname = isset( $parts[1] ) ? $parts[1] : $request->getText( 'displayname' );
 		if ( !$this->displayname ) {
 			$this->displayname = 'fullname';
 		}
 
 		if ( $this->type == LinkFamilyTree::NAME ) {
-			$this->page2 = isset( $parts[2] ) ? $parts[2] : $wgRequest->getText( 'page2' );
+			$this->page2 = isset( $parts[2] ) ? $parts[2] : $request->getText( 'page2' );
 			$this->gen = 0;
 		} else {
-			$this->gen = isset( $parts[2] ) ? intval( $parts[2] ) : $wgRequest->getInt( 'gen' );
+			$this->gen = isset( $parts[2] ) ? intval( $parts[2] ) : $request->getInt( 'gen' );
 			if ( $this->gen <= 0 ) {
 				$this->gen = 5;
 			}
@@ -78,7 +78,6 @@ class SpecialFamilyTree extends IncludableSpecialPage {
 	 * @param string $par the url part
 	 */
 	public function execute( $par ) {
-		global $wgOut;
 		$this->setHeaders();
 
 		$this->parseParameters( $par );
@@ -108,9 +107,9 @@ class SpecialFamilyTree extends IncludableSpecialPage {
 
 			$familytree->render();
 		} catch ( SemanticGenealogyException $e ) {
-			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
+			$output->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
 		} catch ( Exception $e ) {
-			$wgOut->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
+			$output->addWikiText( '<span class="error">' . $e->getMessage() . '</span>' );
 		}
 	}
 
@@ -120,8 +119,6 @@ class SpecialFamilyTree extends IncludableSpecialPage {
 	 * @return void
 	 */
 	protected function showForm() {
-		global $wgScript;
-
 		if ( !$this->including() ) {
 			$output = $this->getOutput();
 			$output->addModules( 'ext.smg.specialfamilytree' );
@@ -149,7 +146,7 @@ class SpecialFamilyTree extends IncludableSpecialPage {
 				$this->msg( 'semanticgenealogy-specialfamilytree-displayname-pagename' )->text(), 'pagename' );
 
 			$output->addHTML(
-				Html::openElement( 'form', [ 'action' => $wgScript ] ) .
+				Html::openElement( 'form', [ 'action' => $this->getConfig()->get( MainConfigNames::Script ) ] ) .
 				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 				Html::openElement( 'fieldset' ) .
 				Html::openElement( 'table', [ 'id' => 'smg-familyTree-form' ] ) .
