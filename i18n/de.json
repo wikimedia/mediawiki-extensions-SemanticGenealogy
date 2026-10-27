@@ -23,7 +23,7 @@
 	"semanticgenealogy-specialfamilytree-label-displayname": "Anzuzeigender Name",
 	"semanticgenealogy-specialfamilytree-label-gen": "Anzahl der Generationen",
 	"semanticgenealogy-specialfamilytree-label-insert-code": "Um diesen Baum in eine Seite einzufügen, verwende den folgenden Wikicode:",
-	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "Du musst den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "{{#FORMAL:Du musst|Sie müssen}} den Namen der Seite zu einer Person im Feld „{{int:semanticgenealogy-specialfamilytree-label-page2}}“ angeben.",
 	"semanticgenealogy-specialfamilytree-error-nolinkfound": "Es wurde keine Verbindung zwischen [[$1]] und [[$2]] gefunden.",
 	"semanticgenealogy-specialfamilytree-error-unknowntype": "Der Typ $1 ist unbekannt.",
 	"specialpages-group-genealogy": "Genealogie"
