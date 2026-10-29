@@ -5,6 +5,26 @@
 			"شاه زمان پټان"
 		]
 	},
+	"semanticgenealogy-desc": "د ټبرليک ونو کتلو او GEDCOM دوتنو رالېږدولو/بهرلېږلو وړتيا چمتو کوي",
+	"semanticgenealogy-gedcomexport-desc": "GEDCOM بهرلېږل",
+	"semanticgenealogy-specialfamilytree-title": "د کورنۍ ونه جوړه کړئ",
 	"semanticgenealogy-specialfamilytree-button-submit": "جوړول",
-	"semanticgenealogy-specialfamilytree-type-link": "تړونی"
+	"semanticgenealogy-specialfamilytree-type-ancestors": "نيکونه",
+	"semanticgenealogy-specialfamilytree-type-descendant": "زوزات",
+	"semanticgenealogy-specialfamilytree-type-link": "تړونی",
+	"semanticgenealogy-specialfamilytree-decorator-simple": "اسان",
+	"semanticgenealogy-specialfamilytree-decorator-box": "بکسونه",
+	"semanticgenealogy-specialfamilytree-displayname-fullname": "بشپړ نوم",
+	"semanticgenealogy-specialfamilytree-displayname-pagename": "مخ نوم",
+	"semanticgenealogy-specialfamilytree-label-page": "بنسټيز کس",
+	"semanticgenealogy-specialfamilytree-label-page2": "بل کس",
+	"semanticgenealogy-specialfamilytree-label-type": "ډول",
+	"semanticgenealogy-specialfamilytree-label-decorator": "ښودبڼه",
+	"semanticgenealogy-specialfamilytree-label-displayname": "ښودلو لپاره نوم",
+	"semanticgenealogy-specialfamilytree-label-gen": "نسل شمېره",
+	"semanticgenealogy-specialfamilytree-label-insert-code": "يوه مخ کې د دې ونې ورټومبلو لپاره لاندې ويکي کوډ وکاروئ:",
+	"semanticgenealogy-specialfamilytree-error-nosecondpagename": "تاسو بايد په \"{{int:semanticgenealogy-specialfamilytree-label-page2}}\"  ډگر کې د يو کس مخ نوم ورگډ کړئ.",
+	"semanticgenealogy-specialfamilytree-error-nolinkfound": "د [[$1]] او [[$2]] ترمنځ کومه تړونی ونه موندل شو.",
+	"semanticgenealogy-specialfamilytree-error-unknowntype": "$1  ډول نامالوم دی.",
+	"specialpages-group-genealogy": "ټبرليک"
 }
